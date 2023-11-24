@@ -1,5 +1,6 @@
 import dynamic from "next/dynamic";
 import Head from "next/head";
+import Script from "next/script";
 import About from "../src/components/About";
 import Blog from "../src/components/Blog";
 import Contact from "../src/components/Contact";
@@ -40,6 +41,7 @@ const IndexDark = () => {
 			</Head>
 			<Header />
 			<Home>
+				<Script src="https://kit.fontawesome.com/29b275fb0c.js"></Script>
 				<div className="profile no-photo">
 					<div
 						className="slide"

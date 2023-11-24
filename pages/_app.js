@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
 		<State>
 			<Head>
 				<link
-					href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+					href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=optional"
 					rel="stylesheet"
 				/>
 				<link
@@ -27,10 +27,6 @@ function MyApp({ Component, pageProps }) {
 
 				<title>vCard / Resume / CV Template</title>
 				<link rel="shortcut icon" href="images/favicons/favicon.ico" />
-				<script
-					src="https://kit.fontawesome.com/29b275fb0c.js"
-					crossorigin="anonymous"
-				></script>
 			</Head>
 			<PreLoader />
 			<Component {...pageProps} />

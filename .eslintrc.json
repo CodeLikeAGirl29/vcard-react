@@ -1,0 +1,11 @@
+{
+    "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "next/core-web-vitals",
+    "next"
+  ],
+  "plugins": ["react", "import", "jsx-a11y"]
+}

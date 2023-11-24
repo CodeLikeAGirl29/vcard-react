@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST={"index.js -> ../src/components/sections/RecentWorks":{"id":"index.js -> ../src/components/sections/RecentWorks","files":["static/chunks/src_components_sections_RecentWorks_js.js"]}}

@@ -13,8 +13,8 @@ const Quote = () => {
 						<div className="revs-item">
 							<div className="text">
 								<div>
-									I love being able to help people by simplifying some of life's
-									more complex problems.
+									I love being able to help people by simplifying some of
+									life&apos;s more complex problems.
 								</div>
 							</div>
 						</div>

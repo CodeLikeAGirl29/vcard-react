@@ -23,10 +23,10 @@ import ContentContainer from "../src/layout/ContentContainer";
 import Header from "../src/layout/Header";
 import Layout from "../src/layout/Layout";
 const RecentWorks = dynamic(
-  () => import("../src/components/sections/RecentWorks"),
-  {
-    ssr: false,
-  }
+	() => import("../src/components/sections/RecentWorks"),
+	{
+		ssr: false,
+	}
 );
 const bio = `<p>
 I am Ryan Adlard, web designer from USA, California. I have rich experience in
@@ -34,84 +34,84 @@ web site design and building and customization, also I am good at wordpress.
 I love to talk with you about our unique.
 </p>`;
 const IndexDark = () => {
-  return (
-    <Layout bg={"gradient"}>
-      <Head>
-        <link rel="stylesheet" href="css/new-skin/new-skin.css" />
-        <link rel="stylesheet" href="css/demos/demo-2-colors.css" />
-        <link rel="stylesheet" href="css/new-skin/classic-skin.css" />
-        <link rel="stylesheet" href="css/template-dark/dark.css" />
-      </Head>
-      <Header />
-      <Home>
-        <div className="profile">
-          <div
-            className="slide"
-            style={{ backgroundImage: "url(images/bg.jpg)" }}
-          />
-          <div className="image">
-            <img src="images/profile.png" alt="" />
-          </div>
-          <div className="title">Ryan Adlard</div>
-          <TypingAnimation />
-          <div className="social">
-            <a target="_blank" rel="noreferrer" href="https://dribbble.com/">
-              <span className="fa fa-dribbble" />
-            </a>
-            <a target="_blank" rel="noreferrer" href="https://twitter.com/">
-              <span className="fa fa-twitter" />
-            </a>
-            <a target="_blank" rel="noreferrer" href="https://github.com/">
-              <span className="fa fa-github" />
-            </a>
-            <a target="_blank" rel="noreferrer" href="https://www.spotify.com/">
-              <span className="fa fa-spotify" />
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://stackoverflow.com/"
-            >
-              <span className="fa fa-stack-overflow" />
-            </a>
-          </div>
-          {/* profile buttons */}
-          <div className="lnks">
-            <a href="#" className="lnk">
-              <span className="text">Download CV</span>
-            </a>
-            <a href="#" className="lnk discover">
-              <span className="text">Contact Me</span>
-            </a>
-          </div>
-        </div>
-      </Home>
-      <ContentContainer>
-        <About>
-          <AboutMe bio={bio} />
-          <Services />
-          <Pricing />
-          <FunFact />
-          <Clients />
-          <Quote />
-        </About>
-        <Resume>
-          <ResumeSection />
-          <Skills />
-          <Testimonials />
-        </Resume>
-        <Work>
-          <RecentWorks />
-        </Work>
-        <Blog>
-          <BlogSection />
-        </Blog>
-        <Contact>
-          <ContactInfo />
-          <ContactForm />
-        </Contact>
-      </ContentContainer>
-    </Layout>
-  );
+	return (
+		<Layout bg={"gradient"}>
+			<Head>
+				<link rel="stylesheet" href="css/new-skin/new-skin.css" />
+				<link rel="stylesheet" href="css/demos/demo-2-colors.css" />
+				<link rel="stylesheet" href="css/new-skin/classic-skin.css" />
+				<link rel="stylesheet" href="css/template-dark/dark.css" />
+			</Head>
+			<Header />
+			<Home>
+				<div className="profile text-slate-400">
+					<div
+						className="slide"
+						style={{ backgroundImage: "url(images/bg.jpg)" }}
+					/>
+					<div className="image">
+						<img src="images/profile.png" alt="" />
+					</div>
+					<div className="title">Ryan Adlard</div>
+					<TypingAnimation />
+					<div className="social">
+						<a target="_blank" rel="noreferrer" href="https://dribbble.com/">
+							<span className="fa fa-dribbble" />
+						</a>
+						<a target="_blank" rel="noreferrer" href="https://twitter.com/">
+							<span className="fa fa-twitter" />
+						</a>
+						<a target="_blank" rel="noreferrer" href="https://github.com/">
+							<span className="fa fa-github" />
+						</a>
+						<a target="_blank" rel="noreferrer" href="https://www.spotify.com/">
+							<span className="fa fa-spotify" />
+						</a>
+						<a
+							target="_blank"
+							rel="noreferrer"
+							href="https://stackoverflow.com/"
+						>
+							<span className="fa fa-stack-overflow" />
+						</a>
+					</div>
+					{/* profile buttons */}
+					<div className="lnks">
+						<a href="#" className="lnk">
+							<span className="text">Download CV</span>
+						</a>
+						<a href="#" className="lnk discover">
+							<span className="text">Contact Me</span>
+						</a>
+					</div>
+				</div>
+			</Home>
+			<ContentContainer>
+				<About>
+					<AboutMe bio={bio} />
+					<Services />
+					<Pricing />
+					<FunFact />
+					<Clients />
+					<Quote />
+				</About>
+				<Resume>
+					<ResumeSection />
+					<Skills />
+					<Testimonials />
+				</Resume>
+				<Work>
+					<RecentWorks />
+				</Work>
+				<Blog>
+					<BlogSection />
+				</Blog>
+				<Contact>
+					<ContactInfo />
+					<ContactForm />
+				</Contact>
+			</ContentContainer>
+		</Layout>
+	);
 };
 export default IndexDark;

@@ -35,10 +35,10 @@ const BlogSection = () => {
 									onClick={() => changeNav("blog-post")}
 									className="name"
 								>
-									Using Gatsby.js
+									<h3 className="text-rose-400"> Using Gatsby.js</h3>
 								</a>
 								<div className="text">
-									<p>
+									<p className="text-zinc-800">
 										Ex audire suavitate has, ei quodsi tacimates sapientem sed,
 										pri zril ubique ut. Te cule tation munere noluisse. Enim
 										torquatos…
@@ -53,7 +53,7 @@ const BlogSection = () => {
 							<div className="image">
 								<a href="#" onClick={() => changeNav("blog-post")}>
 									<img
-										src="images/blog/blog2.jpg"
+										src="images/blog/blog2.png"
 										alt="By spite about do of allow"
 									/>
 									<span className="info">
@@ -63,23 +63,20 @@ const BlogSection = () => {
 							</div>
 							<div className="desc">
 								<a href="#" onClick={() => changeNav("blog-post")}>
-									<span className="date">April 28, 2020</span>
+									<span className="date">April 28, 2022</span>
 								</a>
 								<a
 									href="#"
 									onClick={() => changeNav("blog-post")}
 									className="name"
 								>
-									The Art of Productivity: Proven Strategies for Sustained
-									Efficiency & Success
+									<h3 className="text-rose-400">The Art of Productivity</h3>
 								</a>
 								<div className="text">
-									<p>
+									<p className="text-zinc-800">
 										In today&apos;s fast-paced world, the ability to stay
 										productive is a key factor in achieving personal and
-										professional success. Whether you&apos;re a student, a
-										professional, or an entrepreneur, maximizing your efficiency
-										can lead to a more fulfilling and accomplished life.
+										professional success..
 									</p>
 								</div>
 							</div>
@@ -90,10 +87,7 @@ const BlogSection = () => {
 						<div className="box-item">
 							<div className="image">
 								<a href="#" onClick={() => changeNav("blog-post")}>
-									<img
-										src="images/blog/blog3.jpg"
-										alt="By spite about do of allow"
-									/>
+									<img src="images/blog/blog3.png" alt="styling with CSS" />
 									<span className="info">
 										<span className="ion ion-document-text" />
 									</span>
@@ -101,20 +95,20 @@ const BlogSection = () => {
 							</div>
 							<div className="desc">
 								<a href="#" onClick={() => changeNav("blog-post")}>
-									<span className="date">April 28, 2020</span>
+									<span className="date">Dec 04, 2022</span>
 								</a>
 								<a
 									href="#"
 									onClick={() => changeNav("blog-post")}
 									className="name"
 								>
-									By spite about do of allow
+									<h3 className="text-rose-400">Styling with CSS</h3>
 								</a>
 								<div className="text">
-									<p>
-										Ex audire suavitate has, ei quodsi tacimates sapientem sed,
-										pri zril ubique ut. Te cule tation munere noluisse. Enim
-										torquatos…
+									<p className="text-zinc-800">
+										We&apos;ve compiled a massive list of tips, tricks,
+										techniques, & the occasional dirty hack to help you build
+										the design you want.
 									</p>
 								</div>
 							</div>
@@ -143,10 +137,10 @@ const BlogSection = () => {
 									onClick={() => changeNav("blog-post")}
 									className="name"
 								>
-									By spite about do of allow
+									<h3 className="text-rose-400"> By spite about do of allow</h3>
 								</a>
 								<div className="text">
-									<p>
+									<p className="text-zinc-800">
 										Ex audire suavitate has, ei quodsi tacimates sapientem sed,
 										pri zril ubique ut. Te cule tation munere noluisse. Enim
 										torquatos…

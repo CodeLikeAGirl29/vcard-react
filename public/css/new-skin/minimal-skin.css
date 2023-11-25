@@ -347,7 +347,7 @@ body .header .top-menu {
 .solid-icons-style .skill-title .icon,
 .card-started .profile .lnk.solid-style .ion,
 .header .top-menu.menu-minimal ul li a .link {
-    background: #DE3163 !important;
+    color: #ffdfe8 !important;
 }
 
 .lnk:hover,
@@ -515,7 +515,7 @@ textarea:focus,
 .header .cart-btn .cart-icon .cart-count,
 .header .top-menu.menu-minimal ul li a .link,
 .header .top-menu.menu-minimal ul li:hover a .link {
-    color: #323232!important;
+    color: #323232 !important;
 }
 
 .layout-rounded-style .header .menu-btn {
@@ -553,7 +553,7 @@ textarea:focus,
     color: #fff;
     text-transform: uppercase;
     letter-spacing: .1em;
-    background: #78cc6d;
+    background: #ffb2d0;
     transition: .3s ease 0s;
     padding: 3px 7px;
     margin-top: -11px;
@@ -670,6 +670,10 @@ textarea:focus,
 .content-sidebar .profile .social a .fa {
 	color: rgba(75, 75, 75, 0.85);
 	font-size: 18px;
+}
+
+.social a:hover {
+    transform: scale(1.3);
 }
 
 .header .top-menu ul li a {

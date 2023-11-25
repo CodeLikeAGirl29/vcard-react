@@ -270,7 +270,7 @@ export const BlogPostClassic = () => {
 								</div>
 								{/* blog content */}
 								<div className="blog-content">
-									<p>
+									<p className="text-slate-400">
 										So striking at of to welcomed resolved. Northward by
 										described up household therefore attention. Excellence
 										decisively nay man yet impression for contrasted remarkably.

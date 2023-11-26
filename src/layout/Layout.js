@@ -7,9 +7,6 @@ import { createSkillsDot, dotResize } from "../utils.js";
 import Background from "./Background.js";
 import ContentSidebar from "./ContentSidebar.js";
 
-import "mdb-react-ui-kit/dist/css/mdb.min.css";
-import "@fortawesome/fontawesome-free/css/all.min.css";
-
 const Layout = ({
 	children,
 	noSkin,

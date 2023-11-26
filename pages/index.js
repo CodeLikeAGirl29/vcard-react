@@ -1,4 +1,3 @@
-import Modal from "../src/components/Modal";
 import { useState } from "react";
 import dynamic from "next/dynamic";
 import Head from "next/head";
@@ -34,7 +33,6 @@ const bio = `<p>
 I am Lindsey, a Frontend Developer from Florida. Passionate about crafting captivating digital experiences through code, I am a skilled Frontend Web Developer with a keen eye for design & a knack for turning ideas into interactive web solutions.
 </p>`;
 function IndexDark() {
-	const [showModal, setShowModal] = useState(false);
 	return (
 		<Layout bg={"blured"}>
 			<Head>
@@ -104,13 +102,6 @@ function IndexDark() {
 							<span className="text">Contact Me</span>
 							<span className="ion ion-paper-airplane"></span>
 						</a>
-
-						<button onClick={() => setShowModal(true)}>Open Modal</button>
-						{showModal && (
-							<Modal onClose={() => setShowModal(false)}>
-								Hello from the modal!
-							</Modal>
-						)}
 					</div>
 				</div>
 			</Home>

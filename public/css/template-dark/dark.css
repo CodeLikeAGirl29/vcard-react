@@ -539,11 +539,7 @@ input[type="submit"]:hover {
 }
 
 .revs-item .text {
-	color: rgba(80, 80, 80, 0.85);
-}
-
-.revs-item .text:before, .revs-item .text:after {
-	filter: invert(1);
+	color: rgba(255, 0, 200, 0.85);
 }
 
 .revs-item .info .name {

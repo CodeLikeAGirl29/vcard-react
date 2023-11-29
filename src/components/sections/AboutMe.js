@@ -1,9 +1,6 @@
 import { Fragment } from "react";
 const bio_ = ` <p>
-<strong>Hello! I’m Donald Wellborn.</strong>
-Back-end &amp; Frond-end developer from UK, London. I have rich
-experience in wordpress, also I am good at Magento. I love to
-talk with you about our unique.
+I am Lindsey, a Frontend Developer from Florida. Passionate about crafting captivating digital experiences through code, I am a skilled Frontend Web Developer with a keen eye for design & a knack for turning ideas into interactive web solutions.
 </p>`;
 const AboutMe = ({ bio }) => {
 	return (
@@ -62,7 +59,7 @@ export const AboutMeClassic = () => {
 								{" "}
 								Lindsey Howard
 							</span>
-							, web designer based in Florida. I have rich experience in web
+							, web developer based in Florida. I have rich experience in web
 							site design and building and customization.
 						</p>
 					</div>

@@ -19,7 +19,7 @@ const BlogSection = () => {
 								<a href="#" onClick={() => changeNav("blog-post")}>
 									<img
 										src="images/blog/blog_post1.png"
-										alt="By spite about do of allow"
+										alt="why i love using gatsby.js"
 									/>
 									<span className="info">
 										<span className="ion ion-document-text" />
@@ -39,9 +39,7 @@ const BlogSection = () => {
 								</a>
 								<div className="text">
 									<p className="text-zinc-800">
-										Ex audire suavitate has, ei quodsi tacimates sapientem sed,
-										pri zril ubique ut. Te cule tation munere noluisse. Enim
-										torquatos…
+                  Gatsby.js, a powerful and modern web framework built on React, revolutionizes web development with its speed and efficiency. Its robust ecosystem, rich plugin library, and intuitive architecture make it a top choice for creating high-performance web projects with ease.
 									</p>
 								</div>
 							</div>
@@ -54,7 +52,7 @@ const BlogSection = () => {
 								<a href="#" onClick={() => changeNav("blog-post")}>
 									<img
 										src="images/blog/blog2.png"
-										alt="By spite about do of allow"
+										alt="art of productivity"
 									/>
 									<span className="info">
 										<span className="ion ion-document-text" />
@@ -63,7 +61,7 @@ const BlogSection = () => {
 							</div>
 							<div className="desc">
 								<a href="#" onClick={() => changeNav("blog-post")}>
-									<span className="date">April 28, 2022</span>
+									<span className="date">April 28, 2023</span>
 								</a>
 								<a
 									href="#"
@@ -74,9 +72,7 @@ const BlogSection = () => {
 								</a>
 								<div className="text">
 									<p className="text-zinc-800">
-										In today&apos;s fast-paced world, the ability to stay
-										productive is a key factor in achieving personal and
-										professional success..
+									In the fast-paced world we live in, productivity isn’t just a buzzword; it&apos;s a crucial skill that can significantly impact personal and professional success. Balancing multiple tasks, deadlines, and responsibilities requires not just hard work, but also smart work. Here, we&apos;ll explore some powerful strategies to help you unlock your productivity potential and make the most of your time.
 									</p>
 								</div>
 							</div>
@@ -120,8 +116,8 @@ const BlogSection = () => {
 							<div className="image">
 								<a href="#" onClick={() => changeNav("blog-post")}>
 									<img
-										src="images/blog/blog1.jpg"
-										alt="By spite about do of allow"
+										src="images/blog/blog5.png"
+										alt="responsive design"
 									/>
 									<span className="info">
 										<span className="ion ion-document-text" />
@@ -130,20 +126,18 @@ const BlogSection = () => {
 							</div>
 							<div className="desc">
 								<a href="#" onClick={() => changeNav("blog-post")}>
-									<span className="date">April 28, 2020</span>
+									<span className="date">Nov 28, 2023</span>
 								</a>
 								<a
 									href="#"
 									onClick={() => changeNav("blog-post")}
 									className="name"
 								>
-									<h3 className="text-rose-400"> By spite about do of allow</h3>
+									<h3 className="text-rose-400"> Responsive Websites: Speed Matters</h3>
 								</a>
 								<div className="text">
 									<p className="text-zinc-800">
-										Ex audire suavitate has, ei quodsi tacimates sapientem sed,
-										pri zril ubique ut. Te cule tation munere noluisse. Enim
-										torquatos…
+										Explore performance optimization techniques for web applications, including code-splitting, lazy loading, image optimization, and other strategies to enhance speed and user experience.
 									</p>
 								</div>
 							</div>

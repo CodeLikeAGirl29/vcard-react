@@ -80,22 +80,22 @@ const Index7 = () => {
 
           {/* profile socials */}
           <div className="social">
-            <a target="_blank" rel="noreferrer" href="https://medium.com/">
+            <a target="_blank" rel="noreferrer" href="https://medium.com/@lindseykdev">
               <span className="fa fa-medium" />
             </a>
-            <a target="_blank" rel="noreferrer" href="https://twitter.com/">
+            <a target="_blank" rel="noreferrer" href="https://twitter.com/dev_lindseyk">
               <span className="fa fa-twitter" />
             </a>
-            <a target="_blank" rel="noreferrer" href="https://facebook.com/">
+            <a target="_blank" rel="noreferrer" href="https://facebook.com/codelikeagirl91">
               <span className="fa fa-facebook-f" />
             </a>
-            <a target="_blank" rel="noreferrer" href="https://linkedin.com/">
+            <a target="_blank" rel="noreferrer" href="https://linkedin.com/in/lindsey-howard">
               <span className="fa fa-linkedin" />
             </a>
           </div>
           {/* profile buttons */}
           <div className="lnks">
-            <a href="#" className="lnk">
+            <a href="https://drive.google.com/file/d/10UygQRZXw07bKOSZ0fIfgSr9TqJdmBHg/view?usp=sharing" className="lnk">
               <span className="text">Download CV</span>
               <span className="ion ion-android-attach" />
             </a>

@@ -46,7 +46,7 @@ h5 {
 }
 
 h6 {
-	font-size: 14px;
+	font-size: 0.875rem;
 }
 
 p {
@@ -76,13 +76,13 @@ strong {
 		font-size: 20px;
 	}
 	h4 {
-		font-size: 18px;
+		font-size: 1.125rem;
 	}
 	h5 {
 		font-size: 16px;
 	}
 	h6 {
-		font-size: 14px;
+		font-size: 0.875rem;
 	}
 }
 
@@ -122,6 +122,7 @@ strong {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+  	background: url(../../images/bg.png) ghostwhite !important;
 }
 
 .container {
@@ -392,7 +393,7 @@ input[type="submit"] {
 	display: block;
 	float: none;
 	width: 100%;
-	font-size: 14px;
+	font-size: 0.875rem;
 	color: #323232;
 }
 
@@ -538,7 +539,7 @@ input[type="file"] {
 	padding: 13px 3px;
 	height: auto;
 	color: #323232;
-	font-size: 12px;
+	font-size: 0.75rem;
 	font-weight: 500;
 	text-transform: uppercase;
 }
@@ -1010,7 +1011,7 @@ input[type="file"] {
 	margin-right: 8px;
 	padding: 1px 8px;
 	background: #DA70D6;
-	font-size: 14px;
+	font-size: 0.875rem;
 	line-height: 20px;
 	color: #fefefe;
 	font-weight: 400;
@@ -1140,7 +1141,7 @@ input[type="file"] {
 }
 
 .pricing-items .pricing-item .feature-list ul li strong {
-	font-size: 13px;
+	font-size: 0.813rem;
 	color: #323232;
 }
 
@@ -1222,7 +1223,7 @@ input[type="file"] {
 .resume-items .resume-item .date {
 	margin: 0 0 11px 0;
 	padding: 0 5px;
-	font-size: 13px;
+	font-size: 0.813rem;
 	line-height: 18px;
 	color: #ccc;
 	font-weight: 400;
@@ -1243,7 +1244,7 @@ input[type="file"] {
 
 .resume-items .resume-item .company {
 	margin: 0 0 11px 0;
-	font-size: 14px;
+	font-size: 0.875rem;
 	color: #999999;
 	font-weight: 400;
 	text-transform: none;
@@ -1271,7 +1272,7 @@ input[type="file"] {
 }
 
 .content.works .filter-menu .f_btn {
-	font-size: 14px;
+	font-size: 0.875rem;
 	color: #646464;
 }
 
@@ -1375,7 +1376,7 @@ input[type="file"] {
 
 .box-item .desc .category {
 	margin: 0;
-	font-size: 14px;
+	font-size: 0.875rem;
 	color: #999999;
 	text-transform: none;
 }
@@ -1385,7 +1386,7 @@ input[type="file"] {
 }
 
 .content.works .box-item .desc .category {
-	font-size: 14px;
+	font-size: 0.875rem;
 }
 
 .box-item:hover .desc .name {
@@ -1430,6 +1431,74 @@ input[type="file"] {
 	height: auto;
 }
 .checkbox label br {display: none;}
+
+.effect ~ .focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  z-index: 99;
+}
+.effect ~ .focus-border:before,
+.effect ~ .focus-border:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #4caf50;
+  transition: 0.3s;
+}
+.effect ~ .focus-border:after {
+ top: auto;
+  bottom: 0;
+  left: auto;
+  right: 0;
+}
+.effect ~ .focus-border i:after {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+}
+.effect:focus ~ .focus-border i:before,
+.effect:focus ~ .focus-border i:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 0;
+  background-color: #4caf50;
+  transition: 0.4s;
+}
+.effect ~ label {
+  position: absolute;
+  left: 14px;
+  width: 100%;
+  top: 10px;
+  color: #aaa;
+  transition: 0.3s;
+  z-index: -1;
+  letter-spacing: 0.5px;
+}
+.effect:focus ~ label,
+.has-content.effect ~ label {
+  top: -18px;
+  left: 0;
+  font-size: 12px;
+  color: #4caf50;
+  transition: 0.3s;
+}
+.effect:focus ~ .focus-border i:before,
+.effect:focus ~ .focus-border i:after,
+.has-content.effect ~ .focus-border i:before,
+.has-content.effect ~ .focus-border i:after {
+  height: 100%;
+  transition: 0.4s;
+}
 
 /*
 	Popups
@@ -1530,13 +1599,13 @@ input[type="file"] {
 
 .box-item .desc .category {
 	margin: 0 0 5px 0;
-	font-size: 14px;
+	font-size: 0.875rem;
 	color: #999999;
 }
 
 .content.works .box-item .desc .category {
 	margin: 5px 0 0 0;
-	font-size: 14px;
+	font-size: 0.875rem;
 }
 
 .box-item .desc .text p {
@@ -1555,7 +1624,7 @@ input[type="file"] {
 	display: inline-block;
 	line-height: 18px;
 	font-weight: 400;
-	font-size: 13px;
+	font-size: 0.813rem;
 	color: #DA70D6;
 	background: transparent;
 	border: 1px solid #DA70D6;
@@ -1591,7 +1660,7 @@ input[type="file"] {
 
 .single-post-text .blog-detail, .popup-box .blog-detail {
 	margin: 0 0 25px 0;
-	font-size: 12px;
+	font-size: 0.75rem;
 	color: #999999;
 }
 
@@ -1605,7 +1674,7 @@ input[type="file"] {
 
 .blog-detail > span {
 	text-transform: uppercase;
-	font-size: 12px;
+	font-size: 0.75rem;
 	font-weight: 500;
 	padding-right: 4px;
 }
@@ -1682,7 +1751,7 @@ blockquote p {
 }
 
 blockquote cite {
-	font-size: 12px;
+	font-size: 0.75rem;
 }
 
 iframe, object {
@@ -1823,7 +1892,7 @@ iframe, object {
 	padding: 0 5px;
 	line-height: 18px;
 	font-weight: 400;
-	font-size: 13px;
+	font-size: 0.813rem;
 	color: #DA70D6;
 	border: 1px solid #DA70D6;
 	text-decoration: none;
@@ -1939,7 +2008,7 @@ a.next.page-numbers:hover {
 
 .navigation.post-navigation .nav-links a {
 	position: relative;
-	font-size: 14px;
+	font-size: 0.875rem;
 	font-weight: 400;
 	text-transform: uppercase;
 	color: #aca3a3;
@@ -2159,7 +2228,7 @@ a.next.page-numbers:hover {
 	margin: 0 7px 0 0;
 	padding: 0;
 	display: inline-block;
-	font-size: 14px;
+	font-size: 0.875rem;
 	line-height: 14px;
 	color: #999999;
 	font-weight: 400;
@@ -2177,7 +2246,7 @@ a.next.page-numbers:hover {
 	position: absolute;
 	top: 2px;
 	right: 0;
-	font-size: 14px;
+	font-size: 0.875rem;
 	color: #323232;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -2282,7 +2351,7 @@ a.next.page-numbers:hover {
 	top: 0;
 	left: auto;
 	right: 0;
-	font-size: 14px;
+	font-size: 0.875rem;
 	display: block;
 	white-space: nowrap;
 	color: #999;
@@ -2607,7 +2676,7 @@ a.next.page-numbers:hover {
 	padding: 6px 25px;
 	font-weight: 500;
 	color: #646464;
-	font-size: 18px;
+	font-size: 1.125rem;
 }
 
 .profile .main-menu ul li ul li ul li a {
@@ -2626,7 +2695,7 @@ a.next.page-numbers:hover {
     left: 0;
     display: inline-block;
     vertical-align: middle;
-    font-size: 18px;
+    font-size: 1.125rem;
     transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -webkit-transition: all 0.3s ease 0s;

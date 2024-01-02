@@ -250,7 +250,7 @@
 }
 
 .header .profile .subtitle {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #DA70D6;
   line-height: 14px;
   font-weight: 400;
@@ -403,17 +403,17 @@
   height: 100%;
   background: -moz-linear-gradient(
     -45deg,
-    rgba(120, 204, 109, 0.4) 0%,
+     rgba(202, 46, 168, 0.15) 0%,
     rgba(120, 204, 109, 0.01) 100%
   );
   background: -webkit-linear-gradient(
     -45deg,
-    rgba(120, 204, 109, 0.4) 0%,
+     rgba(202, 46, 168, 0.15) 0%,
     rgba(120, 204, 109, 0.01) 100%
   );
   background: linear-gradient(
     135deg,
-    rgba(120, 204, 109, 0.4) 0%,
+     rgba(202, 46, 168, 0.15) 0%,
     rgba(120, 204, 109, 0.01) 100%
   );
   border-radius: 4px;
@@ -500,17 +500,17 @@
   height: 100%;
   background: -moz-linear-gradient(
     -45deg,
-    rgba(120, 204, 109, 0.4) 0%,
+     rgba(202, 46, 168, 0.15) 0%,
     rgba(120, 204, 109, 0.01) 100%
   );
   background: -webkit-linear-gradient(
     -45deg,
-    rgba(120, 204, 109, 0.4) 0%,
+     rgba(202, 46, 168, 0.15) 0%,
     rgba(120, 204, 109, 0.01) 100%
   );
   background: linear-gradient(
     135deg,
-    rgba(120, 204, 109, 0.4) 0%,
+     rgba(202, 46, 168, 0.15) 0%,
     rgba(120, 204, 109, 0.01) 100%
   );
   border-radius: 100%;
@@ -541,7 +541,7 @@
 
 .card-started .profile .subtitle {
   margin: 0 0 15px 0;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #DA70D6;
   line-height: 14px;
   font-weight: 400;
@@ -749,17 +749,17 @@
   height: 30px;
   background: -moz-linear-gradient(
     -45deg,
-    rgba(120, 204, 109, 0.4) 0%,
+     rgba(202, 46, 168, 0.15) 0%,
     rgba(120, 204, 109, 0.01) 100%
   );
   background: -webkit-linear-gradient(
     -45deg,
-    rgba(120, 204, 109, 0.4) 0%,
+     rgba(202, 46, 168, 0.15) 0%,
     rgba(120, 204, 109, 0.01) 100%
   );
   background: linear-gradient(
     135deg,
-    rgba(120, 204, 109, 0.4) 0%,
+     rgba(202, 46, 168, 0.15) 0%,
     rgba(120, 204, 109, 0.01) 100%
   );
   z-index: -1;
@@ -807,7 +807,7 @@
 
 .info-list ul li strong {
   display: inline-block;
-  font-size: 13px;
+  font-size: 0.813rem;
   color: #171717;
   font-weight: 500;
   text-transform: uppercase;
@@ -865,17 +865,17 @@
   color: #DA70D6;
   background: -moz-linear-gradient(
     -45deg,
-    rgba(120, 204, 109, 0.4) 0%,
+     rgba(202, 46, 168, 0.15) 0%,
     rgba(120, 204, 109, 0.01) 100%
   );
   background: -webkit-linear-gradient(
     -45deg,
-    rgba(120, 204, 109, 0.4) 0%,
+     rgba(202, 46, 168, 0.15) 0%,
     rgba(120, 204, 109, 0.01) 100%
   );
   background: linear-gradient(
     135deg,
-    rgba(120, 204, 109, 0.4) 0%,
+     rgba(202, 46, 168, 0.15) 0%,
     rgba(120, 204, 109, 0.01) 100%
   );
   border-radius: 60px;
@@ -893,7 +893,7 @@
 
 .service-items .service-item .name {
   margin: 15px 0 10px 0;
-  font-size: 13px;
+  font-size: 0.813rem;
   color: #171717;
   font-weight: 500;
   text-transform: uppercase;
@@ -963,7 +963,7 @@
 
 .pricing-items .pricing-item .name {
   margin: 0 0 30px 0;
-  font-size: 13px;
+  font-size: 0.813rem;
   color: #171717;
   font-weight: 500;
   text-transform: uppercase;
@@ -1000,13 +1000,13 @@
   bottom: auto;
   top: 7px;
   vertical-align: bottom;
-  font-size: 13px;
+  font-size: 0.813rem;
   color: #626262;
 }
 
 .pricing-items .pricing-item .feature-list ul li {
   padding: 5px 0;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #171717;
 }
 
@@ -1024,7 +1024,7 @@
   padding: 0 5px;
   display: inline-block;
   vertical-align: middle;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #171717;
   background: rgba(120, 204, 109, 0.4);
   font-weight: 300;
@@ -1075,7 +1075,7 @@
 
 .fuct-items .fuct-item .name {
   margin: 0;
-  font-size: 13px;
+  font-size: 0.813rem;
   color: #171717;
   font-weight: 500;
   text-transform: uppercase;
@@ -1131,7 +1131,7 @@
 .resume-title .name,
 .skill-title .name {
   margin: 0 0 0 40px;
-  font-size: 13px;
+  font-size: 0.813rem;
   line-height: 13px;
   color: #171717;
   font-weight: 500;
@@ -1188,7 +1188,7 @@
 
 .resume-items .resume-item .name {
   margin: 0;
-  font-size: 13px;
+  font-size: 0.813rem;
   color: #171717;
   font-weight: 500;
   text-transform: uppercase;
@@ -1224,7 +1224,7 @@
 
 .skills-list ul li .name {
   margin: 0 0 8px 0;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 14px;
   color: #626262;
 }
@@ -1267,7 +1267,7 @@
   vertical-align: top;
   height: 40px;
   line-height: 40px;
-  font-size: 13px;
+  font-size: 0.813rem;
   color: #626262;
   cursor: pointer;
   border: none;
@@ -1374,17 +1374,17 @@
   height: 100%;
   background: -moz-linear-gradient(
     -45deg,
-    rgba(120, 204, 109, 0.4) 0%,
+     rgba(202, 46, 168, 0.15) 0%,
     rgba(120, 204, 109, 0.01) 100%
   );
   background: -webkit-linear-gradient(
     -45deg,
-    rgba(120, 204, 109, 0.4) 0%,
+     rgba(202, 46, 168, 0.15) 0%,
     rgba(120, 204, 109, 0.01) 100%
   );
   background: linear-gradient(
     135deg,
-    rgba(120, 204, 109, 0.4) 0%,
+     rgba(202, 46, 168, 0.15) 0%,
     rgba(120, 204, 109, 0.01) 100%
   );
   transition: all 0.3s ease 0s;
@@ -1419,7 +1419,7 @@
 .box-item .desc .name {
   padding: 0 0 2px 0;
   display: block;
-  font-size: 13px;
+  font-size: 0.813rem;
   color: #171717;
   font-weight: 500;
   text-transform: uppercase;
@@ -1725,7 +1725,7 @@
 }
 
 .revs-item .info .company {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #999999;
   font-weight: 400;
 }
@@ -3090,7 +3090,7 @@
   display: block;
   font-weight: 400;
   color: #363636;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .content-sidebar .main-menu ul li ul li:before,
@@ -3132,7 +3132,7 @@
   margin-left: 0;
   margin-bottom: 5px;
   padding: 5px 10px;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .content-sidebar .widget ul ul ul {
@@ -3226,7 +3226,7 @@
   height: 20px;
   line-height: 18px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #999;
 }
 
@@ -3243,7 +3243,7 @@
   height: 20px;
   line-height: 18px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #999;
 }
 
@@ -3299,7 +3299,7 @@
   margin: 0 0 15px 0;
   padding: 0 0 5px 0;
   position: relative;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #323232;
   line-height: 21px;
   font-weight: 600;
@@ -3323,17 +3323,17 @@
   height: 30px;
   background: -moz-linear-gradient(
     -45deg,
-    rgba(46, 202, 127, 0.15) 0%,
+    rgba(202, 46, 168, 0.15) 0%,
     rgba(46, 202, 127, 0.01) 100%
   );
   background: -webkit-linear-gradient(
     -45deg,
-    rgba(46, 202, 127, 0.15) 0%,
+     rgba(202, 46, 168, 0.15) 0%,
     rgba(46, 202, 127, 0.01) 100%
   );
   background: linear-gradient(
     135deg,
-    rgba(46, 202, 127, 0.15) 0%,
+     rgba(202, 46, 168, 0.15) 0%,
     rgba(46, 202, 127, 0.01) 100%
   );
   z-index: -1;
@@ -3359,7 +3359,7 @@
   height: 20px;
   line-height: 18px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #999;
 }
 
@@ -3370,7 +3370,7 @@
   height: 20px;
   line-height: 18px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #999;
 }
 
@@ -3380,7 +3380,7 @@
   vertical-align: bottom;
   padding: 0 5px;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 0.813rem;
   color: #DA70D6;
   border: 1px solid #DA70D6;
 }

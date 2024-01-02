@@ -12,17 +12,21 @@ const ContentSidebar = () => {
 			<div className={`content-sidebar ${sidebar ? "active" : ""}`}>
 				<div className="sidebar-wrap search-form">
 					<aside id="secondary" className="widget-area">
-						<div id="search-2" className="widget widget_search">
+						<div id="search-2" className="widget widget_search input-effect">
 							<label>
 								<span className="screen-reader-text">Search for:</span>
 								<input
 									type="search"
-									className="search-field"
+									className="search-field effect"
 									placeholder="Search …"
 									defaultValue=""
 									name="s"
 								/>
 							</label>
+							<span class="focus-border">
+								{" "}
+								<i></i>
+							</span>
 							<input
 								type="submit"
 								className="search-submit"

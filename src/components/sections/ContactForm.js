@@ -92,9 +92,10 @@ const ContactForm = () => {
 								>
 									<div className="row">
 										<div className="col col-d-6 col-t-6 col-m-12">
-											<div className="group-val">
+											<div className="group-val input-effect">
 												<input
 													type="text"
+													className="effect"
 													placeholder="Full Name"
 													name="name"
 													required="required"
@@ -102,12 +103,17 @@ const ContactForm = () => {
 													onBlur={handleBlur}
 													value={values.name}
 												/>
+												<span className="focus-border">
+													{" "}
+													<i></i>
+												</span>
 											</div>
 										</div>
 										<div className="col col-d-6 col-t-6 col-m-12">
-											<div className="group-val">
+											<div className="group-val input-effect">
 												<input
 													type="email"
+													className="effect"
 													placeholder="Email Address"
 													name="email"
 													required="required"
@@ -115,18 +121,27 @@ const ContactForm = () => {
 													onBlur={handleBlur}
 													value={values.email}
 												/>
+												<span className="focus-border">
+													{" "}
+													<i></i>
+												</span>
 											</div>
 										</div>
 										<div className="col col-d-12 col-t-12 col-m-12">
-											<div className="group-val">
+											<div className="input-effect">
 												<textarea
 													placeholder="Your Message"
+													className="effect"
 													name="message"
 													required="required"
 													onChange={handleChange}
 													onBlur={handleBlur}
 													value={values.message}
 												/>
+												<span className="focus-border">
+													{" "}
+													<i></i>
+												</span>
 											</div>
 										</div>
 									</div>

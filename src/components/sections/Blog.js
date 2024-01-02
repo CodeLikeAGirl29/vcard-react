@@ -35,11 +35,18 @@ const BlogSection = () => {
 									onClick={() => changeNav("blog-post")}
 									className="name"
 								>
-									<h3 className="text-rose-400"> Using Gatsby.js</h3>
+									<h3 className="text-rose-400 hover:text-rose-600">
+										{" "}
+										Using Gatsby.js
+									</h3>
 								</a>
 								<div className="text">
 									<p className="text-zinc-800">
-                  Gatsby.js, a powerful and modern web framework built on React, revolutionizes web development with its speed and efficiency. Its robust ecosystem, rich plugin library, and intuitive architecture make it a top choice for creating high-performance web projects with ease.
+										Gatsby.js, a powerful and modern web framework built on
+										React, revolutionizes web development with its speed and
+										efficiency. Its robust ecosystem, rich plugin library, and
+										intuitive architecture make it a top choice for creating
+										high-performance web projects with ease.
 									</p>
 								</div>
 							</div>
@@ -50,10 +57,7 @@ const BlogSection = () => {
 						<div className="box-item">
 							<div className="image">
 								<a href="#" onClick={() => changeNav("blog-post")}>
-									<img
-										src="images/blog/blog2.png"
-										alt="art of productivity"
-									/>
+									<img src="images/blog/blog2.png" alt="art of productivity" />
 									<span className="info">
 										<span className="ion ion-document-text" />
 									</span>
@@ -68,11 +72,17 @@ const BlogSection = () => {
 									onClick={() => changeNav("blog-post")}
 									className="name"
 								>
-									<h3 className="text-rose-400">The Art of Productivity</h3>
+									<h3 className="text-rose-400 hover:text-rose-600">
+										The Art of Productivity
+									</h3>
 								</a>
 								<div className="text">
 									<p className="text-zinc-800">
-									In the fast-paced world we live in, productivity isn’t just a buzzword; it&apos;s a crucial skill that can significantly impact personal and professional success. Balancing multiple tasks, deadlines, and responsibilities requires not just hard work, but also smart work. Here, we&apos;ll explore some powerful strategies to help you unlock your productivity potential and make the most of your time.
+										Dig deeper in what it means to balance life/work; it&apos;s
+										a crucial skill that can significantly impact personal and
+										professional success. Balancing multiple tasks, deadlines,
+										and responsibilities requires not just hard work, but also
+										smart work.
 									</p>
 								</div>
 							</div>
@@ -98,7 +108,9 @@ const BlogSection = () => {
 									onClick={() => changeNav("blog-post")}
 									className="name"
 								>
-									<h3 className="text-rose-400">Styling with CSS</h3>
+									<h3 className="text-rose-400 hover:text-rose-600">
+										Styling with CSS
+									</h3>
 								</a>
 								<div className="text">
 									<p className="text-zinc-800">
@@ -115,10 +127,7 @@ const BlogSection = () => {
 						<div className="box-item">
 							<div className="image">
 								<a href="#" onClick={() => changeNav("blog-post")}>
-									<img
-										src="images/blog/blog5.png"
-										alt="responsive design"
-									/>
+									<img src="images/blog/blog5.png" alt="responsive design" />
 									<span className="info">
 										<span className="ion ion-document-text" />
 									</span>
@@ -133,11 +142,17 @@ const BlogSection = () => {
 									onClick={() => changeNav("blog-post")}
 									className="name"
 								>
-									<h3 className="text-rose-400"> Responsive Websites: Speed Matters</h3>
+									<h3 className="text-rose-400 hover:text-rose-600">
+										{" "}
+										Responsive Websites: Speed Matters
+									</h3>
 								</a>
 								<div className="text">
 									<p className="text-zinc-800">
-										Explore performance optimization techniques for web applications, including code-splitting, lazy loading, image optimization, and other strategies to enhance speed and user experience.
+										Explore performance optimization techniques for web
+										applications, including code-splitting, lazy loading, image
+										optimization, and other strategies to enhance speed and user
+										experience.
 									</p>
 								</div>
 							</div>

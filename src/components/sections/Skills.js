@@ -20,7 +20,7 @@ const Skills = () => {
 						<div className="skills-list">
 							<div className="skill-title border-line-h">
 								<div className="icon">
-									<i className="fa fa-code" />
+									<i className="fa fa-toolbox" />
 								</div>
 								<div className="name">Tech</div>
 							</div>

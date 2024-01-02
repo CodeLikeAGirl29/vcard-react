@@ -11,7 +11,7 @@
 
 .post-box .blog-detail {
 	margin: 0 0 25px 0;
-	font-size: 13px;
+	font-size: 0.813rem;
 	color: #999999;
 }
 
@@ -31,7 +31,7 @@
 .post-box .blog-content blockquote {
 	margin: 25px 0;
 	padding: 0 0 0 20px;
-	font-size: 14px;
+	font-size: 0.875rem;
 	line-height: 24px;
 	color: #626262;
 	font-style: italic;
@@ -106,7 +106,7 @@
 .post-box .post-comments li .comment-info .name {
 	margin: 0 0 10px 0;
 	position: relative;
-	font-size: 13px;
+	font-size: 0.813rem;
 	color: #171717;
 	font-weight: 500;
 }
@@ -115,14 +115,14 @@
 	position: absolute;
 	top: 0;
 	right: 0;
-	font-size: 12px;
+	font-size: 0.75rem;
 	color: #171717;
 	text-transform: uppercase;
 }
 
 .post-box .post-comments li .comment-info .name h6 {
 	margin: 0;
-	font-size: 14px;
+	font-size: 0.875rem;
 	line-height: 14px;
 	color: #DA70D6;
 }
@@ -131,7 +131,7 @@
 	margin: 0 0 0 10px;
 	padding: 0 0 0 10px;
 	display: inline-block;
-	font-size: 12px;
+	font-size: 0.75rem;
 	line-height: 12px;
 	color: #999999;
 	font-weight: 400;

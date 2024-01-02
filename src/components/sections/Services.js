@@ -41,7 +41,7 @@ const Services = ({ serviceList }) => {
 								<div className="icon">
 									<span className={service.icon} />
 								</div>
-								<div className="name">
+								<div className="name text-red-400">
 									<span>{service.title}</span>
 								</div>
 								<div className="desc">
@@ -98,7 +98,7 @@ export const ServicesClassic = () => {
 						<div className="icon">
 							<span className="ion ion-speakerphone" />
 						</div>
-						<div className="name">Advetising</div>
+						<div className="name">Advertising</div>
 						<p>
 							Advertising services include television, radio, print, mail and
 							web.

@@ -24,7 +24,7 @@ body {
 	padding: 0;
 	border: none;
 	font-family: 'Eczar';
-	font-size: 14px;
+	font-size: 0.875rem;
 	color: #626262;
 	letter-spacing: 0em;
 	font-weight: 400;
@@ -156,7 +156,7 @@ body {
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
-	font-size: 14px;
+	font-size: 0.875rem;
 }
 
 .row .col .col {
@@ -402,34 +402,34 @@ h5,
 h6 {
 	margin: 0 0 5px 0;
 	font-family: 'Poppins';
-	font-size: 25px;
-	color: #171717;
+	font-size: 1.563rem;
+	color: #36454f;
 	line-height: 33px;
 	font-weight: 500;
 }
 
 h2 {
-	font-size: 24px;
+	font-size: 1.5rem;
 }
 
 h3 {
-	font-size: 22px;
+	font-size: 1.375rem;
 }
 
 h4 {
-	font-size: 20px;
+	font-size: 1.25rem;
 }
 
 h5 {
-	font-size: 18px;
+	font-size: 1.125rem;
 }
 
 h6 {
-	font-size: 16px;
+	font-size: 1rem;
 }
 
 p {
-	font-size: 14px;
+	font-size: 0.875rem;
 	line-height: 1.6;
 	padding: 0;
 	margin: 0 0 20px 0;
@@ -474,8 +474,8 @@ strong {
 	width: 50%;
 	height: 70px;
 	line-height: 70px;
-	font-size: 12px;
-	color: #171717;
+	font-size: 0.75rem;
+	color: #36454f;
 	font-weight: 500;
 	text-align: center;
 	text-decoration: none;
@@ -505,7 +505,7 @@ strong {
 	top: -2px;
 	display: inline-block;
 	vertical-align: middle;
-	font-size: 18px;
+	font-size: 1.125rem;
 	transition: all 0.3s ease 0s;
 	-moz-transition: all 0.3s ease 0s;
 	-webkit-transition: all 0.3s ease 0s;
@@ -529,7 +529,7 @@ strong {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background: #171717;
+	background: #36454f;
 	transition: all 0.3s ease 0s;
 	-moz-transition: all 0.3s ease 0s;
 	-webkit-transition: all 0.3s ease 0s;
@@ -639,7 +639,7 @@ th {
 	font-weight: 500;
 	border: none;
 	border-bottom: 1px solid #d8dbe2;
-	color: #171717;
+	color: #36454f;
 	padding: 12px 15px;
 	text-align: left;
 }
@@ -667,10 +667,10 @@ button {
 	padding: 0;
 	display: block;
 	font-family: 'Poppins';
-	font-size: 13px;
+	font-size: 0.813rem;
 	width: 100%;
 	height: 60px;
-	color: #171717;
+	color: #36454f;
 	background: none;
 	border: none;
 	border-bottom: 1px solid #d8dbe2;
@@ -692,7 +692,7 @@ button {
 input:focus,
 textarea:focus,
 button:focus {
-	color: #171717;
+	color: #36454f;
 	border-bottom: 1px solid #DA70D6;
 }
 
@@ -705,7 +705,7 @@ button {
 	width: auto;
 	display: inline-block;
 	vertical-align: top;
-	color: #171717;
+	color: #36454f;
 	border-bottom: 1px solid #d8dbe2;
 	text-align: left;
 	cursor: pointer;
@@ -720,7 +720,7 @@ legend {
 	display: block;
 	padding-bottom: 10px;
 	font-family: 'Poppins';
-	font-size: 14px;
+	font-size: 0.875rem;
 }
 
 fieldset {
@@ -751,22 +751,22 @@ input[type="radio"] {
 
 input:focus::-webkit-input-placeholder,
 textarea:focus::-webkit-input-placeholder {
-	color: #171717;
+	color: #36454f;
 }
 
 input:focus:-moz-placeholder,
 textarea:focus:-moz-placeholder {
-	color: #171717;
+	color: #36454f;
 }
 
 input:focus::-moz-placeholder,
 textarea:focus::-moz-placeholder {
-	color: #171717;
+	color: #36454f;
 }
 
 input:focus:-ms-input-placeholder,
 textarea:focus:-ms-input-placeholder {
-	color: #171717;
+	color: #36454f;
 }
 
 input.error,
@@ -859,7 +859,7 @@ textarea.error::-webkit-input-placeholder {
 	vertical-align: bottom !important;
 }
 
-/* text formating */
+/* text formatting */
 .text-uppercase {
 	text-transform: uppercase !important;
 }

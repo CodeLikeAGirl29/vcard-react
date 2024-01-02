@@ -1,10 +1,11 @@
 import { Fragment } from "react";
+
 const FunFact = () => {
 	return (
 		<Fragment>
 			<div className="content fuct">
 				{/* title */}
-				<div className="title">Fun Fact</div>
+				<div className="title">Most Notable</div>
 				{/* content */}
 				<div className="row fuct-items">
 					{/* fuct item */}
@@ -20,18 +21,18 @@ const FunFact = () => {
 					<div className="col col-d-3 col-t-3 col-m-6 border-line-v">
 						<div className="fuct-item">
 							<div className="icon">
-								<span className="fa fa-trophy" />
+								<span className="fa fa-stopwatch" />
 							</div>
-							<div className="name">10+ Awards Won</div>
+							<div className="name">1200+ hrs coding</div>
 						</div>
 					</div>
 					{/* fuct item */}
 					<div className="col col-d-3 col-t-3 col-m-6 border-line-v">
 						<div className="fuct-item">
 							<div className="icon">
-								<span className="fa fa-palette" />
+								<span className="fa fa-plus" />
 							</div>
-							<div className="name">Design is my favorite</div>
+							<div className="name">457+ Contributions on Github</div>
 						</div>
 					</div>
 					{/* fuct item */}

@@ -549,7 +549,7 @@ textarea:focus,
     position: absolute;
     left: 65%;
     top: 50%;
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: .1em;
@@ -669,7 +669,7 @@ textarea:focus,
 .content-sidebar .profile .social a .fas,
 .content-sidebar .profile .social a .fa {
 	color: rgba(75, 75, 75, 0.85);
-	font-size: 18px;
+	font-size: 1.125rem;
 }
 
 .social a:hover {

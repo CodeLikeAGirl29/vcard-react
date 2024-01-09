@@ -535,10 +535,10 @@ textarea:focus,
 
 .layout-rounded-style .header .top-menu {
 	padding: 10px 0;
-	border-radius: 26px 26px;
-	-moz-border-radius: 26px 26px;
-	-webkit-border-radius: 26px 26px;
-	-khtml-border-radius: 26px 26px;
+	border-radius: 26px;
+	-moz-border-radius: 26px;
+	-webkit-border-radius: 26px;
+	-khtml-border-radius: 26px;
 }
 
 .header .top-menu.menu-minimal ul li a {

@@ -521,11 +521,11 @@ input, textarea, button, input[type="submit"] {
 	}
 
 	.content.contacts .info-list ul, .blog-single .info-list ul {
-		margin: -11px 0 0 0;
+		margin: -11px 0 0;
 	}
 
 	.blog-single .info-list ul {
-		margin: -11px 0 30px 0;
+		margin: -11px 0 30px;
 	}
 }
 

@@ -10,13 +10,13 @@
 */
 
 .post-box .blog-detail {
-	margin: 0 0 25px 0;
+	margin: 0 0 25px;
 	font-size: 0.813rem;
 	color: #999999;
 }
 
 .post-box .blog-image {
-	margin: 0 0 25px 0;
+	margin: 0 0 25px;
 	font-size: 0;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .post-box .blog-content {
-	margin: 0 0 40px 0;
+	margin: 0 0 40px;
 }
 
 .post-box .blog-content blockquote {
@@ -55,7 +55,7 @@
 }
 
 .post-box .post-comments {
-	margin: 0 0 40px 0;
+	margin: 0 0 40px;
 }
 
 .post-box .post-comments li {
@@ -100,11 +100,11 @@
 
 .post-box .post-comments li .comment-info {
 	margin: 0 0 0 66px;
-	padding: 5px 0 0 0;
+	padding: 5px 0 0;
 }
 
 .post-box .post-comments li .comment-info .name {
-	margin: 0 0 10px 0;
+	margin: 0 0 10px;
 	position: relative;
 	font-size: 0.813rem;
 	color: #171717;

@@ -388,10 +388,10 @@
   width: 100%;
   height: 100%;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
-  border-radius: 0 0 4px 0;
-  -moz-border-radius: 0 0 4px 0;
-  -webkit-border-radius: 0 0 4px 0;
-  -khtml-border-radius: 0 0 4px 0;
+  border-radius: 0 0 4px;
+  -moz-border-radius: 0 0 4px;
+  -webkit-border-radius: 0 0 4px;
+  -khtml-border-radius: 0 0 4px;
 }
 
 .card-started:after {
@@ -423,7 +423,7 @@
 }
 
 .card-started .profile {
-  padding: 210px 50px 50px 50px;
+  padding: 210px 50px 50px;
   position: relative;
   height: 100%;
   background: #ffffff;
@@ -485,7 +485,7 @@
 }
 
 .card-started .profile .image {
-  margin: 0 0 20px 0;
+  margin: 0 0 20px;
   position: relative;
   display: inline-block;
   width: 140px;
@@ -532,7 +532,7 @@
 }
 
 .card-started .profile .title {
-  margin: 0 0 10px 0;
+  margin: 0 0 10px;
   font-size: 32px;
   color: #171717;
   line-height: 32px;
@@ -540,7 +540,7 @@
 }
 
 .card-started .profile .subtitle {
-  margin: 0 0 15px 0;
+  margin: 0 0 15px;
   font-size: 0.875rem;
   color: #DA70D6;
   line-height: 14px;
@@ -587,7 +587,7 @@
   }
 
   .card-started .profile {
-    padding: 135px 25px 25px 25px;
+    padding: 135px 25px 25px;
   }
 
   .card-started .profile.no-photo {
@@ -599,7 +599,7 @@
   }
 
   .card-started .profile .image {
-    margin: 0 0 15px 0;
+    margin: 0 0 15px;
     width: 124px;
   }
 
@@ -722,7 +722,7 @@
 
 /* content */
 .content {
-  margin: 0 0 60px 0;
+  margin: 0 0 60px;
   position: relative;
 }
 
@@ -731,8 +731,8 @@
 }
 
 .content .title {
-  margin: 0 0 15px 0;
-  padding: 0 0 5px 0;
+  margin: 0 0 15px;
+  padding: 0 0 5px;
   position: relative;
   font-size: 17px;
   color: #171717;
@@ -892,7 +892,7 @@
 }
 
 .service-items .service-item .name {
-  margin: 15px 0 10px 0;
+  margin: 15px 0 10px;
   font-size: 0.813rem;
   color: #171717;
   font-weight: 500;
@@ -941,7 +941,7 @@
 }
 
 .pricing-items .pricing-item {
-  padding: 0 0 70px 0;
+  padding: 0 0 70px;
   text-align: center;
 }
 
@@ -962,7 +962,7 @@
 }
 
 .pricing-items .pricing-item .name {
-  margin: 0 0 30px 0;
+  margin: 0 0 30px;
   font-size: 0.813rem;
   color: #171717;
   font-weight: 500;
@@ -970,7 +970,7 @@
 }
 
 .pricing-items .pricing-item .amount {
-  margin: 0 0 25px 0;
+  margin: 0 0 25px;
 }
 
 .pricing-items .pricing-item .amount .number {
@@ -1097,7 +1097,7 @@
 */
 .resume-title,
 .skill-title {
-  padding: 0 0 20px 0;
+  padding: 0 0 20px;
   position: relative;
 }
 
@@ -1141,7 +1141,7 @@
 /* 5.1 Resume */
 .resume-items .resume-item {
   position: relative;
-  padding: 20px 0 20px 0;
+  padding: 20px 0;
 }
 
 .resume-items .resume-item:after {
@@ -1157,7 +1157,7 @@
 }
 
 .resume-items .resume-item .date {
-  margin: 0 0 10px 0;
+  margin: 0 0 10px;
   padding: 0;
   position: relative;
   display: inline-block;
@@ -1195,7 +1195,7 @@
 }
 
 .resume-items .resume-item .company {
-  margin: 0 0 10px 0;
+  margin: 0 0 10px;
   font-size: 11px;
   color: #999999;
   font-weight: 300;
@@ -1223,7 +1223,7 @@
 }
 
 .skills-list ul li .name {
-  margin: 0 0 8px 0;
+  margin: 0 0 8px;
   font-size: 0.875rem;
   line-height: 14px;
   color: #626262;
@@ -1310,7 +1310,7 @@
 
 @media (max-width: 560px) {
   .content.works .title {
-    padding: 0 0 45px 0;
+    padding: 0 0 45px;
   }
 
   .content.works .filter-menu {
@@ -1412,12 +1412,12 @@
 }
 
 .box-item .desc {
-  padding: 15px 45px 0 45px;
+  padding: 15px 45px 0;
   position: relative;
 }
 
 .box-item .desc .name {
-  padding: 0 0 2px 0;
+  padding: 0 0 2px;
   display: block;
   font-size: 0.813rem;
   color: #171717;
@@ -1434,7 +1434,7 @@
 }
 
 .box-item .date {
-  padding: 10px 0 0 0;
+  padding: 10px 0 0;
   position: absolute;
   left: 20px;
   bottom: 20px;
@@ -1465,7 +1465,7 @@
 	6. Contacts
 */
 .content.contacts .map {
-  margin: 0 0 20px 0;
+  margin: 0 0 20px;
   height: 190px;
 }
 
@@ -1503,7 +1503,7 @@
 }
 
 .mfp-wrap.popup-box-inline .image {
-  padding: 0 0 40px 0;
+  padding: 0 0 40px;
   font-size: 0;
 }
 
@@ -1587,7 +1587,7 @@
 /* new styles */
 
 .header .top-menu ul li a {
-  padding: 10px 0 14px 0;
+  padding: 10px 0 14px;
   height: auto;
 }
 
@@ -1718,7 +1718,7 @@
 }
 
 .revs-item .info .name {
-  margin: 6px 0 0 0;
+  margin: 6px 0 0;
   font-size: 17px;
   font-weight: 500;
   color: #323232;
@@ -2102,7 +2102,6 @@
 
 .skills-list.circles .progress span {
   position: absolute;
-  width: 100%;
   left: 0;
   top: 0;
   width: 100%;
@@ -2876,10 +2875,10 @@
   height: 68px;
   background: #eeeeee;
   cursor: pointer;
-  border-radius: 0 0 4px 0;
-  -moz-border-radius: 0 0 4px 0;
-  -webkit-border-radius: 0 0 4px 0;
-  -khtml-border-radius: 0 0 4px 0;
+  border-radius: 0 0 4px;
+  -moz-border-radius: 0 0 4px;
+  -webkit-border-radius: 0 0 4px;
+  -khtml-border-radius: 0 0 4px;
   z-index: 10;
 }
 
@@ -3169,7 +3168,7 @@
 .content-sidebar .widget ul li li {
   position: relative;
   overflow: hidden;
-  margin: 5px 0 0 0;
+  margin: 5px 0 0;
   padding: 0;
   padding-left: 15px;
   border: none;
@@ -3237,7 +3236,7 @@
 
 .content-sidebar .widget .rss-date,
 .content-sidebar .widget cite {
-  margin: 5px 0 10px 0;
+  margin: 5px 0 10px;
   padding: 0;
   display: block;
   height: 20px;
@@ -3248,7 +3247,7 @@
 }
 
 .content-sidebar .widget cite {
-  margin: 10px 0 0 0;
+  margin: 10px 0 0;
 }
 
 .content-sidebar .widget .rssSummary {
@@ -3296,8 +3295,8 @@
 }
 
 .content-sidebar h2.widget-title {
-  margin: 0 0 15px 0;
-  padding: 0 0 5px 0;
+  margin: 0 0 15px;
+  padding: 0 0 5px;
   position: relative;
   font-size: 1.125rem;
   color: #323232;
@@ -3485,7 +3484,7 @@ p.no-comments {
 }
 
 .post-box.single-post-text .search-form span.screen-reader-text {
-  margin: 0 0 10px 0;
+  margin: 0 0 10px;
   display: block;
   font-size: 16px;
   font-weight: 500;

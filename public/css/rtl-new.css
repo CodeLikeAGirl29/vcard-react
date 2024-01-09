@@ -51,7 +51,7 @@ body {
 
 @media (max-width: 680px) {
     .container {
-        padding: 58px 0 0 0;
+        padding: 58px 0 0;
     }
     .no-sidebar .container.opened {
         margin-left: auto;
@@ -407,10 +407,10 @@ div.wpcf7 .align-left {
 
 @media (max-width: 680px) {
     .disable-sidebar .header .top-menu ul li:first-child a {
-        border-radius: 0 0 4px 0;
-        -moz-border-radius: 0 0 4px 0;
-        -webkit-border-radius: 0 0 4px 0;
-        -khtml-border-radius: 0 0 4px 0;
+        border-radius: 0 0 4px;
+        -moz-border-radius: 0 0 4px;
+        -webkit-border-radius: 0 0 4px;
+        -khtml-border-radius: 0 0 4px;
     }
 }
 
@@ -772,7 +772,7 @@ a.next.page-numbers {
         text-align: right;
     }
     .post-comments ul.children {
-        padding: 15px 15px 15px 15px;
+        padding: 15px;
     }
     .post-comments ul.children ul.children {
         margin: 15px 10px 0 0;

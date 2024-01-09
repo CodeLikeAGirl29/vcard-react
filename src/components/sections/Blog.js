@@ -28,16 +28,16 @@ const BlogSection = () => {
 							</div>
 							<div className="desc">
 								<a href="#" onClick={() => changeNav("blog-post")}>
-									<span className="date">April 28, 2020</span>
+									<span className="date">April 28, 2023</span>
 								</a>
 								<a
 									href="#"
 									onClick={() => changeNav("blog-post")}
 									className="name"
 								>
-									<h3 className="text-rose-400 hover:text-rose-600">
+									<h3 className="text-fuchsia-400 hover:text-rose-600">
 										{" "}
-										Using Gatsby.js
+										Why I Love Using Gatsby.js
 									</h3>
 								</a>
 								<div className="text">
@@ -72,7 +72,7 @@ const BlogSection = () => {
 									onClick={() => changeNav("blog-post")}
 									className="name"
 								>
-									<h3 className="text-rose-400 hover:text-rose-600">
+									<h3 className="text-fuchsia-400  hover:text-rose-600">
 										The Art of Productivity
 									</h3>
 								</a>
@@ -108,7 +108,7 @@ const BlogSection = () => {
 									onClick={() => changeNav("blog-post")}
 									className="name"
 								>
-									<h3 className="text-rose-400 hover:text-rose-600">
+									<h3 className="text-fuchsia-400  hover:text-rose-600">
 										Styling with CSS
 									</h3>
 								</a>
@@ -142,7 +142,7 @@ const BlogSection = () => {
 									onClick={() => changeNav("blog-post")}
 									className="name"
 								>
-									<h3 className="text-rose-400 hover:text-rose-600">
+									<h3 className="text-fuchsia-400  hover:text-rose-600">
 										{" "}
 										Responsive Websites: Speed Matters
 									</h3>

@@ -18,7 +18,7 @@ Elevate your online presence with my latest project, a dynamic and responsive pe
 
 ## Screenshots
 
-![App Screenshot](https://res.cloudinary.com/codelikeagirl29/image/upload/v1700867077/projects/vCard-Resume-CV-Template_hgorac.png)
+![App Screenshot](https://res.cloudinary.com/codelikeagirl29/image/upload/v1705658156/projects/vCard-Resume-CV-Template_ij14hs.png)
 
 
 ## Deployment

@@ -19,26 +19,20 @@ body {
 }
 
 ol, ul {
-    padding-right: 0px;
+    padding-right: 0;
 }
 
-.border-line-v:before {
+.border-line-v::before {
     left: auto;
     right: 0;
 }
 
-.border-line-h:after {
+.border-line-h::after {
     transform: scale(-1);
-    -webkit-transform: scale(-1);
-    -moz-transform: scale(-1);
-    -o-transform: scale(-1);
 }
 
 .container.opened {
     transform: translateX(240px);
-    -webkit-transform: translateX(240px);
-    -moz-transform: translateX(240px);
-    -o-transform: translateX(240px);
 }
 
 .header {
@@ -46,16 +40,13 @@ ol, ul {
     right: -80px;
 }
 
-.card-started:before {
+.card-started::before {
     left: auto;
     right: 0;
     transform: scale(-1);
-    -webkit-transform: scale(-1);
-    -moz-transform: scale(-1);
-    -o-transform: scale(-1);
 }
 
-.card-started:after {
+.card-started::after {
     left: auto;
     right: -15px;
 }
@@ -74,25 +65,22 @@ ol, ul {
     padding: 30px 60px 30px 30px;
 }
 
-.content .title:before {
+.content .title::before {
     left: auto;
     right: -12px;
 }
 
-.content .title:after {
+.content .title::after {
     left: auto;
     right: -60px;
     transform: scale(-1);
-    -webkit-transform: scale(-1);
-    -moz-transform: scale(-1);
-    -o-transform: scale(-1);
 }
 
 .service-items .service-item {
     text-align: right;
 }
 
-.resume-title:after, .skill-title:after {
+.resume-title::after, .skill-title::after {
 	left: auto;
     right: -20px;
 }
@@ -101,12 +89,12 @@ ol, ul {
     float: right;
 }
 
-.resume-items .resume-item .date:before {
+.resume-items .resume-item .date::before {
 	left: auto;
     right: -25px;
 }
 
-.resume-items .resume-item:after {
+.resume-items .resume-item::after {
     left: auto;
     right: -20px;
 }
@@ -129,7 +117,7 @@ ol, ul {
     padding: 0 20px 0 0;
 }
 
-.post-box .blog-content ul.list-style li:before {
+.post-box .blog-content ul.list-style li::before {
     left: auto;
     right: 0;
 }
@@ -154,13 +142,10 @@ ol, ul {
     padding: 0 20px 20px 0;
 }
 
-.post-box .post-comments li:before {
+.post-box .post-comments li::before {
     left: auto;
     right: 0;
     transform: scale(-1);
-    -webkit-transform: scale(-1);
-    -moz-transform: scale(-1);
-    -o-transform: scale(-1);
 }
 
 .post-box .post-comments li img {
@@ -187,16 +172,15 @@ ol, ul {
     position: fixed;
 }
 
-@media (max-width: 1023px) {
+@media (width <= 1023px) {
 .container.opened {
     transform: none;
-    -webkit-transform: none;
-    -moz-transform: none;
-    -o-transform: none;
 }
+
 .header {
     right: 0;
 }
+
 .card-inner {
     left: auto;
     right: 0;
@@ -206,16 +190,14 @@ ol, ul {
 
 /* Animations */
 
-@-webkit-keyframes fadeInLeft {
+@keyframes fadeInLeft {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(70%, 0, 0);
     transform: translate3d(70%, 0, 0);
   }
 
   to {
     opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
@@ -223,30 +205,26 @@ ol, ul {
 @keyframes fadeInLeft {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(70%, 0, 0);
     transform: translate3d(70%, 0, 0);
   }
 
   to {
     opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
 
 .fadeInLeft {
-  -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
 }
 
-@-webkit-keyframes fadeOutLeft {
+@keyframes fadeOutLeft {
   from {
     opacity: 1;
   }
 
   to {
     opacity: 0;
-    -webkit-transform: translate3d(70%, 0, 0);
     transform: translate3d(70%, 0, 0);
   }
 }
@@ -258,12 +236,10 @@ ol, ul {
 
   to {
     opacity: 0;
-    -webkit-transform: translate3d(70%, 0, 0);
     transform: translate3d(70%, 0, 0);
   }
 }
 
 .fadeOutLeft {
-  -webkit-animation-name: fadeOutLeft;
   animation-name: fadeOutLeft;
 }

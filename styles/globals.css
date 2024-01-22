@@ -2,17 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "swiper/css";
-@import "swiper/css/navigation";
-@import "swiper/css/pagination";
-@import "swiper/css/scrollbar";
+@import url("swiper/css");
+@import url("swiper/css/navigation");
+@import url("swiper/css/pagination");
+@import url("swiper/css/scrollbar");
 
 html {
   scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: none;
+  box-shadow: none;
   background-color: transparent;
 }
 
@@ -22,8 +22,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-border-radius: 6px;
+  background-color: rgb(0 0 0 / 50%);
   border-radius: 6px;
 }
 
@@ -31,6 +30,7 @@ html {
 img.mfp-img {
   box-shadow: 0 0 8px rgb(0 0 0 / 60%);
   position: absolute;
+
   /* max-height: 392px; */
   width: 100%;
   padding: 0 !important;
@@ -38,13 +38,16 @@ img.mfp-img {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .mfp-img-container .mfp-content {
   max-width: 400px !important;
 }
+
 .mfp-img-container .mfp-close {
   top: -110px;
   right: -24px;
 }
+
 /* .mfp-content {
   height: 100%;
 } */
@@ -57,6 +60,7 @@ img.mfp-img {
 .mfp-wrap {
   position: unset;
 }
+
 .content_popup_warp.mfp-wrap.popup-box-inline {
   margin: auto;
   position: fixed;
@@ -87,7 +91,7 @@ img.mfp-img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgb(0 0 0 / 50%);
 }
 
 .modal-body {

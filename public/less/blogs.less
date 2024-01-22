@@ -20,21 +20,27 @@
 		font-size: @small-size;
 		color: @extra-color;
 	}
+
 	.blog-image {
 		margin: 0 0 25px;
 		font-size: 0;
+
 		img {
 			width: 100%;
 		}
 	}
+
 	.blog-content {
 		margin: 0 0 40px;
+
 		ul.list-style {
 			margin: 25px 0;
 			list-style: none;
 		}
+
 		.post-lightbox {
 			margin: 25px 0;
+
 			img {
 				display: block;
 				width: 100%;
@@ -42,50 +48,58 @@
 			}
 		}
 	}
+
 	.post-comments {
 		margin: 0 0 40px;
+
 		li {
 			margin: 0 0 20px -20px;
 			padding: 0 0 20px 20px;
 			position: relative;
 			display: block;
 			list-style: none;
+
 			&:last-child {
-				&:before {
+				&::before {
 					display: none;
 				}
 			}
-			&:before {
+
+			&::before {
 				content: '';
 				position: absolute;
 				left: 0;
 				bottom: 0;
 				width: 100%;
 				height: 1px;
-				background: -moz-radial-gradient(left, ellipse cover, rgba(197,202,213,0.7) 0%, rgba(255,255,255,0) 70%);
-				background: -webkit-radial-gradient(left, ellipse cover, rgba(197,202,213,0.7) 0%,rgba(255,255,255,0) 70%);
-				background: radial-gradient(ellipse at left, rgba(197,202,213,0.7) 0%,rgba(255,255,255,0) 70%);
+				background: radial-gradient(left, ellipse cover, rgb(197 202 213 / 70%) 0%,rgb(255 255 255 / 0%) 70%);
+				background: radial-gradient(ellipse at left, rgb(197 202 213 / 70%) 0%,rgb(255 255 255 / 0%) 70%);
 			}
-			&:after {
+
+			&::after {
 				content: '';
 				position: relative;
 				clear: both;
 				display: block;
 			}
+
 			img {
 				width: 54px;
 				float: left;
 				.border-radius(100%);
 			}
+
 			.comment-info {
 				margin: 0 0 0 66px;
 				padding: 5px 0 0;
+
 				.name {
 					margin: 0 0 10px;
 					position: relative;
 					font-size: @small-size;
 					color: @dark-color;
 					font-weight: 500;
+
 					a {
 						position: absolute;
 						top: 0;
@@ -94,11 +108,13 @@
 						color: @dark-color;
 						text-transform: uppercase;
 					}
+
 					h6 {
 						margin: 0;
 						font-size: @default-size;
 						line-height: @default-size;
 						color: @active-color;
+
 						span {
 							margin: 0 0 0 10px;
 							padding: 0 0 0 10px;
@@ -112,6 +128,7 @@
 						}
 					}
 				}
+
 				p {
 					margin: 0;
 				}

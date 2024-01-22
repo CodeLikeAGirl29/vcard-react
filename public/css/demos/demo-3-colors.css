@@ -8,7 +8,7 @@
 
 	.background.gradient {
 		background: #85898a;
-		background: -webkit-linear-gradient(top left, #85898a 0%, #e5e6e8 100%);
+		background: linear-gradient(top left, #85898a 0%, #e5e6e8 100%);
 		background: linear-gradient(to bottom right, #85898a 0%, #e5e6e8 100%);
 	}
 
@@ -19,34 +19,34 @@
 
 	.preloader .spinner .double-bounce1,
 	.preloader .spinner .double-bounce2,
-	.lnk:hover .arrow:before,
-	.button:hover .arrow:before,
-	.lnk:hover .arrow:after,
-	.button:hover .arrow:after,
-	.resume-items .resume-item.active .date:before,
+	.lnk:hover .arrow::before,
+	.button:hover .arrow::before,
+	.lnk:hover .arrow::after,
+	.button:hover .arrow::after,
+	.resume-items .resume-item.active .date::before,
 	.skills-list ul li .progress .percentage,
-	.single-post-text ul > li:before,
-	.comment-text ul > li:before,
-	.content-sidebar .main-menu ul li.page_item_has_children.current_page_item > a:before,
-	.content-sidebar .main-menu ul li.page_item_has_children.current_page_item > a:after,
-	.content-sidebar .main-menu ul li.page_item_has_children:hover > a:before,
-	.content-sidebar .main-menu ul li.page_item_has_children:hover > a:after,
-	.content-sidebar .main-menu ul li.page_item_has_children.current_page_parent > a:before,
-	.content-sidebar .main-menu ul li.page_item_has_children.current_page_parent > a:after,
-	.content-sidebar .main-menu ul li.page_item_has_children.current_page_ancestor > a:before,
-	.content-sidebar .main-menu ul li.page_item_has_children.current_page_ancestor > a:after,
-	.content-sidebar .close:hover:before, .content-sidebar .close:hover:after,
-	.header .menu-btn:hover span, .header .menu-btn:hover span:before,
-	.header .menu-btn:hover span:after,
+	.single-post-text ul > li::before,
+	.comment-text ul > li::before,
+	.content-sidebar .main-menu ul li.page_item_has_children.current_page_item > a::before,
+	.content-sidebar .main-menu ul li.page_item_has_children.current_page_item > a::after,
+	.content-sidebar .main-menu ul li.page_item_has_children:hover > a::before,
+	.content-sidebar .main-menu ul li.page_item_has_children:hover > a::after,
+	.content-sidebar .main-menu ul li.page_item_has_children.current_page_parent > a::before,
+	.content-sidebar .main-menu ul li.page_item_has_children.current_page_parent > a::after,
+	.content-sidebar .main-menu ul li.page_item_has_children.current_page_ancestor > a::before,
+	.content-sidebar .main-menu ul li.page_item_has_children.current_page_ancestor > a::after,
+	.content-sidebar .close:hover::before, .content-sidebar .close:hover::after,
+	.header .menu-btn:hover span, .header .menu-btn:hover span::before,
+	.header .menu-btn:hover span::after,
 	.info-list ul li strong,
-	.profile .main-menu ul li.page_item_has_children.current_page_item > a:before,
-	.profile .main-menu ul li.page_item_has_children.current_page_item > a:after,
-	.profile .main-menu ul li.page_item_has_children:hover > a:before,
-	.profile .main-menu ul li.page_item_has_children:hover > a:after,
-	.profile .main-menu ul li.page_item_has_children.current_page_parent > a:before,
-	.profile .main-menu ul li.page_item_has_children.current_page_parent > a:after,
-	.profile .main-menu ul li.page_item_has_children.current_page_ancestor > a:before,
-	.profile .main-menu ul li.page_item_has_children.current_page_ancestor > a:after,
+	.profile .main-menu ul li.page_item_has_children.current_page_item > a::before,
+	.profile .main-menu ul li.page_item_has_children.current_page_item > a::after,
+	.profile .main-menu ul li.page_item_has_children:hover > a::before,
+	.profile .main-menu ul li.page_item_has_children:hover > a::after,
+	.profile .main-menu ul li.page_item_has_children.current_page_parent > a::before,
+	.profile .main-menu ul li.page_item_has_children.current_page_parent > a::after,
+	.profile .main-menu ul li.page_item_has_children.current_page_ancestor > a::before,
+	.profile .main-menu ul li.page_item_has_children.current_page_ancestor > a::after,
 	.service-items .service-item .icon,
 	.revs-carousel .owl-dot.active,
 	.custom-content-reveal span.custom-content-close,
@@ -54,10 +54,10 @@
 	.fc-calendar .fc-content:hover span.fc-date,
 	.fc-calendar .fc-row > div.fc-today span.fc-date,
 	.skills-list.dotted ul li .progress .percentage .da span,
-	.preloader .spinner.default-circle:before,
-	.preloader .spinner.default-circle:after,
-	.preloader .spinner.clock:before,
-	.preloader .spinner.box-rotation:after,
+	.preloader .spinner.default-circle::before,
+	.preloader .spinner.default-circle::after,
+	.preloader .spinner.clock::before,
+	.preloader .spinner.box-rotation::after,
 	.header .cart-btn .cart-icon .cart-count,
 	.woocommerce span.onsale,
 	.woocommerce #respond input#submit.alt,
@@ -69,13 +69,13 @@
 	.woocommerce button.button.alt:hover,
 	.woocommerce input.button.alt:hover,
 	.woocommerce ul.products li.product .button.add_to_cart_button.added,
-	.popup-box .preloader .spinner.default-circle:before,
-	.popup-box .preloader .spinner.default-circle:after,
-	.popup-box .preloader-popup .spinner.default-circle:before,
-	.popup-box .preloader-popup .spinner.default-circle:after,
-	.single-post-text ul > li:before,
-	.comment-text ul > li:before,
-	.blog-content ul > li:before {
+	.popup-box .preloader .spinner.default-circle::before,
+	.popup-box .preloader .spinner.default-circle::after,
+	.popup-box .preloader-popup .spinner.default-circle::before,
+	.popup-box .preloader-popup .spinner.default-circle::after,
+	.single-post-text ul > li::before,
+	.comment-text ul > li::before,
+	.blog-content ul > li::before {
 		background: #DE3163;
 	}
 
@@ -143,9 +143,9 @@
 	.profile .main-menu ul li:hover > a,
 	.profile .main-menu ul li.current_page_parent > a,
 	.profile .main-menu ul li.current_page_ancestor > a,
-	.custom-header nav span:before,
-	.fc-calendar .fc-row > div.fc-content:hover:after,
-	.skills-list.list ul li .name:before,
+	.custom-header nav span::before,
+	.fc-calendar .fc-row > div.fc-content:hover::after,
+	.skills-list.list ul li .name::before,
 	.preloader .spinner.recursive-circle,
 	.woocommerce nav.woocommerce-pagination ul li a:focus,
 	.woocommerce nav.woocommerce-pagination ul li a:hover,
@@ -168,41 +168,35 @@
 	}
 
 	.content .title .first-word,
-	.content .title:first-letter,
+	.content .title::first-letter,
 	.content-sidebar h2.widget-title .first-word,
-	.content-sidebar h2.widget-title:first-letter {
+	.content-sidebar h2.widget-title::first-letter {
 		color: #DE3163!important;
 	}
 
-	.card-started .profile .image:before,
-	.content-sidebar .profile .image:before,
-	.content .title:before,
-	.box-item .image .info:before,
-	.content-sidebar h2.widget-title:before {
-		background: -moz-linear-gradient(-45deg, rgba(222, 49, 99, 0.15) 0%, rgba(76, 119, 83, 0.01) 100%);
-		background: -webkit-linear-gradient(-45deg, rgba(222, 49, 99, 0.15) 0%, rgba(76, 119, 83, 0.01) 100%);
-		background: linear-gradient(135deg, rgba(222, 119, 83, 0.15) 0%, rgba(76, 119, 83, 0.01) 100%);
+	.card-started .profile .image::before,
+	.content-sidebar .profile .image::before,
+	.content .title::before,
+	.box-item .image .info::before,
+	.content-sidebar h2.widget-title::before {
+		background: linear-gradient(135deg, rgb(222 119 83 / 15%) 0%, rgb(76 119 83 / 1%) 100%);
 	}
 
-	.card-started:after {
-		background: -moz-linear-gradient(-45deg, rgba(222, 49, 83, 0.4) 0%, rgba(76, 119, 83, 0.01) 100%);
-		background: -webkit-linear-gradient(-45deg, rgba(222, 49, 83, 0.4) 0%, rgba(76, 119, 83, 0.01) 100%);
-		background: linear-gradient(135deg, rgba(222, 49, 83, 0.4) 0%, rgba(76, 119, 83, 0.01) 100%);
+	.card-started::after {
+		background: linear-gradient(135deg, rgb(222 49 83 / 40%) 0%, rgb(76 119 83 / 1%) 100%);
 	}
 
-	.box-item .image .info:before {
-		background: -moz-linear-gradient(-45deg, rgba(222, 49, 83, 0.5) 0%, rgba(76, 119, 83, 0.01) 100%);
-		background: -webkit-linear-gradient(-45deg, rgba(222, 49, 83, 0.5) 0%, rgba(76, 119, 83, 0.01) 100%);
-		background: linear-gradient(135deg, rgba(222, 49, 83, 0.5) 0%, rgba(76, 119, 83, 0.01) 100%);
+	.box-item .image .info::before {
+		background: linear-gradient(135deg, rgb(222 49 83 / 50%) 0%, rgb(76 119 83 / 1%) 100%);
 	}
 
 	.card-started .profile .slide,
 	.content-sidebar .profile .slide {
-		background-color: rgba(76, 119, 83, 0.1);
+		background-color: rgb(76 119 83 / 10%);
 	}
 
 	.pricing-items .pricing-item .feature-list ul li strong {
-		background: rgba(76, 119, 83, 0.15);
+		background: rgb(76 119 83 / 15%);
 	}
 
 	input:focus,
@@ -223,7 +217,7 @@
 	}
 
 	.preloader .spinner.recursive-circle,
-	.preloader .spinner.recursive-circle:after {
+	.preloader .spinner.recursive-circle::after {
 		border-color: #DE3163;
 		border-top-color: transparent;
 	}
@@ -237,8 +231,8 @@
 	}
 
 	.preloader .spinner.quantum-spinner,
-	.preloader .spinner.quantum-spinner:before,
-	.preloader .spinner.quantum-spinner:after {
+	.preloader .spinner.quantum-spinner::before,
+	.preloader .spinner.quantum-spinner::after {
 		border-top-color: #DE3163;
 	}
 
@@ -267,10 +261,9 @@
 	*/
 
 	.service-items .service-item .icon {
-		background: -moz-linear-gradient(-45deg, rgba(76, 119, 83, 0.15) 0%, rgba(76, 119, 83, 0.01) 100%)!important;
-		background: -webkit-linear-gradient(-45deg, rgba(76, 119, 83, 0.15) 0%, rgba(76, 119, 83, 0.01) 100%)!important;
-		background: linear-gradient(135deg, rgba(76, 119, 83, 0.15) 0%, rgba(76, 119, 83, 0.01) 100%)!important;
+		background: linear-gradient(135deg, rgb(76 119 83 / 15%) 0%, rgb(76 119 83 / 1%) 100%)!important;
 	}
+
 	.service-items .service-item .icon {
 		color: #DE3163!important;
 	}
@@ -278,15 +271,13 @@
 		/*
 		Classic Version Style
 	*/
-	.card-started:after,
-	.card-started .profile .image:before,
-	.content-sidebar .profile .image:before,
-	.content .title:before,
-	.box-item .image .info:before,
-	.content-sidebar h2.widget-title:before {
-		background: -moz-linear-gradient(-45deg, rgba(222, 49, 83, 0.4) 0%, rgba(76, 119, 83, 0.01) 100%);
-		background: -webkit-linear-gradient(-45deg, rgba(222, 49, 83, 0.4) 0%, rgba(76, 119, 83, 0.01) 100%);
-		background: linear-gradient(135deg, rgba(222, 49, 83, 0.4) 0%, rgba(76, 119, 83, 0.01) 100%);
+	.card-started::after,
+	.card-started .profile .image::before,
+	.content-sidebar .profile .image::before,
+	.content .title::before,
+	.box-item .image .info::before,
+	.content-sidebar h2.widget-title::before {
+		background: linear-gradient(135deg, rgb(222 49 83 / 40%) 0%, rgb(76 119 83 / 1%) 100%);
 	}
 
 span.first-letter {

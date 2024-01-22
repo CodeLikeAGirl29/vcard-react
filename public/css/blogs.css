@@ -12,7 +12,7 @@
 .post-box .blog-detail {
 	margin: 0 0 25px;
 	font-size: 0.813rem;
-	color: #999999;
+	color: #999;
 }
 
 .post-box .blog-image {
@@ -66,23 +66,22 @@
 	list-style: none;
 }
 
-.post-box .post-comments li:last-child:before {
+.post-box .post-comments li:last-child::before {
 	display: none;
 }
 
-.post-box .post-comments li:before {
+.post-box .post-comments li::before {
 	content: '';
 	position: absolute;
 	left: 0;
 	bottom: 0;
 	width: 100%;
 	height: 1px;
-	background: -moz-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
-	background: -webkit-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
-	background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+	background: radial-gradient(left, ellipse cover, rgb(197 202 213 / 70%) 0%, rgb(255 255 255 / 0%) 70%);
+	background: radial-gradient(ellipse at left, rgb(197 202 213 / 70%) 0%, rgb(255 255 255 / 0%) 70%);
 }
 
-.post-box .post-comments li:after {
+.post-box .post-comments li::after {
 	content: '';
 	position: relative;
 	clear: both;
@@ -93,9 +92,6 @@
 	width: 54px;
 	float: left;
 	border-radius: 100%;
-	-moz-border-radius: 100%;
-	-webkit-border-radius: 100%;
-	-khtml-border-radius: 100%;
 }
 
 .post-box .post-comments li .comment-info {
@@ -133,7 +129,7 @@
 	display: inline-block;
 	font-size: 0.75rem;
 	line-height: 12px;
-	color: #999999;
+	color: #999;
 	font-weight: 400;
 	text-transform: none;
 	border-left: 1px solid #d8dbe2;

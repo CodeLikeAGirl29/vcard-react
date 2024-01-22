@@ -23,6 +23,7 @@
     "next-mdx-remote": "^4.4.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-github-corner": "^2.5.0",
     "react-gtm-module": "^2.0.11",
     "react-icons": "^5.0.0",
     "reactstrap": "^9.2.1",

@@ -718,5 +718,5 @@ textarea:focus,
 }
 
 .blur {
-   	background-image: url("../../images/bg.png") #fff;
+   	background-image: url("../../images/bg.png");
 }

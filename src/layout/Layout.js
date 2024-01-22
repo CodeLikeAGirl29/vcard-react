@@ -6,6 +6,7 @@ import VideoPopup from "../components/popup/VideoPopup.js";
 import { createSkillsDot, dotResize } from "../utils.js";
 import Background from "./Background.js";
 import ContentSidebar from "./ContentSidebar.js";
+import GithubCorner from "../components/GithubCorner";
 
 const Layout = ({
 	children,
@@ -43,6 +44,7 @@ const Layout = ({
 					{children}
 				</div>
 				<ContentSidebar />
+				<GithubCorner url="https://github.com/codelikeagirl29/vcard-react" />
 			</div>
 		</Fragment>
 	);

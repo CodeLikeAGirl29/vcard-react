@@ -1425,6 +1425,83 @@ input[type="file"] {
 }
 .checkbox label br {display: none;}
 
+.input-effect {
+  position: relative;
+}
+
+.text-input label {
+  position: absolute;
+  top: 1ch;
+  left: 1ch;
+  padding: 0 0.5ch;
+  pointer-events: none;
+  transition: 150ms ease;
+  color: #888;
+}
+.text-input label.label-focus {
+  position: absolute;
+  top: 0;
+  font-size: 0.9em;
+  color: #e14;
+  font-weight: bold;
+  transform: translateY(-50%);
+  background-color: #fff;
+  font-weight: 600;
+}
+.text-input input {
+  display: block;
+  width: 100%;
+  border: 2px solid #eee;
+  padding: 1ch;
+  border-radius: 3px;
+  transition: 150ms ease;
+  outline: none;
+  font-size: 1rem;
+  font-family: inherit;
+}
+.text-input input.input-focus {
+  border-color: #e14;
+}
+
+.text-area {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.text-area label {
+  position: absolute;
+  top: 1ch;
+  left: 1ch;
+  padding: 0 0.5ch;
+  pointer-events: none;
+  transition: 150ms ease;
+  color: #888;
+}
+.text-area label.label-focus {
+  position: absolute;
+  top: 0;
+  font-size: 0.9em;
+  color: #e14;
+  font-weight: bold;
+  transform: translateY(-50%);
+  background-color: #fff;
+  font-weight: 600;
+}
+.text-area textarea {
+  display: block;
+  width: 100%;
+  border: 2px solid #eee;
+  padding: 1ch;
+  border-radius: 3px;
+  transition: 150ms ease;
+  outline: none;
+  font-size: 1rem;
+  font-family: inherit;
+  height: 8em;
+}
+.text-area textarea.input-focus {
+  border-color: #e14;
+}
+
 .effect ~ .focus-border {
   position: absolute;
   bottom: 0;

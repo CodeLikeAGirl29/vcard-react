@@ -1,6 +1,6 @@
 import { Formik } from "formik";
 
-const ContactForm = () => {
+const ContactForm = (props) => {
 	const formData = {
 		formspreeURL: "https://formspree.io/f/xpzobwob",
 	};
@@ -8,7 +8,7 @@ const ContactForm = () => {
 	return (
 		<div className="content contacts">
 			{/* title */}
-			<div className="title text-rose-500">Contact Form</div>
+			<div className="title text-rose-500">Contact Me</div>
 			{/* content */}
 			<div className="row">
 				<div className="col col-d-12 col-t-12 col-m-12 border-line-v">
@@ -62,14 +62,14 @@ const ContactForm = () => {
 														.join(", ");
 												} else {
 													status.innerHTML =
-														"Oops! There was a problem submitting your form";
+														"Oops! There was a problem submitting your form..";
 												}
 											});
 										}
 									})
 									.catch((error) => {
 										status.innerHTML =
-											"Oops! There was a problem submitting your form";
+											"Oops! There was a problem submitting your form..";
 									});
 
 								setSubmitting(false);
@@ -89,59 +89,75 @@ const ContactForm = () => {
 									onSubmit={handleSubmit}
 									id="contactForm"
 									action={formData.formspreeURL}
+									className="form"
 								>
 									<div className="row">
 										<div className="col col-d-6 col-t-6 col-m-12">
-											<div className="group-val input-effect">
+											<div className="group-val text-input">
+												<label
+													className={
+														props.focus || props.value !== ""
+															? "label-focus"
+															: ""
+													}
+													htmlFor={props.name}
+												>
+													{props.label}
+												</label>
 												<input
 													type="text"
-													className="effect"
-													placeholder="Full Name"
+													className="input-focus"
 													name="name"
 													required="required"
 													onChange={handleChange}
 													onBlur={handleBlur}
 													value={values.name}
 												/>
-												<span className="focus-border">
-													{" "}
-													<i></i>
-												</span>
 											</div>
 										</div>
 										<div className="col col-d-6 col-t-6 col-m-12">
-											<div className="group-val input-effect">
+											<div className="group-val text-input">
+												<label
+													className={
+														props.focus || props.value !== ""
+															? "label-focus"
+															: ""
+													}
+													htmlFor={props.name}
+												>
+													{props.label}
+												</label>
 												<input
 													type="email"
-													className="effect"
-													placeholder="Email Address"
+													className="input-focus"
 													name="email"
 													required="required"
 													onChange={handleChange}
 													onBlur={handleBlur}
 													value={values.email}
 												/>
-												<span className="focus-border">
-													{" "}
-													<i></i>
-												</span>
 											</div>
 										</div>
 										<div className="col col-d-12 col-t-12 col-m-12">
-											<div className="input-effect">
+											<div className="text-area">
+												<label
+													className={
+														props.focus || props.value !== ""
+															? "label-focus"
+															: ""
+													}
+													htmlFor={props.name}
+												>
+													{props.label}
+												</label>
 												<textarea
-													placeholder="Your Message"
-													className="effect"
+													className="input-focus"
 													name="message"
 													required="required"
 													onChange={handleChange}
 													onBlur={handleBlur}
 													value={values.message}
 												/>
-												<span className="focus-border">
-													{" "}
-													<i></i>
-												</span>
 											</div>
 										</div>
 									</div>

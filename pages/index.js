@@ -1,5 +1,4 @@
 import dynamic from "next/dynamic";
-import Head from "next/head";
 import Script from "next/script";
 import About from "../src/components/About";
 import Blog from "../src/components/Blog";
@@ -68,11 +67,6 @@ const animationText = [
 const Index3 = () => {
 	return (
 		<Layout bg={"gradient"}>
-			<Head>
-				<link rel="stylesheet" href="css/new-skin/new-skin.css" />
-				<link rel="stylesheet" href="css/demos/demo-3-colors.css" />
-				<link rel="stylesheet" href="css/new-skin/classic-skin.css" />
-			</Head>
 			<Header noSideBarBtn animationText={animationText} />
 			<Home>
 				<Script src="https://kit.fontawesome.com/29b275fb0c.js"></Script>
@@ -140,13 +134,13 @@ const Index3 = () => {
 				<About>
 					<AboutMe bio={bio} />
 					<Services serviceList={services} />
+					<Quote />
 					<Testimonials />
 					<FunFact />
 				</About>
 				<Resume>
 					<ResumeSection />
 					<Skills />
-					<Quote />
 				</Resume>
 				<Work>
 					<RecentWorks />

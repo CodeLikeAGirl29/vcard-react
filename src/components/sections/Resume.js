@@ -17,16 +17,17 @@ const ResumeSection = () => {
 						</div>
 						<div className="resume-items">
 							<div className="resume-item border-line-h active">
-								<div className="date">2021 - Present</div>
+								<div className="date">April 2021 - Present</div>
 								<div className="name">Web Developer</div>
 								<div className="company">Freelance</div>
 								<p>
-									Collaborate with creative and development teams on the
-									execution of ideas.
+									I specialize in crafting dynamic and visually appealing
+									websites tailored to meet the unique needs of my clients,
+									ensuring a seamless and engaging online presence.
 								</p>
 							</div>
-							<div className="resume-item border-line-h active">
-								<div className="date">2020 - Present</div>
+							<div className="resume-item border-line-h">
+								<div className="date">Oct 2020 - Nov 2023</div>
 								<div className="name">JBL Coastal</div>
 								<div className="company">Interior Painter</div>
 								<p>
@@ -36,7 +37,7 @@ const ResumeSection = () => {
 								</p>
 							</div>
 							<div className="resume-item">
-								<div className="date">2016 - 2020</div>
+								<div className="date">Oct 2016 - Oct 2020</div>
 								<div className="name">Sales & Marketing</div>
 								<div className="company">Tristate Media</div>
 								<p>
@@ -58,7 +59,17 @@ const ResumeSection = () => {
 						</div>
 						<div className="resume-items">
 							<div className="resume-item border-line-h">
-								<div className="date">2021 - 2022</div>
+								<div className="date">Dec 2023 - Feb 2024</div>
+								<div className="name">Frontend Development Certificate</div>
+								<div className="company">Altcademy</div>
+								<p>
+									Comprehensive training in frontend development, equipping
+									learners with the skills and knowledge needed to excel in
+									creating interactive and user-friendly web interfaces.
+								</p>
+							</div>
+							<div className="resume-item border-line-h">
+								<div className="date">Aug 2021 - Jan 2022</div>
 								<div className="name">Full-stack Development Certificate</div>
 								<div className="company">Nucamp</div>
 								<p>

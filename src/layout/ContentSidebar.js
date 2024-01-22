@@ -1,5 +1,6 @@
 import { Fragment, useContext } from "react";
 import Context from "../context/context";
+
 const ContentSidebar = () => {
 	const { sidebar, changeSideBar } = useContext(Context);
 
@@ -12,12 +13,12 @@ const ContentSidebar = () => {
 			<div className={`content-sidebar ${sidebar ? "active" : ""}`}>
 				<div className="sidebar-wrap search-form">
 					<aside id="secondary" className="widget-area">
-						<div id="search-2" className="widget widget_search input-effect">
+						<div id="search-2" className="widget widget_search">
 							<label>
 								<span className="screen-reader-text">Search for:</span>
 								<input
 									type="search"
-									className="search-field effect"
+									className="search-field"
 									placeholder="Search …"
 									defaultValue=""
 									name="s"

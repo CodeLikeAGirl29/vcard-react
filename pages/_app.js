@@ -3,8 +3,19 @@ import Head from "next/head";
 import State from "../src/context/state";
 import PreLoader from "../src/layout/PreLoader";
 import "../styles/globals.css";
+import "../public/css/basic.css";
+import "../public/css/layout.css";
+import "../public/css/blogs.css";
+import "../public/css/ionicons.css";
+import "../public/css/magnific-popup.css";
+import "../public/css/animate.css";
+import "../public/css/gradient.css";
 
-function MyApp({ Component, pageProps }) {
+import "../public/css/new-skin/new-skin.css";
+import "../public/css/demos/demo-3-colors.css";
+import "../public/css/new-skin/minimal-skin.css";
+
+export default function MyApp({ Component, pageProps }) {
 	return (
 		<State>
 			<Head>
@@ -16,13 +27,6 @@ function MyApp({ Component, pageProps }) {
 					href="https://fonts.googleapis.com/css2?family=Eczar&display=swap"
 					rel="stylesheet"
 				/>
-				<link rel="stylesheet" href="css/basic.css" />
-				<link rel="stylesheet" href="css/layout.css" />
-				<link rel="stylesheet" href="css/blogs.css" />
-				<link rel="stylesheet" href="css/ionicons.css" />
-				<link rel="stylesheet" href="css/magnific-popup.css" />
-				<link rel="stylesheet" href="css/animate.css" />
-				<link rel="stylesheet" href="css/gradient.css" />
 
 				<title>vCard / Resume / CV Template</title>
 				<link rel="shortcut icon" href="images/favicons/favicon.ico" />
@@ -32,5 +36,3 @@ function MyApp({ Component, pageProps }) {
 		</State>
 	);
 }
-
-export default MyApp;

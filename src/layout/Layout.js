@@ -8,7 +8,6 @@ import Background from "./Background.js";
 import ContentSidebar from "./ContentSidebar.js";
 import GithubCorner from "../components/GithubCorner";
 import siteMetadata from "../utils/siteMetaData";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
 	metadataBase: new URL(siteMetadata.siteUrl),
@@ -83,7 +82,6 @@ const Layout = ({
 				<ContentSidebar />
 				<GithubCorner url="https://github.com/codelikeagirl29/vcard-react" />
 			</div>
-			<SpeedInsights />
 		</Fragment>
 	);
 };

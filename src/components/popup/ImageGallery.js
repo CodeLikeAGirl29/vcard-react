@@ -5,9 +5,9 @@ const ImgView = ({ close, imgs }) => {
 		imgs.length > 0
 			? imgs
 			: [
-					"images/works/work6.png",
-					"images/works/work1.png",
-					"images/works/work5.png",
+					"images/works/work6.webp",
+					"images/works/work1.webp",
+					"images/works/work5.webp",
 			  ];
 	const [photoIndex, setPhotoIndex] = useState(0);
 

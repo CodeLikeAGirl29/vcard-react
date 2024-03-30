@@ -104,8 +104,8 @@ const RecentWorksDefault = () => {
 					<div className="col col-d-6 col-t-6 col-m-12 grid-item frontend border-line-h">
 						<div className="box-item">
 							<div className="image">
-								<a href="images/works/work1.png" className="has-popup-image">
-									<img src="images/works/work1.png" alt="" />
+								<a href="images/works/work1.webp" className="has-popup-image">
+									<img src="images/works/work1.webp" alt="" />
 									<span className="info">
 										<span className="ion ion-code" />
 									</span>
@@ -113,7 +113,7 @@ const RecentWorksDefault = () => {
 							</div>
 							<div className="desc m-4">
 								<a
-									href="images/works/work1.png"
+									href="images/works/work1.webp"
 									className="name has-popup-image"
 								>
 									Visit FL
@@ -130,7 +130,7 @@ const RecentWorksDefault = () => {
 									href="https://unsplash-api-azure.vercel.app/"
 									className="has-popup-image"
 								>
-									<img src="images/works/work2.png" alt="" />
+									<img src="images/works/work2.webp" alt="" />
 									<span className="info">
 										<span className="ion ion-paintbrush" />
 									</span>
@@ -177,7 +177,7 @@ const RecentWorksDefault = () => {
 						<div className="box-item">
 							<div className="image">
 								<a href="#popup-1" className="has-popup-media">
-									<img src="images/works/work4.jpg" alt="" />
+									<img src="images/works/work4.webp" alt="" />
 									<span className="info">
 										<span className="ion ion-images" />
 									</span>
@@ -185,7 +185,7 @@ const RecentWorksDefault = () => {
 								<div id="popup-1" className="popup-box mfp-fade mfp-hide">
 									<div className="content">
 										<div className="image">
-											<img src="images/works/work4.jpg" alt="" />
+											<img src="images/works/work4.webp" alt="" />
 										</div>
 										<div className="desc p-4">
 											<div className="post-box">
@@ -279,15 +279,15 @@ const RecentWorksDefault = () => {
 						<div className="box-item">
 							<div className="image">
 								<a href="#gallery-1" className="has-popup-gallery img-gallery">
-									<img src="images/works/work6.png" alt="" />
+									<img src="images/works/work6.webp" alt="" />
 									<span className="info">
 										<span className="ion ion-images" />
 									</span>
 								</a>
 								<div id="gallery-1" className="mfp-hide">
-									<a href="images/works/work5.png" />
-									<a href="images/works/work1.png" />
-									<a href="images/works/work6.png" />
+									<a href="images/works/work5.webp" />
+									<a href="images/works/work1.webp" />
+									<a href="images/works/work6.webp" />
 								</div>
 							</div>
 							<div className="desc p-4">
@@ -306,7 +306,7 @@ const RecentWorksDefault = () => {
 									href="https://github.com/CodeLikeAGirl29/dictionarium"
 									className="has-popup-image"
 								>
-									<img src="images/works/work7.png" alt="" />
+									<img src="images/works/work7.webp" alt="" />
 									<span className="info">
 										<span className="ion ion-images" />
 									</span>
@@ -331,7 +331,7 @@ const RecentWorksDefault = () => {
 									href="https://github.com/CodeLikeAGirl29/react-tailwindcss"
 									className="has-popup-image"
 								>
-									<img src="images/works/work10.png" alt="" />
+									<img src="images/works/work10.webp" alt="" />
 									<span className="info">
 										<span className="ion ion-images" />
 									</span>
@@ -356,7 +356,7 @@ const RecentWorksDefault = () => {
 									href="https://github.com/codelikeagirl29/my-blog"
 									className="has-popup-image"
 								>
-									<img src="images/works/work3.png" alt="" />
+									<img src="images/works/work3.webp" alt="" />
 									<span className="info">
 										<span className="ion ion-images" />
 									</span>
@@ -378,7 +378,7 @@ const RecentWorksDefault = () => {
 						<div className="box-item">
 							<div className="image">
 								<a href="#popup-2" className="has-popup-media">
-									<img src="images/works/work8.png" alt="" />
+									<img src="images/works/work8.webp" alt="" />
 									<span className="info">
 										<span className="ion ion-images" />
 									</span>
@@ -386,7 +386,7 @@ const RecentWorksDefault = () => {
 								<div id="popup-2" className="popup-box mfp-fade mfp-hide">
 									<div className="content">
 										<div className="image">
-											<img src="images/works/work8.png" alt="" />
+											<img src="images/works/work8.webp" alt="" />
 										</div>
 										<div className="desc m-4">
 											<div className="post-box">

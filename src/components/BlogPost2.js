@@ -1,4 +1,17 @@
 import ActiveSection from "../activeSection";
+import Image from "next/image";
+import {
+	FacebookShareButton,
+	FacebookIcon,
+	TwitterShareButton,
+	TwitterIcon,
+	RedditShareButton,
+	RedditIcon,
+	PinterestShareButton,
+	PinterestIcon,
+	LinkedinShareButton,
+	LinkedinIcon,
+} from "next-share";
 
 const BlogPostNew = () => {
 	return (
@@ -34,7 +47,13 @@ const BlogPostNew = () => {
 								</div>
 								{/* blog image */}
 								<div className="blog-image">
-									<img src="images/blog/blog1.png" alt="" />
+									<Image
+										src="/images/blog/blog1.png"
+										alt="blog image"
+										width={800}
+										height={375}
+										layout="responsive"
+									/>
 								</div>
 								{/* blog content */}
 								<div className="blog-content">
@@ -192,36 +211,28 @@ const BlogPostNew = () => {
 								<div className="post-text-bottom">
 									<div className="social-share">
 										<span>Share</span>
-										<a
-											className="share-btn share-btn-facebook"
-											title="Share on Facebook"
+										<FacebookShareButton
+											url={"http://facebook.com/codelikeagirl91"}
 										>
-											<i className="ion ion-social-facebook" />
-										</a>
-										<a
-											className="share-btn share-btn-twitter"
-											title="Share on Twitter"
+											<FacebookIcon size={32} round />
+										</FacebookShareButton>
+
+										<TwitterShareButton
+											url={"https://twitter.com/dev_lindseyk"}
 										>
-											<i className="ion ion-social-twitter" />
-										</a>
-										<a
-											className="share-btn share-btn-linkedin"
-											title="Share on Linkedin"
+											<TwitterIcon size={32} round />
+										</TwitterShareButton>
+										<LinkedinShareButton
+											url={"https://linkedin/in/lindsey-howard"}
 										>
-											<i className="ion ion-social-linkedin" />
-										</a>
-										<a
-											className="share-btn share-btn-reddit"
-											title="Share on Reddit"
-										>
-											<i className="ion ion-social-reddit" />
-										</a>
-										<a
-											className="share-btn share-btn-pinterest"
-											title="Share on Pinterest"
-										>
-											<i className="ion ion-social-pinterest" />
-										</a>
+											<LinkedinIcon size={32} round />
+										</LinkedinShareButton>
+										<RedditShareButton url={"https://www.reddit.com/"}>
+											<RedditIcon size={32} round />
+										</RedditShareButton>
+										<PinterestShareButton url={"https://pinterest.com"}>
+											<PinterestIcon size={32} round />
+										</PinterestShareButton>
 									</div>
 									<span className="tags-links">
 										Tags: <a href="#">advice</a>

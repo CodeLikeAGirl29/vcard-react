@@ -1,4 +1,5 @@
 import ActiveSection from "../activeSection";
+import Image from "next/image";
 
 const BlogPostNew = () => {
 	return (
@@ -34,7 +35,13 @@ const BlogPostNew = () => {
 								</div>
 								{/* blog image */}
 								<div className="blog-image">
-									<img src="images/blog/blog1.png" alt="" />
+									<Image
+										src="/images/blog/blog1.png"
+										alt="blog image 1"
+										width={800}
+										height={375}
+										layout="responsive"
+									/>
 								</div>
 								{/* blog content */}
 								<div className="blog-content">
@@ -273,7 +280,13 @@ export const BlogPostClassic = () => {
 								<div className="blog-detail">Posted 12 June 2016</div>
 								{/* blog image */}
 								<div className="blog-image">
-									<img src="images/blog/blog1.jpg" alt="" />
+									<Image
+										src="/images/blog/blog1.jpg"
+										alt="blog img"
+										width={800}
+										height={375}
+										layout="responsive"
+									/>
 								</div>
 								{/* blog content */}
 								<div className="blog-content">

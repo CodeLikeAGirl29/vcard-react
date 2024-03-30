@@ -75,7 +75,7 @@ const Index3 = () => {
 					{/* profile image */}
 					<div
 						className="slide"
-						style={{ backgroundImage: "url(images/avatar1.png)" }}
+						style={{ backgroundImage: "url(images/avatar1.webp)" }}
 					/>
 					{/* profile titles */}
 					<div className="title">Lindsey Howard</div>

@@ -30,7 +30,7 @@
 	"devDependencies": {
 		"@tailwindcss/typography": "^0.5.10",
 		"autoprefixer": "^10.4.20",
-		"eslint": "^8.56.0",
+		"eslint": "^9.9.1",
 		"eslint-config-next": "^14.2.5",
 		"eslint-plugin-import": "^2.29.0",
 		"eslint-plugin-jsx-a11y": "^6.8.0",

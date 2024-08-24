@@ -104,7 +104,7 @@ const Index3 = () => {
 						<a
 							target='_blank'
 							rel='noreferrer'
-							href='https://drive.google.com/file/d/1dBUdOj7VKZI21w6MW82IwtJBhXS8jXhy/view?usp=drive_link'
+							href='https://docs.google.com/document/d/1Ridnv_Wzk9Uo5P0ksVRLA52aEaN9lbO1/edit?usp=sharing&ouid=106707598762258660153&rtpof=true&sd=true'
 							className='lnk'
 						>
 							<span className='text'>Download CV</span>

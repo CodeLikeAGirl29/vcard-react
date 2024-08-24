@@ -16,6 +16,8 @@ Elevate your online presence with my latest project, a dynamic and responsive pe
 
 ![Semantic UI React](https://img.shields.io/badge/Semantic%20UI%20React-%2335BDB2.svg?style=for-the-badge&logo=SemanticUIReact&logoColor=white)
 
+[![CodeFactor](https://www.codefactor.io/repository/github/codelikeagirl29/vcard-react/badge)](https://www.codefactor.io/repository/github/codelikeagirl29/vcard-react)
+
 ---
 
 ## Screenshots

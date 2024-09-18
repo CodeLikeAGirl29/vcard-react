@@ -1,0 +1,590 @@
+/* TABLE OF CONTENTS
+	1. Template Dark
+*/
+
+/* 1. Template Dark */
+body {
+	color: rgb(110 110 110 / 55%);
+	 	background: url("../images/bg.png") #fff;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: rgb(255 255 255 / 25%);
+}
+
+.background {
+	background-color: #26262d !important;
+}
+
+.border-line-v::before {
+	background: radial-gradient(top, ellipse cover, rgb(197 202 213 / 15%) 0%, rgb(85 85 85 / 0%) 70%);
+	background: radial-gradient(ellipse at top, rgb(197 202 213 / 15%) 0%, rgb(85 85 85 / 0%) 70%);
+}
+
+.border-line-h::after {
+	background: radial-gradient(left, ellipse cover, rgb(197 202 213 / 15%) 0%, rgb(85 85 85 / 0%) 70%);
+	background: radial-gradient(ellipse at left, rgb(197 202 213 / 15%) 0%, rgb(85 85 85 / 0%) 70%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: rgb(85 85 85 / 85%);
+}
+
+.lnks::before {
+	background: radial-gradient(left, ellipse cover, rgb(197 202 213 / 15%) 0%, rgb(85 85 85 / 0%) 70%);
+	background: radial-gradient(ellipse at left, rgb(197 202 213 / 15%) 0%, rgb(85 85 85 / 0%) 70%);
+}
+
+.lnk,
+.button {
+	color: rgb(85 85 85 / 85%);
+}
+
+.lnk::before,
+.button::before {
+	background: radial-gradient(top, ellipse cover, rgb(197 202 213 / 15%) 0%, rgb(85 85 85 / 0%) 70%);
+	background: radial-gradient(ellipse at top, rgb(197 202 213 / 15%) 0%, rgb(85 85 85 / 0%) 70%);
+}
+
+.lnk .arrow::before,
+.button .arrow::before,
+.lnk .arrow::after,
+.button .arrow::after {
+	background: rgb(85 85 85 / 85%);
+}
+
+a {
+	color: rgb(80 80 80 / 55%);
+}
+
+th {
+	color: rgb(85 85 85 / 85%);
+}
+
+td {
+	color: rgb(85 85 85 / 85%);
+}
+
+input,
+textarea,
+button {
+	color: rgb(85 85 85 / 85%);
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+	color: rgb(85 85 85 / 85%);
+}
+
+button {
+	color: rgb(85 85 85 / 85%);
+}
+
+input:focus::input-placeholder,
+textarea:focus::input-placeholder {
+	color: rgb(85 85 85 / 85%);
+}
+
+input:focus:placeholder,
+textarea:focus:placeholder {
+	color: rgb(85 85 85 / 85%);
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+	color: rgb(85 85 85 / 85%);
+}
+
+input:focus:input-placeholder,
+textarea:focus:input-placeholder {
+	color: rgb(85 85 85 / 85%);
+}
+
+.header .top-menu ul li a, .header .menu-btn {
+	color: rgb(85 85 85 / 85%);
+	background: #31313a;
+}
+
+.header .menu-btn span, .header .menu-btn span::before, .header .menu-btn span::after {
+	background: rgb(85 85 85 / 85%);
+}
+
+.header .top-menu ul li a::before {
+	background: radial-gradient(right, ellipse cover, rgb(197 202 213 / 15%) 0%, rgb(85 85 85 / 0%) 70%);
+	background: radial-gradient(ellipse at right, rgb(197 202 213 / 15%) 0%, rgb(85 85 85 / 0%) 70%);
+}
+
+.header .top-menu ul li a .icon {
+	color: rgb(85 85 85 / 85%);
+}
+
+@media (width <= 1240px) {
+	.header .top-menu {
+		box-shadow: 0 0 25px rgb(0 0 0 / 10%);
+	}
+
+	.header .top-menu ul li a::before {
+		background: radial-gradient(top, ellipse cover, rgb(197 202 213 / 15%) 0%, rgb(85 85 85 / 0%) 70%);
+		background: radial-gradient(ellipse at top, rgb(197 202 213 / 15%) 0%, rgb(85 85 85 / 0%) 70%);
+	}
+}
+
+@media (width <= 1240px) {
+.header {
+	background: #31313a;
+}
+}
+
+.card-started::after {
+	background: #31313a;
+	opacity: 0.3;
+}
+
+.card-started .profile {
+	background: #31313a;
+}
+
+.card-started .profile .slide::before,
+.card-started .profile .slide::after {
+	background: #31313a;
+}
+
+.card-started .profile .image img {
+	border-color: #31313a;
+	background-color: #31313a;
+}
+
+.card-started .profile .title {
+	color: rgb(31 31 31 / 85%);
+}
+
+.card-started .profile .social a .ion,
+.card-started .profile .social a .fab,
+.card-started .profile .social a .fas {
+	color: rgb(85 85 85 / 55%);
+}
+
+.card-inner {
+	background: #31313a;
+}
+
+.card-inner::before,
+.card-inner::after {
+	background: #31313a;
+}
+
+.content .title {
+	color: rgb(85 85 85 / 85%);
+}
+
+.content .title::after {
+	background: radial-gradient(left, ellipse cover, rgb(197 202 213 / 15%) 0%, rgb(85 85 85 / 0%) 70%);
+	background: radial-gradient(ellipse at left, rgb(197 202 213 / 15%) 0%, rgb(85 85 85 / 0%) 70%);
+}
+
+.info-list ul li strong {
+	color: rgb(85 85 85 / 85%);
+}
+
+.service-items.border-line-v::after {
+	background: radial-gradient(top, ellipse cover, rgb(197 202 213 / 15%) 0%, rgb(85 85 85 / 0%) 70%);
+	background: radial-gradient(ellipse at top, rgb(197 202 213 / 15%) 0%, rgb(85 85 85 / 0%) 70%);
+}
+
+.service-items .service-item .name {
+	color: rgb(85 85 85 / 85%);
+}
+
+@media (width <= 560px) {
+	.service-items .col::after {
+		background: radial-gradient(left, ellipse cover, rgb(197 202 213 / 15%) 0%, rgb(85 85 85 / 0%) 70%);
+		background: radial-gradient(ellipse at left, rgb(197 202 213 / 15%) 0%, rgb(85 85 85 / 0%) 70%);
+	}
+
+}
+
+.pricing-items .pricing-item .name {
+	color: rgb(85 85 85 / 85%);
+}
+
+.pricing-items .pricing-item .amount .number {
+	color: rgb(85 85 85 / 85%);
+}
+
+.pricing-items .pricing-item .amount .dollar,
+.pricing-items .pricing-item .amount .period {
+	color: rgb(85 85 85 / 85%);
+}
+
+.pricing-items .pricing-item .amount .period {
+	color: rgb(85 85 85 / 55%);
+}
+
+.pricing-items .pricing-item .feature-list ul li {
+	color: rgb(85 85 85 / 85%);
+}
+
+.pricing-items .pricing-item .feature-list ul li strong {
+	color: rgb(85 85 85 / 85%);
+}
+
+.fuct-items .fuct-item .name {
+	color: rgb(85 85 85 / 85%);
+}
+
+.resume-title .icon,
+.skill-title .icon {
+	background: transparent;
+}
+
+.resume-title .name,
+.skill-title .name {
+	color: rgb(85 85 85 / 85%);
+}
+
+.resume-items .resume-item .name {
+	color: rgb(85 85 85 / 85%);
+}
+
+.skills-list ul li .name {
+	color: rgb(85 85 85 / 85%);
+}
+
+.skills-list ul li .progress {
+	background: #3e4148;
+}
+
+.skills-list.dotted ul li .progress .dg span{
+	background: #3e4148;
+}
+
+.skills-list.circles .progress {
+	background: #3e4148;
+}
+
+.skills-list.circles .progress span {
+	color: rgb(85 85 85 / 85%);
+}
+
+.skills-list.circles .progress::after {
+	background-color: #31313a;
+}
+
+.content.works .filter-menu .f_btn {
+	color: rgb(85 85 85 / 85%);
+}
+
+.content.works .grid-items.border-line-v::after {
+	background: radial-gradient(top, ellipse cover, rgb(197 202 213 / 15%) 0%, rgb(85 85 85 / 0%) 70%);
+	background: radial-gradient(ellipse at top, rgb(197 202 213 / 15%) 0%, rgb(85 85 85 / 0%) 70%);
+}
+
+.box-item .desc .name {
+	color: rgb(85 85 85 / 85%);
+}
+
+.mfp-wrap.popup-box-inline .mfp-close {
+	color: rgb(85 85 85 / 85%);
+}
+
+.mfp-wrap.popup-box-inline {
+	background: #31313a;
+}
+
+.post-box .blog-detail {
+	color: rgb(85 85 85 / 55%);
+}
+
+.post-box .blog-content blockquote {
+	color: rgb(85 85 85 / 55%);
+	border-left: none;
+}
+
+.post-box .blog-content ul.list-style li {
+	color: rgb(85 85 85 / 85%);
+}
+
+.post-box .post-comments li::before {
+	background: radial-gradient(left, ellipse cover, rgb(197 202 213 / 15%) 0%, rgb(85 85 85 / 0%) 70%);
+	background: radial-gradient(ellipse at left, rgb(197 202 213 / 15%) 0%, rgb(85 85 85 / 0%) 70%);
+}
+
+.post-box .post-comments li .comment-info .name {
+	color: rgb(85 85 85 / 85%);
+}
+
+.post-box .post-comments li .comment-info .name a {
+	color: rgb(85 85 85 / 85%);
+}
+
+.post-box .post-comments li .comment-info .name h6 span {
+	color: rgb(85 85 85 / 55%);
+}
+
+.background.gradient {
+	background: #17171b !important;
+	background: linear-gradient(top left, #17171b 0%, #28282f 100%) !important;
+	background: linear-gradient(to bottom right, #17171b 0%, #28282f 100%) !important;
+}
+
+.bg-bubbles li {
+	background-color: rgb(85 85 85 / 2%) !important;
+}
+
+.content .title .first-word {
+	color: rgb(85 85 85 / 85%);
+}
+
+.content .title::first-letter {
+	color: rgb(85 85 85 / 85%);
+}
+
+.info-list ul li strong::after {
+	background: #31313a;
+}
+
+.content.blog .border-line-v::after {
+	background: radial-gradient(top, ellipse cover, rgb(197 202 213 / 15%) 0%, rgb(85 85 85 / 0%) 70%);
+	background: radial-gradient(ellipse at top, rgb(197 202 213 / 15%) 0%, rgb(85 85 85 / 0%) 70%);
+}
+
+.post-comments .post-comment::before {
+	background: radial-gradient(left, ellipse cover, rgb(197 202 213 / 15%) 0%, rgb(85 85 85 / 0%) 70%);
+	background: radial-gradient(ellipse at left, rgb(197 202 213 / 15%) 0%, rgb(85 85 85 / 0%) 70%);
+}
+
+.info-list ul li::before {
+	background: radial-gradient(center, ellipse cover, rgb(197 202 213 / 15%) 0%, rgb(85 85 85 / 0%) 70%);
+	background: radial-gradient(ellipse at center, rgb(197 202 213 / 15%) 0%, rgb(85 85 85 / 0%) 70%);
+}
+
+.pager .nav-links {
+	background: #3b3b42;
+}
+
+input, textarea, button, input[type="submit"] {
+	border-color: #666;
+}
+
+.content-sidebar {
+	background: #31313a;
+}
+
+.content-sidebar .close {
+	background: #3b3b42;
+}
+
+.content-sidebar .close::before, .content-sidebar .close::after {
+	background: rgb(255 255 255 / 85%);
+}
+
+.content-sidebar .widget ul li a {
+	color: rgb(85 85 85 / 85%);
+}
+
+.content-sidebar h2.widget-title {
+	color: rgb(85 85 85 / 85%);
+}
+
+.content-sidebar h2.widget-title .first-word {
+	color: rgb(85 85 85 / 85%);
+}
+
+.content-sidebar h2.widget-title::first-letter {
+	color: rgb(85 85 85 / 85%);
+}
+
+.post-comments .title .title_inner::first-letter {
+	color: rgb(85 85 85 / 85%);
+}
+
+.content .post-comments .title .first-word {
+	color: rgb(85 85 85 / 85%);
+}
+
+.search-form input.search-field {
+	border-color: #666;
+}
+
+.search-form input.search-submit {
+	filter: brightness(0) invert(1);
+}
+
+.effect ~ .focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  z-index: 99;
+}
+
+.effect ~ .focus-border::before,
+.effect ~ .focus-border::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #4caf50;
+  transition: 0.4s;
+}
+
+.effect ~ .focus-border::after {
+  left: auto;
+  right: 0;
+}
+
+.effect:focus ~ .focus-border::before,
+.effect:focus ~ .focus-border::after,
+.has-content.effect ~ .focus-border::before,
+.has-content.effect ~ .focus-border::after {
+  width: 50%;
+  transition: 0.4s;
+}
+
+.effect ~ label {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 9px;
+  color: #aaa;
+  transition: 0.3s;
+  z-index: -1;
+  letter-spacing: 0.5px;
+}
+
+.effect:focus ~ label,
+.has-content.effect ~ label {
+  top: -16px;
+  font-size: 12px;
+  color: #4caf50;
+  transition: 0.3s;
+}
+
+.content-sidebar .widget ul li {
+	border-color: #666;
+}
+
+.content-sidebar .widget ul li:last-child {
+	border-color: #666;
+}
+
+.resume-items .resume-item .date {
+	color: #666;
+	border-color: #666;
+}
+
+.post-comments .post-comment .desc span.comment-reply a {
+	color: rgb(80 80 80 / 85%);
+}
+
+.post-comments .post-comment .desc span.comment-reply {
+	color: rgb(80 80 80 / 85%);
+}
+
+.navigation.post-navigation .nav-links a:hover {
+	color: #ddd;
+}
+
+.post-comments ul.children {
+	background: #3b3b42;
+}
+
+.preloader {
+	background: #3b3b42;
+}
+
+@media (width <= 1240px) {
+	.blog-single .info-list ul li, .content.contacts .info-list ul li {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.content.contacts .info-list ul, .blog-single .info-list ul {
+		margin: -11px 0 0;
+	}
+
+	.blog-single .info-list ul {
+		margin: -11px 0 30px;
+	}
+}
+
+.content-sidebar .main-menu ul li a {
+	color: rgb(80 80 80 / 85%);
+}
+
+.content-sidebar .main-menu ul li::after, .content-sidebar .main-menu ul li:first-child::before {
+	background: radial-gradient(left, ellipse cover, rgb(197 202 213 / 15%) 0%, rgb(85 85 85 / 0%) 70%);
+	background: radial-gradient(ellipse at left, rgb(197 202 213 / 15%) 0%, rgb(85 85 85 / 0%) 70%);
+}
+
+.button {
+	padding: 0;
+	background: transparent;
+}
+
+.button .text {
+	padding-left: 0;
+}
+
+.profile .main-menu-fixed::before {
+	background: #31313a;
+}
+
+.profile .main-menu ul li a {
+	color: rgb(80 80 80 / 85%);
+}
+
+.profile .main-menu .menu-main-menu-container ul li a:hover, .profile .main-menu .menu-main-menu-container ul li a:hover .icon {
+    color: rgb(150 150 150 / 85%);
+}
+
+.header .profile .title {
+	color: rgb(80 80 80 / 85%);
+}
+
+input[type="submit"] {
+	border-color: #44454c;
+	background: #44454c;
+	color: #fff;
+}
+
+input[type="submit"]:hover {
+	border-color: #4b4c54;
+	background: #4b4c54;
+}
+
+@media (width <= 680px) {
+.header .top-menu::before {
+	background: radial-gradient(left, ellipse cover, rgb(197 202 213 / 15%) 0%, rgb(85 85 85 / 0%) 70%);
+	background: radial-gradient(ellipse at left, rgb(197 202 213 / 15%) 0%, rgb(85 85 85 / 0%) 70%);
+}
+
+.header .top-menu ul.menu {
+	background: #31313a;
+}
+}
+
+.revs-item .text {
+	color: rgb(255 0 200 / 85%);
+}
+
+.revs-item .info .name {
+	color: rgb(80 80 80 / 85%);
+}
+
+.revs-item .info .company {
+	color: #999;
+}
+
+body {
+   	background: url("../images/bg.png") #fff !important;
+}

@@ -1,0 +1,724 @@
+/*
+	Minimal Skin
+*/
+
+.blured-background {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #141414;
+}
+
+.blured-background span {
+  width: 20vmin;
+  height: 20vmin;
+  border-radius: 20vmin;
+  backface-visibility: hidden;
+  position: absolute;
+  animation-name: blured_move;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.blured-background span:nth-child(1) {
+  color: #583c87;
+  top: 56%;
+  left: 9%;
+  animation-duration: 11s;
+  animation-delay: -8.1s;
+  transform-origin: 6vw -10vh;
+  box-shadow: 40vmin 0 13.0166555866vmin currentcolor;
+}
+
+.blured-background span:nth-child(2) {
+  color: #ffacac;
+  top: 72%;
+  left: 75%;
+  animation-duration: 11.1s;
+  animation-delay: -3.8s;
+  transform-origin: -12vw 9vh;
+  box-shadow: 40vmin 0 6.1961466709vmin currentcolor;
+}
+
+.blured-background span:nth-child(3) {
+  color: #583c87;
+  top: 9%;
+  left: 81%;
+  animation-duration: 11.9s;
+  animation-delay: -7.1s;
+  transform-origin: 23vw 2vh;
+  box-shadow: -40vmin 0 7.4502495452vmin currentcolor;
+}
+
+.blured-background span:nth-child(4) {
+  color: #e45a84;
+  top: 2%;
+  left: 17%;
+  animation-duration: 12s;
+  animation-delay: -2.8s;
+  transform-origin: -16vw 8vh;
+  box-shadow: -40vmin 0 12.533787847vmin currentcolor;
+}
+
+.blured-background span:nth-child(5) {
+  color: #583c87;
+  top: 25%;
+  left: 4%;
+  animation-duration: 15.6s;
+  animation-delay: -8s;
+  transform-origin: -20vw -22vh;
+  box-shadow: -40vmin 0 5.4723418582vmin currentcolor;
+}
+
+.blured-background span:nth-child(6) {
+  color: #ffacac;
+  top: 25%;
+  left: 11%;
+  animation-duration: 12.4s;
+  animation-delay: -7.2s;
+  transform-origin: 6vw -17vh;
+  box-shadow: 40vmin 0 10.0276258235vmin currentcolor;
+}
+
+.blured-background span:nth-child(7) {
+  color: #ffacac;
+  top: 5%;
+  left: 29%;
+  animation-duration: 10.4s;
+  animation-delay: -8.4s;
+  transform-origin: 20vw 5vh;
+  box-shadow: -40vmin 0 6.0912947411vmin currentcolor;
+}
+
+.blured-background span:nth-child(8) {
+  color: #583c87;
+  top: 38%;
+  left: 18%;
+  animation-duration: 14s;
+  animation-delay: -13.9s;
+  transform-origin: 5vw -1vh;
+  box-shadow: -40vmin 0 7.4727724313vmin currentcolor;
+}
+
+.blured-background span:nth-child(9) {
+  color: #ffacac;
+  top: 63%;
+  left: 83%;
+  animation-duration: 11.6s;
+  animation-delay: -10.9s;
+  transform-origin: -2vw -11vh;
+  box-shadow: -40vmin 0 7.1376872218vmin currentcolor;
+}
+
+.blured-background span:nth-child(10) {
+  color: #ffacac;
+  top: 44%;
+  left: 64%;
+  animation-duration: 12s;
+  animation-delay: -4.7s;
+  transform-origin: -24vw 17vh;
+  box-shadow: 40vmin 0 7.4094127515vmin currentcolor;
+}
+
+.blured-background span:nth-child(11) {
+  color: #583c87;
+  top: 73%;
+  left: 76%;
+  animation-duration: 15.8s;
+  animation-delay: -6.2s;
+  transform-origin: -9vw -24vh;
+  box-shadow: 40vmin 0 14.0899880498vmin currentcolor;
+}
+
+.blured-background span:nth-child(12) {
+  color: #583c87;
+  top: 4%;
+  left: 96%;
+  animation-duration: 12.1s;
+  animation-delay: -7.9s;
+  transform-origin: -7vw 11vh;
+  box-shadow: 40vmin 0 12.0679060615vmin currentcolor;
+}
+
+.blured-background span:nth-child(13) {
+  color: #ffacac;
+  top: 80%;
+  left: 89%;
+  animation-duration: 10.7s;
+  animation-delay: -9.6s;
+  transform-origin: -23vw 8vh;
+  box-shadow: -40vmin 0 13.4227817909vmin currentcolor;
+}
+
+.blured-background span:nth-child(14) {
+  color: #e45a84;
+  top: 10%;
+  left: 84%;
+  animation-duration: 11.7s;
+  animation-delay: -13.7s;
+  transform-origin: 23vw -9vh;
+  box-shadow: 40vmin 0 13.0652683419vmin currentcolor;
+}
+
+.blured-background span:nth-child(15) {
+  color: #583c87;
+  top: 31%;
+  left: 52%;
+  animation-duration: 12s;
+  animation-delay: -4.5s;
+  transform-origin: 1vw -5vh;
+  box-shadow: 40vmin 0 14.569884619vmin currentcolor;
+}
+
+.blured-background span:nth-child(16) {
+  color: #ffacac;
+  top: 6%;
+  left: 98%;
+  animation-duration: 12.7s;
+  animation-delay: -7.5s;
+  transform-origin: 15vw -9vh;
+  box-shadow: -40vmin 0 7.281992007vmin currentcolor;
+}
+
+.blured-background span:nth-child(17) {
+  color: #ffacac;
+  top: 18%;
+  left: 96%;
+  animation-duration: 12.7s;
+  animation-delay: -7.6s;
+  transform-origin: -11vw 23vh;
+  box-shadow: 40vmin 0 11.8428291366vmin currentcolor;
+}
+
+.blured-background span:nth-child(18) {
+  color: #e45a84;
+  top: 47%;
+  left: 65%;
+  animation-duration: 13.3s;
+  animation-delay: -12.4s;
+  transform-origin: 14vw -13vh;
+  box-shadow: -40vmin 0 5.1686799201vmin currentcolor;
+}
+
+.blured-background span:nth-child(19) {
+  color: #ffacac;
+  top: 51%;
+  left: 61%;
+  animation-duration: 13.5s;
+  animation-delay: -15.1s;
+  transform-origin: -11vw 16vh;
+  box-shadow: -40vmin 0 9.0171705711vmin currentcolor;
+}
+
+.blured-background span:nth-child(20) {
+  color: #583c87;
+  top: 64%;
+  left: 96%;
+  animation-duration: 14.9s;
+  animation-delay: -4.7s;
+  transform-origin: 8vw 7vh;
+  box-shadow: 40vmin 0 5.1015424987vmin currentcolor;
+}
+
+@keyframes blured_move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+.blured-background span:nth-child(1),
+.blured-background span:nth-child(3),
+.blured-background span:nth-child(5),
+.blured-background span:nth-child(8),
+.blured-background span:nth-child(11),
+.blured-background span:nth-child(12),
+.blured-background span:nth-child(15),
+.blured-background span:nth-child(20) {
+  color: #DE3163 !important;
+}
+
+.blured-background span:nth-child(2),
+.blured-background span:nth-child(6),
+.blured-background span:nth-child(7),
+.blured-background span:nth-child(9),
+.blured-background span:nth-child(10),
+.blured-background span:nth-child(13),
+.blured-background span:nth-child(16),
+.blured-background span:nth-child(17),
+.blured-background span:nth-child(19) {
+  color: ghostwhite !important;
+}
+
+.blured-background span:nth-child(4),
+.blured-background span:nth-child(14),
+.blured-background span:nth-child(18) {
+  color: #52d379 !important;
+}
+
+
+/* - Cursor */
+
+.cursor {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 30px;
+	height: 30px;
+	opacity: 1;
+	background: rgb(120 204 109 / 25%);
+	border: 1px solid transparent;
+	transition: width 0.3s cubic-bezier(0.3, 0, 0.3, 1), height 0.3s cubic-bezier(0.3, 0, 0.3, 1), background 0.3s cubic-bezier(0.3, 0, 0.3, 1), margin 0.3s cubic-bezier(0.3, 0, 0.3, 1), border-color 0.7s cubic-bezier(0.3, 0, 0.3, 1);
+	z-index: 999;
+	pointer-events: none;
+	border-radius: 100%;
+}
+
+.cursor.cursor-zoom {
+	margin-top: -25px;
+	margin-left: -25px;
+	width: 80px;
+	height: 80px;
+	background: rgb(120 204 109 / 0%);
+	border-color: rgb(120 204 109 / 100%);
+}
+
+/* - Minimal */
+
+body .header .menu-btn,
+body .card-started .profile,
+body .card-started .profile .slide::before,
+body .card-started .profile .slide::after,
+body .card-inner,
+body .card-inner::before,
+body .card-inner::after,
+body .skills-list.circles .progress::after,
+body .mfp-wrap.popup-box-inline,
+body .info-list ul li strong::after,
+body .content-sidebar,
+body .profile .main-menu-fixed::before,
+body .header .cart-btn,
+body .header .cart-btn .cart-widget,
+body .header .top-menu {
+    color: #191919 !important;
+    background: ghostwhite;
+}
+
+.preloader .spinner .double-bounce1,
+.preloader .spinner .double-bounce2,
+.lnk:hover .arrow::before,
+.button:hover .arrow::before,
+.lnk:hover .arrow::after,
+.button:hover .arrow::after,
+.resume-items .resume-item.active .date::before,
+.skills-list ul li .progress .percentage,
+.single-post-text ul > li::before,
+.comment-text ul > li::before,
+.content-sidebar .main-menu ul li.page_item_has_children.current_page_item > a::before,
+.content-sidebar .main-menu ul li.page_item_has_children.current_page_item > a::after,
+.content-sidebar .main-menu ul li.page_item_has_children:hover > a::before,
+.content-sidebar .main-menu ul li.page_item_has_children:hover > a::after,
+.content-sidebar .main-menu ul li.page_item_has_children.current_page_parent > a::before,
+.content-sidebar .main-menu ul li.page_item_has_children.current_page_parent > a::after,
+.content-sidebar .main-menu ul li.page_item_has_children.current_page_ancestor > a::before,
+.content-sidebar .main-menu ul li.page_item_has_children.current_page_ancestor > a::after,
+.content-sidebar .close:hover::before,
+.content-sidebar .close:hover::after,
+.header .menu-btn:hover span,
+.header .menu-btn:hover span::before,
+.header .menu-btn:hover span::after,
+.info-list ul li strong,
+.profile .main-menu ul li.page_item_has_children.current_page_item > a::before,
+.profile .main-menu ul li.page_item_has_children.current_page_item > a::after,
+.profile .main-menu ul li.page_item_has_children:hover > a::before,
+.profile .main-menu ul li.page_item_has_children:hover > a::after,
+.profile .main-menu ul li.page_item_has_children.current_page_parent > a::before,
+.profile .main-menu ul li.page_item_has_children.current_page_parent > a::after,
+.profile .main-menu ul li.page_item_has_children.current_page_ancestor > a::before,
+.profile .main-menu ul li.page_item_has_children.current_page_ancestor > a::after,
+.service-items .service-item .icon,
+.revs-carousel .owl-dot.active,
+.custom-content-reveal span.custom-content-close,
+.fc-calendar .fc-row > div.fc-today,
+.fc-calendar .fc-content:hover span.fc-date,
+.fc-calendar .fc-row > div.fc-today span.fc-date,
+.skills-list.dotted ul li .progress .percentage .da span,
+.preloader .spinner.default-circle::before,
+.preloader .spinner.default-circle::after,
+.preloader .spinner.clock::before,
+.preloader .spinner.box-rotation::after,
+.header .cart-btn .cart-icon .cart-count,
+.popup-box .preloader .spinner.default-circle::before,
+.popup-box .preloader .spinner.default-circle::after,
+.popup-box .preloader-popup .spinner.default-circle::before,
+.popup-box .preloader-popup .spinner.default-circle::after,
+.single-post-text ul > li::before,
+.comment-text ul > li::before,
+.blog-content ul > li::before,
+.revs-carousel .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.solid-icons-style .service-items .service-item .icon,
+.solid-icons-style .pricing-items .pricing-item .icon,
+.solid-icons-style .fuct-items .fuct-item .icon,
+.solid-icons-style .resume-title .icon,
+.solid-icons-style .skill-title .icon,
+.card-started .profile .lnk.solid-style .ion,
+.header .top-menu.menu-minimal ul li a .link {
+    color: #ffdfe8 !important;
+}
+
+.lnk:hover,
+.button:hover,
+.lnk:hover .ion,
+.button:hover .ion,
+a:hover,
+input:focus,
+textarea:focus,
+.header .top-menu ul li:hover a,
+.header .top-menu ul li.active a,
+.header .top-menu ul li.current-menu-item a,
+.header .top-menu ul li:hover a .icon,
+.header .top-menu ul li.active a .icon,
+.header .top-menu ul li:hover a .link,
+.header .top-menu ul li.active a .link,
+.header .top-menu ul li.current-menu-item a .icon,
+.header .top-menu ul li.current-menu-item a .link,
+.header .profile .subtitle,
+.card-started .profile .subtitle,
+.content-sidebar .profile .subtitle,
+.card-started .profile .social a:hover .ion,
+.card-started .profile .social a:hover .fab,
+.card-started .profile .social a:hover .fas,
+.card-started .profile .social a:hover .fa,
+.content-sidebar .profile .social a:hover .ion,
+.content-sidebar .profile .social a:hover .fab,
+.content-sidebar .profile .social a:hover .fas,
+.content-sidebar .profile .social a:hover .fa,
+.pricing-items .pricing-item .icon,
+.fuct-items .fuct-item .icon,
+.resume-title .icon,
+.skill-title .icon,
+.resume-items .resume-item.active .date,
+.content.works .filter-menu .f_btn.active,
+.box-item:hover .desc .name,
+.single-post-text p a,
+.comment-text p a,
+.post-text-bottom span.cat-links a,
+.post-text-bottom .tags-links a,
+.post-text-bottom .tags-links span,
+.page-numbers.current,
+.page-links a,
+.post-comments .post-comment .desc .name,
+.post-comments .post-comment .desc span.comment-reply a:hover,
+.content-sidebar .main-menu ul li.current_page_item > a,
+.content-sidebar .main-menu ul li:hover > a,
+.content-sidebar .main-menu ul li.current_page_parent > a,
+.content-sidebar .main-menu ul li.current_page_ancestor > a,
+.content-sidebar .widget ul li a:hover,
+.content-sidebar .tagcloud a,
+.card-started .profile .subtitle,
+.content-sidebar .profile .subtitle,
+.content-sidebar .profile .typed-cursor,
+.card-started .profile .typed-cursor,
+.content .title .first-word,
+.content .title::first-letter,
+.content .title .first-letter::first-letter,
+.content-sidebar h2.widget-title .first-word,
+.content-sidebar h2.widget-title::first-letter,
+.content-sidebar h2.widget-title .first-letter::first-letter,
+.box-item .date,
+.profile .main-menu ul li.current-menu-item a,
+.profile .main-menu ul li.current_page_item > a,
+.profile .main-menu ul li:hover > a,
+.profile .main-menu ul li.current_page_parent > a,
+.profile .main-menu ul li.current_page_ancestor > a,
+.custom-header nav span::before,
+.fc-calendar .fc-row > div.fc-content:hover::after,
+.skills-list.list ul li .name::before,
+.preloader .spinner.recursive-circle,
+.single-post-text p a,
+.comment-text p a,
+.blog-content p a,
+.minimal-icons-style .service-items .service-item .icon,
+.minimal-icons-style .pricing-items .pricing-item .icon,
+.minimal-icons-style .fuct-items .fuct-item .icon,
+.minimal-icons-style .resume-title .icon,
+.minimal-icons-style .skill-title .icon,
+.border-icons-style .service-items .service-item .icon,
+.border-icons-style .pricing-items .pricing-item .icon,
+.border-icons-style .fuct-items .fuct-item .icon,
+.border-icons-style .resume-title .icon,
+.border-icons-style .skill-title .icon,
+.lnk:hover .ion,
+.button:hover .ion,
+.lnk:hover .fa,
+.button:hover .fa {
+    color: #DE3163 !important;
+}
+
+input:focus,
+textarea:focus,
+.revs-carousel .owl-dots .owl-dot,
+.custom-header,
+.post-text-bottom .tags-links a,
+.post-text-bottom .tags-links span,
+.content-sidebar .tagcloud a,
+.resume-items .resume-item.active .date,
+.box-item .date,
+.content.skills .skills-list.circles .progress .bar,
+.content.skills .skills-list.circles .progress .fill,
+.preloader .spinner.clock,
+.preloader .spinner.box-rotation,
+.skills-list.circles .progress .bar,
+.skills-list.circles .progress.p51 .fill,
+.skills-list.circles .progress.p52 .fill,
+.skills-list.circles .progress.p53 .fill,
+.skills-list.circles .progress.p54 .fill,
+.skills-list.circles .progress.p55 .fill,
+.skills-list.circles .progress.p56 .fill,
+.skills-list.circles .progress.p57 .fill,
+.skills-list.circles .progress.p58 .fill,
+.skills-list.circles .progress.p59 .fill,
+.skills-list.circles .progress.p60 .fill,
+.skills-list.circles .progress.p61 .fill,
+.skills-list.circles .progress.p62 .fill,
+.skills-list.circles .progress.p63 .fill,
+.skills-list.circles .progress.p64 .fill,
+.skills-list.circles .progress.p65 .fill,
+.skills-list.circles .progress.p66 .fill,
+.skills-list.circles .progress.p67 .fill,
+.skills-list.circles .progress.p68 .fill,
+.skills-list.circles .progress.p69 .fill,
+.skills-list.circles .progress.p70 .fill,
+.skills-list.circles .progress.p71 .fill,
+.skills-list.circles .progress.p72 .fill,
+.skills-list.circles .progress.p73 .fill,
+.skills-list.circles .progress.p74 .fill,
+.skills-list.circles .progress.p75 .fill,
+.skills-list.circles .progress.p76 .fill,
+.skills-list.circles .progress.p77 .fill,
+.skills-list.circles .progress.p78 .fill,
+.skills-list.circles .progress.p79 .fill,
+.skills-list.circles .progress.p80 .fill,
+.skills-list.circles .progress.p81 .fill,
+.skills-list.circles .progress.p82 .fill,
+.skills-list.circles .progress.p83 .fill,
+.skills-list.circles .progress.p84 .fill,
+.skills-list.circles .progress.p85 .fill,
+.skills-list.circles .progress.p86 .fill,
+.skills-list.circles .progress.p87 .fill,
+.skills-list.circles .progress.p88 .fill,
+.skills-list.circles .progress.p89 .fill,
+.skills-list.circles .progress.p90 .fill,
+.skills-list.circles .progress.p91 .fill,
+.skills-list.circles .progress.p92 .fill,
+.skills-list.circles .progress.p93 .fill,
+.skills-list.circles .progress.p94 .fill,
+.skills-list.circles .progress.p95 .fill,
+.skills-list.circles .progress.p96 .fill,
+.skills-list.circles .progress.p97 .fill,
+.skills-list.circles .progress.p98 .fill,
+.skills-list.circles .progress.p99 .fill,
+.skills-list.circles .progress.p100 .fill,
+.revs-carousel .swiper-pagination-bullet,
+.border-icons-style .service-items .service-item .icon,
+.border-icons-style .pricing-items .pricing-item .icon,
+.border-icons-style .fuct-items .fuct-item .icon,
+.border-icons-style .resume-title .icon,
+.border-icons-style .skill-title .icon {
+    border-color: #DE3163;
+}
+
+.header .cart-btn .cart-icon .cart-count,
+.header .top-menu.menu-minimal ul li a .link,
+.header .top-menu.menu-minimal ul li:hover a .link {
+    color: #323232 !important;
+}
+
+.layout-rounded-style .header .menu-btn {
+	border-radius: 26px;
+}
+
+.layout-rounded-style .header .cart-btn {
+  border-radius: 26px;
+}
+
+.layout-rounded-style .header .cart-btn .cart-widget {
+	border-radius: 26px;
+}
+
+.layout-rounded-style .header .top-menu {
+	padding: 10px 0;
+	border-radius: 26px;
+}
+
+.header .top-menu.menu-minimal ul li a {
+    padding: 9px 3px;
+}
+
+.header .top-menu.menu-minimal ul li a .link {
+    position: absolute;
+    left: 65%;
+    top: 50%;
+    font-size: 0.65rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    background: #ffb2d0;
+    transition: .3s ease 0s;
+    padding: 3px 7px;
+    margin-top: -11px;
+    opacity: 0;
+    border-radius: 4px;
+}
+
+.header .top-menu.menu-minimal ul li a:hover .link {
+    left: 75%;
+    opacity: 1;
+}
+
+.layout-rounded-style .card-started,
+.layout-rounded-style .card-started .profile,
+.layout-rounded-style .content-sidebar .profile {
+    border-radius: 26px;
+}
+
+.layout-rounded-style .card-started::before {
+    border-radius: 26px;
+}
+
+.layout-rounded-style .card-started .profile .slide::after {
+    position: absolute;
+    left: -20px;
+    bottom: -65px;
+    right: -20px;
+    width: auto;
+    height: 100px;
+    transform: none;
+    border-radius: 100% 100% 0 0;
+}
+
+.layout-rounded-style .card-started .profile .slide::before {
+	display: none;
+}
+
+.layout-rounded-style .card-started::after,
+.layout-boxed-style .card-started::after {
+	display: none;
+}
+
+.layout-rounded-style .card-inner {
+    border-radius: 26px;
+}
+
+.header .top-menu.menu-minimal ul li a::before {
+	display: none;
+}
+
+.minimal-icons-style .fuct-items .fuct-item .icon,
+.minimal-icons-style .pricing-items .pricing-item .icon,
+.minimal-icons-style .resume-title .icon,
+.minimal-icons-style .service-items .service-item .icon,
+.minimal-icons-style .skill-title .icon {
+    color: #78cc6d;
+    background: 0 0!important;
+}
+
+.minimal-icons-style .service-items .service-item .icon > *,
+.minimal-icons-style .pricing-items .pricing-item .icon > *,
+.minimal-icons-style .fuct-items .fuct-item .icon > * {
+	font-size: 32px;
+}
+
+.layout-rounded-style .button {
+	border-radius: 26px;
+}
+
+.layout-rounded-style .header .top-menu.menu-minimal ul li a .link {
+	border-radius: 10px;
+}
+
+.layout-rounded-style .content-sidebar .close {
+	border-radius: 0 26px 26px 0;
+}
+
+.info-list ul li strong {
+	color: #323232;
+}
+
+@media (width <= 680px) {
+	body .header .top-menu.menu-minimal ul.menu {
+		background: transparent;
+	}
+
+	.layout-rounded-style .header .top-menu {
+		border-radius: 0 0 26px 26px;
+	}
+}
+
+.header .top-menu ul li a, .header .menu-btn {
+	background: transparent;
+}
+
+.card-started .profile .social a .ion,
+.card-started .profile .social a .fab,
+.card-started .profile .social a .fas,
+.card-started .profile .social a .fa,
+.content-sidebar .profile .social a .ion,
+.content-sidebar .profile .social a .fab,
+.content-sidebar .profile .social a .fas,
+.content-sidebar .profile .social a .fa {
+	color: rgb(75 75 75 / 85%);
+	font-size: 1.125rem;
+}
+
+.social a:hover {
+    transform: scale(1.3);
+}
+
+.header .top-menu ul li a {
+	overflow: visible;
+}
+
+.header .top-menu ul li a .link {
+	line-height: 17px;
+}
+
+.pager .nav-links {
+	background: rgb(0 0 0 / 10%);
+}
+
+.card-started .profile, .content-sidebar .profile {
+	padding: 0;
+	overflow: hidden;
+}
+
+.preloader {
+	background: rgb(20 20 20);
+}
+
+.card-started .profile.no-photo {
+  padding-top: 0;
+}
+
+@media (width <= 560px) {
+  .header .top-menu ul {
+    background: none;
+  }
+}
+
+@media (width <= 1240px) {
+  .header {
+    color: #191919 !important;
+  }
+}
+
+.header .top-menu ul li:hover {
+  z-index: 2;
+}
+
+.blur {
+   	background-image: url("../../images/bg.png");
+}

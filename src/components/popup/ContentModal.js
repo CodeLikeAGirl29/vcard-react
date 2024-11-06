@@ -1,5 +1,4 @@
 import { Fragment, useEffect, useState, useRef } from "react";
-//import useClickOutside from "../../useClickOutside";
 
 const Content = ({ content, close }) => {
 	let domNode = useRef(null);
@@ -28,17 +27,19 @@ const Content = ({ content, close }) => {
 			>
 				<div className="mfp-container mfp-s-ready mfp-inline-holder">
 					<div className="mfp-content" ref={domNode}>
-						<div id="popup-2" className="popup-box mfp-fade">
-							{content}
-							<button
-								onClick={() => close()}
-								title="Close (Esc)"
-								type="button"
-								className="mfp-close"
-							>
-								×
-							</button>
-						</div>
+						<div
+							id="popup-2"
+							className="popup-box mfp-fade"
+							dangerouslySetInnerHTML={{ __html: content }} // Render content as HTML
+						/>
+						<button
+							onClick={() => close()}
+							title="Close (Esc)"
+							type="button"
+							className="mfp-close"
+						>
+							×
+						</button>
 					</div>
 					<div className="mfp-preloader">Loading...</div>
 				</div>
@@ -54,15 +55,25 @@ const ContentModal = () => {
 	const handlePopupClick = (element) => {
 		setOpen(true);
 		const hiddenElement = element.parentElement.querySelector(".mfp-hide");
-		const content_ = hiddenElement.querySelector(".content");
+		const content_ = hiddenElement.querySelector(".content").innerHTML; // Extract inner HTML as a string
 		setContent(content_);
 	};
 
 	useEffect(() => {
-		const popupLinks = document.querySelectorAll(".has-popup-media");
-		popupLinks.forEach((element) => {
-			element.addEventListener("click", () => handlePopupClick(element));
-		});
+		if (typeof window !== "undefined") {
+			const popupLinks = document.querySelectorAll(".has-popup-media");
+			const handleClick = (element) => handlePopupClick(element);
+
+			popupLinks.forEach((element) => {
+				element.addEventListener("click", () => handleClick(element));
+			});
+
+			return () => {
+				popupLinks.forEach((element) => {
+					element.removeEventListener("click", handleClick);
+				});
+			};
+		}
 	}, []);
 
 	return (
@@ -79,4 +90,5 @@ const ContentModal = () => {
 		</Fragment>
 	);
 };
+
 export default ContentModal;

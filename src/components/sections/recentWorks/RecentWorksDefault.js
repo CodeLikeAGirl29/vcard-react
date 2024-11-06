@@ -7,10 +7,9 @@ const RecentWorksDefault = () => {
 	const isotope = useRef();
 	const [filterKey, setFilterKey] = useState("*");
 	useEffect(() => {
-		setTimeout(() => {
+		if (typeof window !== "undefined") {
 			isotope.current = new Isotope(".grid-items", {
 				itemSelector: ".grid-item",
-				//    layoutMode: "fitRows",
 				percentPosition: true,
 				masonry: {
 					columnWidth: ".grid-item",
@@ -21,8 +20,9 @@ const RecentWorksDefault = () => {
 					queue: false,
 				},
 			});
-		}, 1000);
-		//     return () => isotope.current.destroy();
+
+			return () => isotope.current.destroy();
+		}
 	}, []);
 	useEffect(() => {
 		if (isotope.current) {
@@ -127,7 +127,7 @@ const RecentWorksDefault = () => {
 						<div className="box-item">
 							<div className="image">
 								<a
-									href="https://unsplash-api-azure.vercel.app/"
+									href="https://unsplash-search-site.netlify.app/"
 									className="has-popup-image"
 								>
 									<img src="images/works/work2.webp" alt="" />
@@ -138,7 +138,7 @@ const RecentWorksDefault = () => {
 							</div>
 							<div className="desc p-4">
 								<a
-									href="https://www.github.com/codelikeagirl29/unsplash-api"
+									href="https://www.github.com/codelikeagirl29/unsplash-react"
 									className="name has-popup-image"
 								>
 									Unsplash Image Search

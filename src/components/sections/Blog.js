@@ -1,6 +1,7 @@
 import { Fragment, useContext } from "react";
 import Context from "../../context/context";
 import Image from "next/image";
+import BlogItem from "./BlogItem";
 
 const BlogSection = () => {
   const { changeNav } = useContext(Context);
@@ -199,93 +200,38 @@ export default BlogSection;
 
 export const BlogClassic = () => {
   const { changeNav } = useContext(Context);
+
+  const blogPosts = [
+    {
+      imageSrc: "images/blog/blog1.jpg",
+      title: "By spite about do of do allow blush",
+      date: "20 Jun",
+      category: "Design",
+    },
+    {
+      imageSrc: "images/blog/blog2.jpg",
+      title: "Two Before Arrow Not Relied",
+      date: "19 Jun",
+      category: "Coding",
+    },
+    {
+      imageSrc: "images/blog/blog3.jpg",
+      title: "By spite about do of do allow blush",
+      date: "20 Jun",
+      category: "Travel",
+    },
+  ];
+
   return (
     <Fragment>
       <div className="content blog">
-        {/* title */}
         <div className="title">Latest Posts</div>
-        {/* content */}
         <div className="row border-line-v">
-          {/* blog item */}
-          <div className="col col-d-12 col-t-12 col-m-12 border-line-h">
-            <div className="box-item">
-              <div className="image">
-                <a href="#" onClick={() => changeNav("blog-post")}>
-                  <img src="images/blog/blog1.jpg" alt="" />
-                  <span className="info">
-                    <span className="ion ion-document-text" />
-                  </span>
-                  <span className="date">
-                    <strong>20</strong>Jun
-                  </span>
-                </a>
-              </div>
-              <div className="desc">
-                <a
-                  href="#"
-                  onClick={() => changeNav("blog-post")}
-                  className="name"
-                >
-                  By spite about do of do allow blush
-                </a>
-                <div className="category">Design</div>
-              </div>
-            </div>
-          </div>
-          {/* blog item */}
-          <div className="col col-d-12 col-t-12 col-m-12 border-line-h">
-            <div className="box-item">
-              <div className="image">
-                <a href="#" onClick={() => changeNav("blog-post")}>
-                  <img src="images/blog/blog2.jpg" alt="" />
-                  <span className="info">
-                    <span className="ion ion-document-text" />
-                  </span>
-                  <span className="date">
-                    <strong>19</strong>Jun
-                  </span>
-                </a>
-              </div>
-              <div className="desc">
-                <a
-                  href="#"
-                  onClick={() => changeNav("blog-post")}
-                  className="name"
-                >
-                  Two Before Arrow Not Relied
-                </a>
-                <div className="category">Coding</div>
-              </div>
-            </div>
-          </div>
-          {/* blog item */}
-          <div className="col col-d-12 col-t-12 col-m-12 border-line-h">
-            <div className="box-item">
-              <div className="image">
-                <a href="#" onClick={() => changeNav("blog-post")}>
-                  <img src="images/blog/blog3.jpg" alt="" />
-                  <span className="info">
-                    <span className="ion ion-document-text" />
-                  </span>
-                  <span className="date">
-                    <strong>20</strong>Jun
-                  </span>
-                </a>
-              </div>
-              <div className="desc">
-                <a
-                  href="#"
-                  onClick={() => changeNav("blog-post")}
-                  className="name"
-                >
-                  By spite about do of do allow blush
-                </a>
-                <div className="category">Travel</div>
-              </div>
-            </div>
-          </div>
-          <div className="clear" />
+          {blogPosts.map((post, index) => (
+            <BlogItem key={index} {...post} changeNav={changeNav} />
+          ))}
         </div>
+        <div className="clear" />
       </div>
     </Fragment>
   );

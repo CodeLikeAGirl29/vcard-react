@@ -2,8 +2,8 @@
 title: "Staying Productive"
 description: "Practical tips and motivation to help you stay focused, energized, and organized throughout your workday."
 author: "Lindsey"
-publishedAt: "2022-12-02"
-updatedAt: "2022-12-02"
+publishedAt: "2024-12-02"
+updatedAt: "2024-12-02"
 isPublished: true
 tags: ["Advice", "Tips", "Productivity", "Balance"]
 image: "/images/blog/blog1.png"

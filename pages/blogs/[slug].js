@@ -1,35 +1,51 @@
-import { allBlogs } from "contentlayer/generated";
 import BlogPostNew from "@/components/BlogPost";
+import {
+  getAllBlogs,
+  getBlogBySlug,
+  getBlogSlugs,
+} from "@/utils/blogs";
 
 export default function BlogPostPage({ post, prev, next }) {
   return <BlogPostNew post={post} prev={prev} next={next} />;
 }
 
 export async function getStaticPaths() {
+  const slugs = getBlogSlugs();
+
   return {
-    // Use the clean filename-only slug
-    paths: allBlogs.map((p) => ({ params: { slug: p.slug } })),
+    paths: slugs.map((slug) => ({
+      params: { slug },
+    })),
     fallback: false,
   };
 }
 
 export async function getStaticProps({ params }) {
-  // Find by the clean slug
-  const post = allBlogs.find((p) => p.slug === params.slug);
-  if (!post) return { notFound: true };
+  const post = await getBlogBySlug(params.slug);
 
-  // prev/next by date (unchanged)
-  const sorted = [...allBlogs].sort(
-    (a, b) => new Date(a.publishedAt) - new Date(b.publishedAt),
-  );
-  const i = sorted.findIndex((p) => p._id === post._id);
+  // 404 if not found or not published
+  if (!post || !post.isPublished) {
+    return { notFound: true };
+  }
+
+  const allBlogs = await getAllBlogs(); // already filtered + sorted
+  const i = allBlogs.findIndex((p) => p._id === post._id);
 
   const prev =
-    i > 0 ? { href: sorted[i - 1].url, title: sorted[i - 1].title } : null;
-  const next =
-    i < sorted.length - 1
-      ? { href: sorted[i + 1].url, title: sorted[i + 1].title }
+    i > 0
+      ? { href: allBlogs[i - 1].url, title: allBlogs[i - 1].title }
       : null;
 
-  return { props: { post, prev, next } };
+  const next =
+    i < allBlogs.length - 1
+      ? { href: allBlogs[i + 1].url, title: allBlogs[i + 1].title }
+      : null;
+
+  return {
+    props: {
+      post,
+      prev,
+      next,
+    },
+  };
 }

@@ -1,12 +1,13 @@
 import { Fragment, useEffect, useState, useRef } from "react";
 
 const Content = ({ content, close }) => {
-	let domNode = useRef(null);
+	const domNode = useRef(null);
 
+	// Close when clicking outside
 	useEffect(() => {
 		const handleClickOutside = (event) => {
 			if (domNode.current && !domNode.current.contains(event.target)) {
-				close(false);
+				close();
 			}
 		};
 
@@ -16,10 +17,25 @@ const Content = ({ content, close }) => {
 		};
 	}, [close]);
 
+	// Optional: close on ESC
+	useEffect(() => {
+		const handleEsc = (event) => {
+			if (event.key === "Escape") {
+				close();
+			}
+		};
+
+		document.addEventListener("keydown", handleEsc);
+		return () => {
+			document.removeEventListener("keydown", handleEsc);
+		};
+	}, [close]);
+
+	if (!content) return null;
+
 	return (
 		<Fragment>
 			<div className="mfp-bg mfp-fade popup-box-inline mfp-ready" />
-
 			<div
 				className="mfp-wrap content_popup_warp mfp-close-btn-in mfp-auto-cursor mfp-fade popup-box-inline mfp-ready"
 				tabIndex={-1}
@@ -28,12 +44,12 @@ const Content = ({ content, close }) => {
 				<div className="mfp-container mfp-s-ready mfp-inline-holder">
 					<div className="mfp-content" ref={domNode}>
 						<div
-							id="popup-2"
 							className="popup-box mfp-fade"
-							dangerouslySetInnerHTML={{ __html: content }} // Render content as HTML
+							// Render HTML copied from hidden .content
+							dangerouslySetInnerHTML={{ __html: content }}
 						/>
 						<button
-							onClick={() => close()}
+							onClick={close}
 							title="Close (Esc)"
 							type="button"
 							className="mfp-close"
@@ -50,43 +66,56 @@ const Content = ({ content, close }) => {
 
 const ContentModal = () => {
 	const [open, setOpen] = useState(false);
-	const [content, setContent] = useState(null);
-
-	const handlePopupClick = (element) => {
-		setOpen(true);
-		const hiddenElement = element.parentElement.querySelector(".mfp-hide");
-		const content_ = hiddenElement.querySelector(".content").innerHTML; // Extract inner HTML as a string
-		setContent(content_);
-	};
+	const [content, setContent] = useState("");
 
 	useEffect(() => {
-		if (typeof window !== "undefined") {
-			const popupLinks = document.querySelectorAll(".has-popup-media");
-			const handleClick = (element) => handlePopupClick(element);
+		if (typeof window === "undefined") return;
 
-			popupLinks.forEach((element) => {
-				element.addEventListener("click", () => handleClick(element));
-			});
+		const popupLinks = Array.from(
+			document.querySelectorAll(".has-popup-media")
+		);
 
-			return () => {
-				popupLinks.forEach((element) => {
-					element.removeEventListener("click", handleClick);
-				});
+		const handlers = popupLinks.map((link) => {
+			const handler = (event) => {
+				event.preventDefault();
+
+				// Assuming structure:
+				// <a class="has-popup-media" ...></a>
+				// <div class="popup-box mfp-fade mfp-hide"> ... </div>
+				const hiddenElement = link.nextElementSibling;
+
+				if (!hiddenElement || !hiddenElement.classList.contains("mfp-hide")) {
+					return;
+				}
+
+				const contentNode = hiddenElement.querySelector(".content");
+				if (!contentNode) return;
+
+				const html = contentNode.innerHTML;
+				setContent(html);
+				setOpen(true);
 			};
-		}
+
+			link.addEventListener("click", handler);
+			return { link, handler };
+		});
+
+		// Clean up listeners on unmount
+		return () => {
+			handlers.forEach(({ link, handler }) => {
+				link.removeEventListener("click", handler);
+			});
+		};
 	}, []);
+
+	const handleClose = () => {
+		setContent("");
+		setOpen(false);
+	};
 
 	return (
 		<Fragment>
-			{open && (
-				<Content
-					content={content}
-					close={() => {
-						setContent(null);
-						setOpen(false);
-					}}
-				/>
-			)}
+			{open && <Content content={content} close={handleClose} />}
 		</Fragment>
 	);
 };

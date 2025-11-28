@@ -56,7 +56,36 @@ const BlogPostLayout = ({
             )}
 
             {/* Blog Content */}
-            <div className="blog-content">{content}</div>
+            <div className="blog-content">
+              {Array.isArray(content)
+                ? content.map((item, index) => {
+                  switch (item.type) {
+                    case "paragraph":
+                      return (
+                        <p key={index} className={item.className}>
+                          {item.text}
+                        </p>
+                      );
+                    case "blockquote":
+                      return (
+                        <blockquote key={index}>
+                          <p>{item.text}</p>
+                        </blockquote>
+                      );
+                    case "list":
+                      return (
+                        <ul key={index}>
+                          {item.items?.map((listItem, listIndex) => (
+                            <li key={listIndex}>{listItem}</li>
+                          ))}
+                        </ul>
+                      );
+                    default:
+                      return null;
+                  }
+                })
+                : content}
+            </div>
 
             {/* Tags and Share Links */}
             {(tags || shareLinks) && (
@@ -77,7 +106,7 @@ const BlogPostLayout = ({
                 )}
                 {tags && (
                   <span className="tags-links">
-                    Tags:{" "}
+                    Tags{" "}
                     {tags.map((tag, index) => (
                       <a key={index} href="#">
                         {tag}

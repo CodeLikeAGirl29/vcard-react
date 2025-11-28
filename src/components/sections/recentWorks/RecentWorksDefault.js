@@ -4,8 +4,9 @@ import { Fragment, useEffect, useRef, useState } from "react";
 
 const RecentWorksDefault = () => {
 	// Isotope
-	const isotope = useRef();
+	const isotope = useRef(null);
 	const [filterKey, setFilterKey] = useState("*");
+
 	useEffect(() => {
 		if (typeof window !== "undefined") {
 			isotope.current = new Isotope(".grid-items", {
@@ -21,28 +22,30 @@ const RecentWorksDefault = () => {
 				},
 			});
 
-			return () => isotope.current.destroy();
+			return () => isotope.current?.destroy();
 		}
 	}, []);
+
 	useEffect(() => {
-		if (isotope.current) {
-			filterKey === "*"
-				? isotope.current.arrange({ filter: `*` })
-				: isotope.current.arrange({ filter: `.${filterKey}` });
+		if (!isotope.current) return;
+
+		if (filterKey === "*") {
+			isotope.current.arrange({ filter: "*" });
+		} else {
+			isotope.current.arrange({ filter: `.${filterKey}` });
 		}
 	}, [filterKey]);
-	const handleFilterKeyChange = (key) => () => {
-		setFilterKey(key);
-	};
+
+	const handleFilterKeyChange = (key) => () => setFilterKey(key);
 	const activeBtn = (value) => (value === filterKey ? "active" : "");
 
 	return (
 		<Fragment>
-			<div className="content works">
+			<div className="content works max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 				{/* title */}
-				<div className="title">Recent Projects</div>
+				<div className="title mb-6">Recent Projects</div>
 				{/* filters */}
-				<div className="filter-menu filter-button-group">
+				<div className="filter-menu filter-button-group mb-8 flex flex-wrap gap-3">
 					<div
 						className={`f_btn ${activeBtn("*")}`}
 						onClick={handleFilterKeyChange("*")}
@@ -324,14 +327,14 @@ const RecentWorksDefault = () => {
 						</div>
 					</div>
 					{/* work item video */}
-					<div className="col col-d-6 col-t-6 col-m-12 grid-item frontend border-line-h">
+					<div className="col col-d-6 col-t-6 col-m-12 grid-item content border-line-h">
 						<div className="box-item">
 							<div className="image">
 								<a
-									href="https://github.com/CodeLikeAGirl29/react-tailwindcss"
+									href="https://github.com/CodeLikeAGirl29/harborlight-case-study"
 									className="has-popup-image"
 								>
-									<img src="images/works/work10.webp" alt="" />
+									<img src="https://res.cloudinary.com/dhw9dl4gm/image/upload/v1764363453/Case-Study-HarborLight-Charters-_-Destin-FL-11-28-2025_02_56_PM_hhabre.png" alt="" />
 									<span className="info">
 										<span className="ion ion-images" />
 									</span>
@@ -339,11 +342,11 @@ const RecentWorksDefault = () => {
 							</div>
 							<div className="desc m-4">
 								<a
-									href="https://galaxyventures.vercel.app/"
+									href="https://harborlight-case-study.vercel.app/"
 									className="name has-popup"
 								>
-									Stellar Explorations
-									<div className="category">design</div>
+									Case Study
+									<div className="category">content</div>
 								</a>
 							</div>
 						</div>
@@ -390,7 +393,7 @@ const RecentWorksDefault = () => {
 										</div>
 										<div className="desc m-4">
 											<div className="post-box">
-												<h2>Florida Dream Blog</h2>
+												<h2>Florida Dreamin Blog</h2>
 												<div className="blog-detail">design</div>
 												<div className="blog-content">
 													<p className="text-slate-700">

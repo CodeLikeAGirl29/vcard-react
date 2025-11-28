@@ -41,7 +41,7 @@ const FunFact = () => {
               <div className="icon">
                 <span className="fa fa-calendar-days" />
               </div>
-              <div className="name">3+ years experience</div>
+              <div className="name">4+ years experience</div>
             </div>
           </div>
           <div className="clear" />

@@ -1,11 +1,15 @@
 // pages/blogs/index.js
 import Link from "next/link";
-import { allBlogs } from "contentlayer/generated";
+import { getAllBlogs } from "@/utils/blogs"; // ⬅️ our FS-based markdown loader
 
-export default function BlogIndex() {
-  const posts = allBlogs
+export default function BlogIndex({ posts }) {
+  // newest first
+  const sortedPosts = [...posts]
     .filter((p) => p.isPublished)
-    .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
+    .sort(
+      (a, b) =>
+        new Date(b.publishedAt || 0) - new Date(a.publishedAt || 0),
+    );
 
   return (
     <div className="content blog">
@@ -13,7 +17,7 @@ export default function BlogIndex() {
         <span>Blog</span>
       </div>
       <div className="row border-line-v">
-        {posts.map((p) => (
+        {sortedPosts.map((p) => (
           <div key={p._id} className="col col-d-6 col-t-6 col-m-12">
             <div className="box-item">
               <div className="image">
@@ -32,7 +36,9 @@ export default function BlogIndex() {
               <div className="desc">
                 <Link href={p.url}>
                   <span className="date">
-                    {new Date(p.publishedAt).toLocaleDateString()}
+                    {p.publishedAt
+                      ? new Date(p.publishedAt).toLocaleDateString()
+                      : ""}
                   </span>
                 </Link>
                 <Link href={p.url} className="name">
@@ -51,4 +57,15 @@ export default function BlogIndex() {
       </div>
     </div>
   );
+}
+
+// Pull markdown posts at build time
+export async function getStaticProps() {
+  const posts = await getAllBlogs();
+
+  return {
+    props: {
+      posts,
+    },
+  };
 }

@@ -1,6 +1,3 @@
-// next.config.js
-const { withContentlayer } = require("next-contentlayer");
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   webpack: function (config) {
@@ -16,4 +13,4 @@ const nextConfig = {
   eslint: { ignoreDuringBuilds: true },
 };
 
-module.exports = withContentlayer(nextConfig);
+module.exports = nextConfig;

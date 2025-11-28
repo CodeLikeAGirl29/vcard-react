@@ -1,9 +1,5 @@
-import BlogPostNew from "@/components/BlogPost";
-import {
-  getAllBlogs,
-  getBlogBySlug,
-  getBlogSlugs,
-} from "@/utils/blogs";
+import BlogPostNew from "../../src/components/BlogPost";
+import { getAllBlogs, getBlogBySlug, getBlogSlugs } from "../../src/utils/blogs";
 
 export default function BlogPostPage({ post, prev, next }) {
   return <BlogPostNew post={post} prev={prev} next={next} />;

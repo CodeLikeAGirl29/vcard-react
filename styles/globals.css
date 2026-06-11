@@ -130,21 +130,34 @@ img.mfp-img {
 
 /* ------------------------------------------------------------------ */
 /* Project grid spacing                                                */
-/* Adds even gutters between Isotope masonry tiles. box-sizing keeps   */
-/* each tile's measured width at 50%, so the 2-column layout holds.    */
+/* The template's new-skin.css / layout.css load AFTER globals.css and */
+/* zero out padding on .col (same element as .grid-item), often with   */
+/* !important. So we use higher specificity + !important to win the    */
+/* cascade. box-sizing keeps each tile at 50% width so the masonry     */
+/* layout still resolves to two columns; the padding becomes the gap.  */
 /* ------------------------------------------------------------------ */
-.content.works .grid-item {
-  box-sizing: border-box;
-  padding: 14px;
+.content.works .grid-items .grid-item {
+  box-sizing: border-box !important;
+  padding: 18px !important;
 }
 
 @media (max-width: 600px) {
-  .content.works .grid-item {
-    padding: 8px;
+  .content.works .grid-items .grid-item {
+    padding: 10px !important;
   }
 }
 
-/* Optional: subtle lift so each project reads as its own card */
-.content.works .grid-item .box-item {
+/* Make each tile read as its own card (optional, remove if unwanted) */
+.content.works .grid-items .grid-item .box-item {
   height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.content.works .grid-items .grid-item .box-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgb(0 0 0 / 18%);
+}
+
+globals.css

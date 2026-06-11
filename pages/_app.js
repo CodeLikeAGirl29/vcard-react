@@ -2,6 +2,7 @@ import "font-awesome/css/font-awesome.min.css";
 import Head from "next/head";
 import State from "../src/context/state";
 import PreLoader from "../src/layout/PreLoader";
+import siteMetadata from "../src/utils/siteMetaData";
 import "../styles/globals.css";
 import "../public/css/basic.css";
 import "../public/css/layout.css";
@@ -19,7 +20,8 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <State>
       <Head>
-        <title>vCard / Resume / CV Template</title>
+        <title>{siteMetadata.title}</title>
+        <meta name="description" content={siteMetadata.description} />
         <link rel="shortcut icon" href="images/favicons/favicon.ico" />
       </Head>
       <PreLoader />

@@ -18,34 +18,35 @@ const ResumeSection = () => {
             </div>
             <div className="resume-items">
               <div className="resume-item border-line-h active">
-                <div className="date">April 2021 - Present</div>
+                <div className="date">Apr 2021 - Nov 2025</div>
                 <div className="name">Web Developer</div>
-                <div className="company">Freelance</div>
+                <div className="company">Freelance · Remote</div>
                 <p>
-                  I specialize in crafting dynamic and visually appealing
-                  websites tailored to meet the unique needs of my clients,
-                  ensuring a seamless and engaging online presence.
+                  As a freelance web developer, I design, develop, and maintain
+                  dynamic and responsive websites for a diverse range of
+                  clients, leveraging the latest technologies and frameworks to
+                  deliver high-quality, user-friendly digital experiences.
                 </p>
               </div>
               <div className="resume-item border-line-h">
-                <div className="date">Oct 2020 - Nov 2023</div>
-                <div className="name">JBL Coastal</div>
-                <div className="company">Interior Painter</div>
+                <div className="date">Oct 2021 - Jan 2024</div>
+                <div className="name">Interior Painter</div>
+                <div className="company">JBL Painting · Pensacola, FL</div>
                 <p>
-                  Dedicated interior painter with a keen eye for detail and a
-                  proven track record of transforming spaces through precise
-                  color application and expert surface preparation.
+                  Skilled interior painter with experience in preparing,
+                  priming, and painting residential and commercial spaces,
+                  ensuring high-quality finishes and customer satisfaction
+                  through meticulous attention to detail and color matching.
                 </p>
               </div>
               <div className="resume-item">
-                <div className="date">Oct 2016 - Oct 2020</div>
-                <div className="name">Sales & Marketing</div>
-                <div className="company">Tristate Media</div>
+                <div className="date">Oct 2016 - Apr 2021</div>
+                <div className="name">Sales &amp; Marketing Representative</div>
+                <div className="company">Tri-state Marketing · Remote</div>
                 <p>
-                  Results-oriented sales & marketing professional with a proven
-                  track record of driving revenue growth through strategic
-                  planning, client relationship management, & innovative
-                  promotional campaigns.
+                  Developed and executed strategic sales and marketing plans,
+                  successfully increasing revenue and expanding market presence
+                  through targeted campaigns and effective team leadership.
                 </p>
               </div>
             </div>

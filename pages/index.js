@@ -58,12 +58,7 @@ const services = [
   },
 ];
 
-const animationText = [
-  "Frontend Developer",
-  "Blogger",
-  "Freelancer",
-  "Graphic Designer",
-];
+const animationText = siteMetadata.titles;
 
 const Index3 = () => {
   return (
@@ -78,22 +73,16 @@ const Index3 = () => {
             style={{ backgroundImage: "url(images/avatar1.jpg)" }}
           />
           {/* profile titles */}
-          <div className="title">Lindsey Howard</div>
+          <div className="title">{siteMetadata.author}</div>
 
           <TypingAnimation data={animationText} />
           {/* profile socials */}
           <div className="social">
-            <a target="_blank" rel="noreferrer" href={siteMetadata.dribbble}>
-              <span className="fa fa-dribbble" />
-            </a>
-            <a target="_blank" rel="noreferrer" href={siteMetadata.twitter}>
-              <span className="fa fa-twitter" />
+            <a target="_blank" rel="noreferrer" href={siteMetadata.linkedin}>
+              <span className="fa fa-linkedin" />
             </a>
             <a target="_blank" rel="noreferrer" href={siteMetadata.github}>
               <span className="fa fa-github" />
-            </a>
-            <a target="_blank" rel="noreferrer" href={siteMetadata.linkedin}>
-              <span className="fa fa-linkedin" />
             </a>
             <a target="_blank" rel="noreferrer" href={siteMetadata.medium}>
               <span className="fa fa-medium" />
@@ -104,7 +93,7 @@ const Index3 = () => {
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://docs.google.com/document/d/1Ridnv_Wzk9Uo5P0ksVRLA52aEaN9lbO1/edit?usp=sharing&ouid=106707598762258660153&rtpof=true&sd=true"
+              href={siteMetadata.cvLink}
               className="lnk"
             >
               <span className="text">Download CV</span>

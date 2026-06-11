@@ -127,3 +127,24 @@ img.mfp-img {
   font-size: 20px;
   cursor: pointer;
 }
+
+/* ------------------------------------------------------------------ */
+/* Project grid spacing                                                */
+/* Adds even gutters between Isotope masonry tiles. box-sizing keeps   */
+/* each tile's measured width at 50%, so the 2-column layout holds.    */
+/* ------------------------------------------------------------------ */
+.content.works .grid-item {
+  box-sizing: border-box;
+  padding: 14px;
+}
+
+@media (max-width: 600px) {
+  .content.works .grid-item {
+    padding: 8px;
+  }
+}
+
+/* Optional: subtle lift so each project reads as its own card */
+.content.works .grid-item .box-item {
+  height: 100%;
+}

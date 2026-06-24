@@ -1,32 +1,36 @@
 {
-    "extends": [
-    "eslint:recommended",
-    "plugin:import/errors",
-    "plugin:react/recommended",
-    "plugin:jsx-a11y/recommended",
-    "next/core-web-vitals",
-    "next"
-  ],
-   "rules": {
-    // Add other Next.js core-web-vitals rules here if needed
-
-    // Add the react/no-unescaped-entities rule
+  "extends": ["next/core-web-vitals"],
+  "rules": {
+    // Disallow unescaped HTML entities in JSX
     "react/no-unescaped-entities": [
       "error",
       {
         "forbid": [
-          {
-            "char": "'",
-            "alternative": "&apos;"
-          },
-          {
-            "char": "\"",
-            "alternative": "&quot;"
-          }
-          // Add more entities as needed
+          { "char": "'", "alternative": "&apos;" },
+          { "char": "\"", "alternative": "&quot;" },
+          { "char": ">", "alternative": "&gt;" },
+          { "char": "<", "alternative": "&lt;" }
         ]
       }
-    ]
-  },
-  "plugins": ["react", "import", "jsx-a11y"]
+    ],
+
+    // Catch unused variables (leave _-prefixed ones alone)
+    "no-unused-vars": [
+      "warn",
+      { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }
+    ],
+
+    // Prefer const where variable is never reassigned
+    "prefer-const": "warn",
+
+    // Warn on console.log left in code (console.error/warn are fine)
+    "no-console": ["warn", { "allow": ["warn", "error"] }],
+
+    // next/core-web-vitals already covers react/react-in-jsx-scope,
+    // so we just turn off the old requirement explicitly
+    "react/react-in-jsx-scope": "off",
+
+    // Prop-types are not needed in a Next.js/TS-ready project
+    "react/prop-types": "off"
+  }
 }

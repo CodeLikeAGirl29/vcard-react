@@ -1,14 +1,15 @@
-import SwiperCore, {
+import { Swiper, SwiperSlide } from "swiper/react";
+import {
   Autoplay,
   EffectFade,
   Grid,
   Navigation,
   Pagination,
-} from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-SwiperCore.use([Pagination, Navigation, EffectFade, Autoplay, Grid]);
+} from "swiper/modules";
+
 const Testimonials = () => {
   const props = {
+    modules: [Pagination, Navigation, EffectFade, Autoplay, Grid],
     loop: true,
     autoplay: {
       delay: 5000,

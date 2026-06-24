@@ -1,39 +1,38 @@
 /* eslint-disable @next/next/no-img-element */
 import Isotope from "isotope-layout";
+import imagesLoaded from "imagesloaded";
 import { Fragment, useEffect, useRef, useState } from "react";
 
 const RecentWorksDefault = () => {
-  // Isotope
   const isotope = useRef(null);
+  const containerRef = useRef(null);
   const [filterKey, setFilterKey] = useState("*");
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      isotope.current = new Isotope(".grid-items", {
+    if (typeof window === "undefined" || !containerRef.current) return;
+
+    // Wait for all images to load before Isotope measures heights
+    imagesLoaded(containerRef.current, () => {
+      isotope.current = new Isotope(containerRef.current, {
         itemSelector: ".grid-item",
         percentPosition: true,
-        masonry: {
-          columnWidth: ".grid-item",
-        },
+        layoutMode: "fitRows",
         animationOptions: {
           duration: 750,
           easing: "linear",
           queue: false,
         },
       });
+    });
 
-      return () => isotope.current?.destroy();
-    }
+    return () => isotope.current?.destroy();
   }, []);
 
   useEffect(() => {
     if (!isotope.current) return;
-
-    if (filterKey === "*") {
-      isotope.current.arrange({ filter: "*" });
-    } else {
-      isotope.current.arrange({ filter: `.${filterKey}` });
-    }
+    isotope.current.arrange({
+      filter: filterKey === "*" ? "*" : `.${filterKey}`,
+    });
   }, [filterKey]);
 
   const handleFilterKeyChange = (key) => () => setFilterKey(key);
@@ -42,73 +41,37 @@ const RecentWorksDefault = () => {
   return (
     <Fragment>
       <div className="content works max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        {/* title */}
         <div className="title mb-6">Recent Projects</div>
-        {/* filters */}
+
         <div className="filter-menu filter-button-group mb-8 flex flex-wrap gap-3">
-          <div
-            className={`f_btn ${activeBtn("*")}`}
-            onClick={handleFilterKeyChange("*")}
-          >
-            <label>
-              <input type="radio" name="fl_radio" defaultValue="grid-item" />
-              All
-            </label>
-          </div>
-          <div
-            className={`f_btn ${activeBtn("photo")}`}
-            onClick={handleFilterKeyChange("photo")}
-          >
-            <label>
-              <input type="radio" name="fl_radio" defaultValue="photo" />
-              Image
-            </label>
-          </div>
-          <div
-            className={`f_btn ${activeBtn("frontend")}`}
-            onClick={handleFilterKeyChange("frontend")}
-          >
-            <label>
-              <input type="radio" name="fl_radio" defaultValue="frontend" />
-              Frontend
-            </label>
-          </div>
-          <div
-            className={`f_btn ${activeBtn("design")}`}
-            onClick={handleFilterKeyChange("design")}
-          >
-            <label>
-              <input type="radio" name="fl_radio" defaultValue="design" />
-              Design
-            </label>
-          </div>
-          <div
-            className={`f_btn ${activeBtn("branding")}`}
-            onClick={handleFilterKeyChange("branding")}
-          >
-            <label>
-              <input type="radio" name="fl_radio" defaultValue="branding" />
-              Branding
-            </label>
-          </div>
-          <div
-            className={`f_btn ${activeBtn("content")}`}
-            onClick={handleFilterKeyChange("content")}
-          >
-            <label>
-              <input type="radio" name="fl_radio" defaultValue="content" />
-              Content
-            </label>
-          </div>
+          {[
+            { key: "*", label: "All" },
+            { key: "photo", label: "Image" },
+            { key: "frontend", label: "Frontend" },
+            { key: "design", label: "Design" },
+            { key: "branding", label: "Branding" },
+            { key: "content", label: "Content" },
+          ].map(({ key, label }) => (
+            <div
+              key={key}
+              className={`f_btn ${activeBtn(key)}`}
+              onClick={handleFilterKeyChange(key)}
+            >
+              <label>
+                <input type="radio" name="fl_radio" defaultValue={key} />
+                {label}
+              </label>
+            </div>
+          ))}
         </div>
-        {/* content */}
-        <div className="row grid-items border-line-v">
-          {/* work item photo */}
+
+        {/* ref added here so imagesLoaded can watch this container */}
+        <div ref={containerRef} className="row grid-items border-line-v">
           <div className="col col-d-6 col-t-6 col-m-12 grid-item frontend border-line-h">
             <div className="box-item">
               <div className="image">
                 <a href="images/works/work1.webp" className="has-popup-image">
-                  <img src="images/works/work1.webp" alt="" />
+                  <img src="images/works/work1.webp" alt="Visit FL" />
                   <span className="info">
                     <span className="ion ion-code" />
                   </span>
@@ -125,7 +88,7 @@ const RecentWorksDefault = () => {
               </div>
             </div>
           </div>
-          {/* work item video */}
+
           <div className="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
             <div className="box-item">
               <div className="image">
@@ -133,7 +96,10 @@ const RecentWorksDefault = () => {
                   href="https://unsplash-collections.vercel.app/"
                   className="has-popup-image"
                 >
-                  <img src="images/works/work2.webp" alt="" />
+                  <img
+                    src="images/works/work2.webp"
+                    alt="Unsplash Image Search"
+                  />
                   <span className="info">
                     <span className="ion ion-paintbrush" />
                   </span>
@@ -150,7 +116,7 @@ const RecentWorksDefault = () => {
               </div>
             </div>
           </div>
-          {/* work item */}
+
           <div className="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
             <div className="box-item">
               <div className="image">
@@ -158,7 +124,7 @@ const RecentWorksDefault = () => {
                   href="https://my-gitprofile.vercel.app/"
                   className="has-popup-image"
                 >
-                  <img src="images/works/work4.png" alt="" />
+                  <img src="images/works/work4.png" alt="GitProfile" />
                   <span className="info">
                     <span className="ion ion-paintbrush" />
                   </span>
@@ -175,12 +141,12 @@ const RecentWorksDefault = () => {
               </div>
             </div>
           </div>
-          {/* work item */}
+
           <div className="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
             <div className="box-item">
               <div className="image">
                 <a href="#popup-1" className="has-popup-media">
-                  <img src="images/works/work4.webp" alt="" />
+                  <img src="images/works/work4.webp" alt="Aqua Eden" />
                   <span className="info">
                     <span className="ion ion-images" />
                   </span>
@@ -188,7 +154,7 @@ const RecentWorksDefault = () => {
                 <div id="popup-1" className="popup-box mfp-fade mfp-hide">
                   <div className="content">
                     <div className="image">
-                      <img src="images/works/work4.webp" alt="" />
+                      <img src="images/works/work4.webp" alt="Aqua Eden" />
                     </div>
                     <div className="desc p-4">
                       <div className="post-box">
@@ -198,64 +164,22 @@ const RecentWorksDefault = () => {
                           <p>
                             Welcome to Aqua Eden, an immersive web project that
                             brings the enchanting world of aquariums to your
-                            fingertips! Dive into the mesmerizing depths of the
-                            ocean with our HTML/CSS/JS-powered website that
-                            seamlessly blends technology and marine beauty.
+                            fingertips!
                           </p>
                           <p>
                             &#34;Aqua Eden&#34; is not just a website; it&apos;s
                             a digital voyage into the wonders of the underwater
-                            realm. Immerse yourself, learn, support, and be a
-                            part of our mission to preserve the beauty of the
-                            oceans.
+                            realm.
                           </p>
                           <blockquote>
                             Dive into the wonders of Aqua Eden, where every
-                            ripple tells a tale of oceanic enchantment. Let the
-                            waves of curiosity carry you to a sea of discovery!
-                            🌊✨
+                            ripple tells a tale of oceanic enchantment. 🌊✨
                           </blockquote>
-                          <p>
-                            <strong>Responsive Design</strong>: Immerse yourself
-                            in the aquatic magic seamlessly across devices. Aqua
-                            Eden&apos;s responsive design ensures a captivating
-                            experience, from desktops to tablets and
-                            smartphones, utilizing HTML5, CSS3, and JavaScript
-                            for a fluid user interface.
-                          </p>
-                          <p>
-                            <strong>Donation and Support Section</strong>:
-                            Contribute to the thriving marine ecosystem by
-                            visiting our donation and support section. The
-                            seamless integration of HTML forms, CSS styling, and
-                            JavaScript functionality makes supporting Aqua Eden
-                            a breeze. Explore various donation options, learn
-                            about conservation initiatives, and make a
-                            difference with just a click.
-                          </p>
-                          <p>
-                            <strong>Educational Resources</strong>: Delve into
-                            the educational side of Aqua Eden. Explore
-                            information-rich sections about various aquatic
-                            species, ecosystems, and conservation efforts. Our
-                            HTML-powered content ensures a structured
-                            presentation, CSS adds style, and JavaScript brings
-                            elements to life for an engaging learning
-                            experience.
-                          </p>
                           <ul className="list-style">
                             <li>CSS</li>
                             <li>JavaScript</li>
                             <li>Netlify</li>
                           </ul>
-                          <p>
-                            This web project is more than just a showcase;
-                            it&apos;s an educational voyage. Explore the depths
-                            of our content-rich sections, unveiling the secrets
-                            of various aquatic species and ecosystems. The
-                            harmony of HTML structure, CSS style, and JavaScript
-                            dynamics creates an engaging platform for learning.
-                          </p>
                         </div>
                         <a
                           href="https://aquaeden.netlify.app/"
@@ -277,12 +201,12 @@ const RecentWorksDefault = () => {
               </div>
             </div>
           </div>
-          {/* work item photo */}
+
           <div className="col col-d-6 col-t-6 col-m-12 grid-item frontend border-line-h">
             <div className="box-item">
               <div className="image">
                 <a href="#gallery-1" className="has-popup-gallery img-gallery">
-                  <img src="images/works/work6.webp" alt="" />
+                  <img src="images/works/work6.webp" alt="Profile Concept" />
                   <span className="info">
                     <span className="ion ion-images" />
                   </span>
@@ -301,7 +225,7 @@ const RecentWorksDefault = () => {
               </div>
             </div>
           </div>
-          {/* work item music */}
+
           <div className="col col-d-6 col-t-6 col-m-12 grid-item frontend border-line-h">
             <div className="box-item">
               <div className="image">
@@ -309,7 +233,7 @@ const RecentWorksDefault = () => {
                   href="https://github.com/CodeLikeAGirl29/dictionarium"
                   className="has-popup-image"
                 >
-                  <img src="images/works/work7.webp" alt="" />
+                  <img src="images/works/work7.webp" alt="Dictionarium" />
                   <span className="info">
                     <span className="ion ion-images" />
                   </span>
@@ -326,7 +250,7 @@ const RecentWorksDefault = () => {
               </div>
             </div>
           </div>
-          {/* work item video */}
+
           <div className="col col-d-6 col-t-6 col-m-12 grid-item content border-line-h">
             <div className="box-item">
               <div className="image">
@@ -336,7 +260,7 @@ const RecentWorksDefault = () => {
                 >
                   <img
                     src="https://res.cloudinary.com/dhw9dl4gm/image/upload/v1764363453/Case-Study-HarborLight-Charters-_-Destin-FL-11-28-2025_02_56_PM_hhabre.png"
-                    alt=""
+                    alt="HarborLight Case Study"
                   />
                   <span className="info">
                     <span className="ion ion-images" />
@@ -354,7 +278,7 @@ const RecentWorksDefault = () => {
               </div>
             </div>
           </div>
-          {/* work item */}
+
           <div className="col col-d-6 col-t-6 col-m-12 grid-item image border-line-h">
             <div className="box-item">
               <div className="image">
@@ -362,7 +286,7 @@ const RecentWorksDefault = () => {
                   href="https://github.com/codelikeagirl29/my-blog"
                   className="has-popup-image"
                 >
-                  <img src="images/works/work3.webp" alt="" />
+                  <img src="images/works/work3.webp" alt="BMW Blog" />
                   <span className="info">
                     <span className="ion ion-images" />
                   </span>
@@ -379,12 +303,15 @@ const RecentWorksDefault = () => {
               </div>
             </div>
           </div>
-          {/* work item design */}
+
           <div className="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
             <div className="box-item">
               <div className="image">
                 <a href="#popup-2" className="has-popup-media">
-                  <img src="images/works/work8.webp" alt="" />
+                  <img
+                    src="images/works/work8.webp"
+                    alt="Florida Dreaming Blog"
+                  />
                   <span className="info">
                     <span className="ion ion-images" />
                   </span>
@@ -392,7 +319,10 @@ const RecentWorksDefault = () => {
                 <div id="popup-2" className="popup-box mfp-fade mfp-hide">
                   <div className="content">
                     <div className="image">
-                      <img src="images/works/work8.webp" alt="" />
+                      <img
+                        src="images/works/work8.webp"
+                        alt="Florida Dreaming Blog"
+                      />
                     </div>
                     <div className="desc m-4">
                       <div className="post-box">
@@ -402,93 +332,22 @@ const RecentWorksDefault = () => {
                           <p className="text-slate-700">
                             Welcome to our vibrant corner of the web, where
                             we&apos;re bringing the warmth of the Sunshine State
-                            to your screen. Our new blog design, &quot;Living
-                            the Florida Dream,&quot; is more than just a
-                            template—it&apos;s an invitation to immerse yourself
-                            in the laid-back lifestyle, coastal charm, and
-                            tropical vibes of Florida. Join us as we take a
-                            virtual stroll through the palm-lined beaches and
-                            vibrant communities of the Sunshine State right from
-                            the comfort of your digital space.
-                          </p>
-                          <p className="text-slate-700">
-                            The design of our blog template captures the essence
-                            of Florida living with its coastal-inspired
-                            aesthetics. Picture a palette of serene blues, sandy
-                            neutrals, and pops of vibrant coral, reminiscent of
-                            the ocean and sunsets that paint the Florida sky.
-                            The layout is clean, inviting, and easy to navigate,
-                            mirroring the relaxed atmosphere that defines life
-                            in Florida.
+                            to your screen.
                           </p>
                           <blockquote>
                             <p className="text-sky-400">
-                              {" "}
                               Living in Florida is like having a permanent
                               vacation — every day is a chance to make a splash
                               in the sunshine.
                             </p>
                           </blockquote>
-                          <p className="text-slate-700">
-                            Florida is a visual paradise, and our blog template
-                            accentuates this with a focus on captivating
-                            imagery. From breathtaking sunsets over the Gulf of
-                            Mexico to the lively street scenes of Miami, the
-                            template provides ample space for high-quality
-                            visuals that bring your content to life. Whether
-                            you&apos;re a travel blogger, a local enthusiast, or
-                            someone looking to share their Florida experiences,
-                            our template is your canvas to paint the beauty of
-                            the Sunshine State.
-                          </p>
-                          <p className="text-neutral-700">
-                            Reasons why I love living in Florida:
-                          </p>
                           <ul className="list-style">
-                            <li>
-                              Year-Round Sunshine ☀️ Enjoy a warm and sunny
-                              climate throughout the year, making outdoor
-                              activities and a beach lifestyle possible
-                              regardless of the season.
-                            </li>
-                            <li>
-                              World-Class Beaches 🏖️ With over 1,300 miles of
-                              coastline, Florida boasts some of the most
-                              beautiful beaches in the world, providing endless
-                              opportunities for relaxation, water sports, and
-                              stunning sunsets.
-                            </li>
-                            <li>
-                              Thriving Cities 🏙️ From the vibrant nightlife of
-                              Miami to the historic charm of St. Augustine,
-                              Florida is home to diverse and dynamic cities,
-                              each with its own unique personality and
-                              attractions.
-                            </li>
-                            <li>
-                              Theme Park Capital 🎢 Orlando is known as the
-                              theme park capital of the world, hosting
-                              world-famous attractions like Walt Disney World,
-                              Universal Studios, and SeaWorld, providing
-                              entertainment for all ages.
-                            </li>
-                            <li>
-                              No State Income Tax 💸 Enjoy the financial perk of
-                              living in a state with no personal income tax,
-                              making it an attractive destination for those
-                              looking to save on taxes.
-                            </li>
+                            <li>Year-Round Sunshine ☀️</li>
+                            <li>World-Class Beaches 🏖️</li>
+                            <li>Thriving Cities 🏙️</li>
+                            <li>Theme Park Capital 🎢</li>
+                            <li>No State Income Tax 💸</li>
                           </ul>
-                          <p>
-                            Embark on a digital journey through the sun-soaked
-                            landscapes and vibrant culture of Florida with our
-                            &quot;Living the Florida Dream&quot; blog template.
-                            Whether you&apos;re a seasoned Floridian or an
-                            armchair traveler dreaming of coastal living, this
-                            template is your passport to the ultimate Sunshine
-                            State experience. Dive in, explore, and start
-                            sharing your Florida dream today!
-                          </p>
                         </div>
                         <a
                           href="https://codelikeagirl29.github.io/my-blog/"
@@ -510,10 +369,12 @@ const RecentWorksDefault = () => {
               </div>
             </div>
           </div>
+
           <div className="clear" />
         </div>
       </div>
     </Fragment>
   );
 };
+
 export default RecentWorksDefault;

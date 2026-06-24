@@ -23,6 +23,9 @@ import ContentContainer from "../src/layout/ContentContainer";
 import Header from "../src/layout/Header";
 import Layout from "../src/layout/Layout";
 import siteMetadata from "../src/utils/siteMetaData";
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
 
 const RecentWorks = dynamic(
   () => import("../src/components/sections/RecentWorks"),
@@ -60,7 +63,7 @@ const services = [
 
 const animationText = siteMetadata.titles;
 
-const Index3 = () => {
+const Index3 = ({ posts }) => {
   return (
     <Layout bg={"gradient"}>
       <Header noSideBarBtn animationText={animationText} />
@@ -119,7 +122,7 @@ const Index3 = () => {
           <RecentWorks />
         </Work>
         <Blog>
-          <BlogSection />
+          <BlogSection posts={posts} />
         </Blog>
         <Contact>
           <ContactInfo />
@@ -130,3 +133,17 @@ const Index3 = () => {
   );
 };
 export default Index3;
+
+export async function getStaticProps() {
+  const blogsDir = path.join(process.cwd(), "content/blogs");
+  const files = fs.readdirSync(blogsDir).filter((f) => f.endsWith(".md"));
+
+  const posts = files.map((filename) => {
+    const slug = filename.replace(".md", "");
+    const raw = fs.readFileSync(path.join(blogsDir, filename), "utf-8");
+    const { data } = matter(raw);
+    return { slug, ...data };
+  });
+
+  return { props: { posts } };
+}

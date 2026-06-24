@@ -1,12 +1,8 @@
 ---
-title: "Staying Productive"
-description: "Practical tips and motivation to help you stay focused, energized, and organized throughout your workday."
-author: "Lindsey"
-publishedAt: "2024-12-02"
-updatedAt: "2024-12-02"
-isPublished: true
-tags: ["Advice", "Tips", "Productivity", "Balance"]
+title: "Art of Productivity"
+date: "April 28, 2023"
 image: "/images/blog/blog1.png"
+excerpt: "Dig deeper in what it means to balance life/work; it's a crucial skill that can significantly impact personal and professional success."
 ---
 
 Some people hold themselves accountable by logging work on productivity apps, while others turn to blogs and books inspirational productivity quotes. Regardless of how you **motivate yourself** to get things done in the workplace, now and then we all find ourselves searching for productivity tips to keep us moving forward. And if you don't think this applies to you, consider this: **research suggests that in an eight-hour workday, the average worker is only productive for two hours and 53 minutes.** That leaves a lot of room for improvement.

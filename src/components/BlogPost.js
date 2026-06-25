@@ -4,7 +4,7 @@ import ActiveSection from "../activeSection";
 import BlogPostLayout from "./BlogPostLayout";
 
 const BlogPostNew = ({ post = null, prev = null, next = null }) => {
-  if (!post) return <div className="content">Post not found.</div>;
+  if (!post) return null;
 
   const tags = Array.isArray(post.tags) ? post.tags : [];
   const firstCategory = tags.length ? [tags[0]] : [];

@@ -3,7 +3,7 @@ import BlogPostNew from "../components/BlogPost";
 import { BlogPostClassic } from "../components/BlogPost2";
 import Context from "../context/context";
 
-const ContentContainer = ({ children, blog }) => {
+const ContentContainer = ({ children, blog, post }) => {
   const { nav } = useContext(Context);
   return (
     <Fragment>
@@ -11,7 +11,7 @@ const ContentContainer = ({ children, blog }) => {
         blog === "classic" ? (
           <BlogPostClassic />
         ) : (
-          <BlogPostNew />
+          <BlogPostNew post={post} />
         )
       ) : (
         <Fragment>{children}</Fragment>

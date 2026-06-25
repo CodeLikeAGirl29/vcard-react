@@ -8,15 +8,23 @@ const PreLoader = () => {
     }, 2000);
   }, []);
 
+  if (!loading) return null;
+
   return (
-    <div className="preloader" style={{ display: loading ? "block" : "none" }}>
-      <div className="centralize full-width">
-        <div className="vertical-center">
-          <div className="spinner">
-            <div className="double-bounce1" />
-            <div className="double-bounce2" />
-          </div>
-        </div>
+    <div
+      className="preloader"
+      style={{
+        position: "fixed",
+        inset: 0,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        zIndex: 9999,
+      }}
+    >
+      <div className="spinner">
+        <div className="double-bounce1" />
+        <div className="double-bounce2" />
       </div>
     </div>
   );

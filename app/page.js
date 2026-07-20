@@ -20,7 +20,11 @@ export default function Home() {
 
   return (
     <main className="lg:flex min-h-screen bg-canvas">
-      <Sidebar resume={resume} activeTab={activeTab} setActiveTab={setActiveTab} />
+      <Sidebar
+        resume={resume}
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+      />
 
       <div className="flex-1 p-6 sm:p-10 lg:p-14">
         <div className="max-w-[760px] mx-auto bg-paper border border-rule px-6 py-10 sm:px-12 sm:py-14">
@@ -30,7 +34,7 @@ export default function Home() {
           {activeTab === "Contact" && <Contact contact={resume.contact} />}
 
           <footer className="mt-10 pt-5 border-t border-rule font-mono text-[9.5px] text-ink-soft text-center tracking-wider">
-            SPEC v1.0 · REPLACE ALL BRACKETED FIELDS BEFORE SENDING
+            SPEC v1.0 · 2026 · Built by lindsey k
           </footer>
         </div>
       </div>

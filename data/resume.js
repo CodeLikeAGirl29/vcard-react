@@ -14,14 +14,13 @@ const resume = {
     linkedin: "linkedin.com/in/lindseyhoward",
   },
   socials: [
-    { label: "LinkedIn", href: "https://www.linkedin.com/in/lindseyhoward" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/lindsey-howard" },
     { label: "GitHub", href: "https://github.com/codelikeagirl29" },
     { label: "Dribbble", href: "https://dribbble.com/codelikeagirl29" },
     { label: "X", href: "https://twitter.com/dev_lindseyk" },
   ],
-  resumeUrl: "[link to a hosted PDF of your resume]",
-  bio:
-    "Frontend web developer proficient in JavaScript, specializing in crafting dynamic user interfaces, with expertise in Next.js and Tailwind CSS. A deep logic builder and problem-solver with strong adaptability across tech stacks — I love exploring new tools and leveraging them to build things that actually work well for the people using them. Four-plus years of freelance experience designing, building, and maintaining responsive, high-quality websites for a diverse range of clients.",
+  resumeUrl: "/Lindsey_Howard_Resume.docx",
+  bio: "Frontend web developer proficient in JavaScript, specializing in crafting dynamic user interfaces, with expertise in Next.js and Tailwind CSS. A deep logic builder and problem-solver with strong adaptability across tech stacks — I love exploring new tools and leveraging them to build things that actually work well for the people using them. Four-plus years of freelance experience designing, building, and maintaining responsive, high-quality websites for a diverse range of clients.",
   thesis:
     "I build dynamic, responsive web experiences — from client sites to custom tools — with Next.js, React, and Tailwind CSS at the core.",
   impact: [

@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+  /* Colors */
+  --color-paper: #F1F5F9;
+  --color-ink: #0F172A;
+  --color-ink-soft: #475569;
+  --color-accent: #3B82F6;
+  --color-lilac: #818CF8;
+  --color-rule: #CBD5E1;
+  --color-card: #FFFFFF;
+  --color-canvas: #E2E8F0;
+
+  /* Font Families */
+  --font-display: var(--font-fraunces), serif;
+  --font-body: var(--font-public-sans), sans-serif;
+  --font-mono: var(--font-jetbrains), monospace;
+}
+
+html,
+body {
+  background: #dad5c7;
+}
+
+@media print {
+
+  html,
+  body {
+    background: #fff;
+  }
+}

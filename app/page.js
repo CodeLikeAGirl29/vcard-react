@@ -1,0 +1,39 @@
+"use client";
+
+import { useState } from "react";
+import resume from "@/data/resume";
+import Sidebar from "@/components/Sidebar";
+import AboutTab from "@/components/AboutTab";
+import ResumeTab from "@/components/ResumeTab";
+import ProjectsTab from "@/components/ProjectsTab";
+import Contact from "@/components/Contact";
+
+const TAB_COMPONENTS = {
+  About: AboutTab,
+  Resume: ResumeTab,
+  Projects: ProjectsTab,
+  Contact: null, // rendered separately, needs only `contact` prop
+};
+
+export default function Home() {
+  const [activeTab, setActiveTab] = useState("About");
+
+  return (
+    <main className="lg:flex min-h-screen bg-canvas">
+      <Sidebar resume={resume} activeTab={activeTab} setActiveTab={setActiveTab} />
+
+      <div className="flex-1 p-6 sm:p-10 lg:p-14">
+        <div className="max-w-[760px] mx-auto bg-paper border border-rule px-6 py-10 sm:px-12 sm:py-14">
+          {activeTab === "About" && <AboutTab resume={resume} />}
+          {activeTab === "Resume" && <ResumeTab resume={resume} />}
+          {activeTab === "Projects" && <ProjectsTab resume={resume} />}
+          {activeTab === "Contact" && <Contact contact={resume.contact} />}
+
+          <footer className="mt-10 pt-5 border-t border-rule font-mono text-[9.5px] text-ink-soft text-center tracking-wider">
+            SPEC v1.0 · REPLACE ALL BRACKETED FIELDS BEFORE SENDING
+          </footer>
+        </div>
+      </div>
+    </main>
+  );
+}

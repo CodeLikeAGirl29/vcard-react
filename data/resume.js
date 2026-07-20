@@ -26,9 +26,9 @@ const resume = {
     "I build dynamic, responsive web experiences — from client sites to custom tools — with Next.js, React, and Tailwind CSS at the core.",
   impact: [
     { metric: "4.5+ Yrs", label: "Freelance web development" },
-    { metric: "150+", label: "Public GitHub repositories" },
-    { metric: "255", label: "GitHub stars earned" },
-    { metric: "Bilingual", label: "Professional working Spanish" },
+    { metric: "483", label: "GitHub contributions this past year" },
+    { metric: "2017", label: "Coding on GitHub since" },
+    { metric: "265+ hrs", label: "JavaScript logged, top language" },
   ],
   experience: [
     {
@@ -68,6 +68,7 @@ const resume = {
     "Node.js",
     "HTML5 & CSS3",
     "PostgreSQL",
+    "Spanish (Professional Working)",
   ],
   certifications: [
     "Responsive Web Design",

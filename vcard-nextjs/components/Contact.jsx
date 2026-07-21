@@ -2,11 +2,8 @@
 
 import { useState } from "react";
 import { Mail, Phone, Globe } from "lucide-react";
-import * as Si from "react-icons/si";
-import { pickIcon } from "./iconUtils";
+import { SiLinkedin } from "react-icons/si";
 import SectionHead from "./SectionHead";
-
-const LinkedInIcon = pickIcon(Si, "SiLinkedin");
 
 export default function Contact({ contact }) {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -63,7 +60,7 @@ export default function Contact({ contact }) {
               {contact.site}
             </div>
             <div className="flex items-center gap-2">
-              {LinkedInIcon && <LinkedInIcon size={13} className="text-accent shrink-0" />}
+              <SiLinkedin size={13} className="text-accent shrink-0" />
               {contact.linkedin}
             </div>
           </div>

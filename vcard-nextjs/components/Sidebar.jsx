@@ -1,16 +1,15 @@
 "use client";
 
 import { useState } from "react";
-import * as Si from "react-icons/si";
-import { pickIcon } from "./iconUtils";
+import { SiLinkedin, SiGithub, SiDribbble, SiX } from "react-icons/si";
 
 const TABS = ["About", "Resume", "Projects", "Blog", "Contact"];
 
 const SOCIAL_ICONS = {
-  linkedin: pickIcon(Si, "SiLinkedin"),
-  github: pickIcon(Si, "SiGithub"),
-  dribbble: pickIcon(Si, "SiDribbble"),
-  twitter: pickIcon(Si, "SiX", "SiTwitter"),
+  linkedin: SiLinkedin,
+  github: SiGithub,
+  dribbble: SiDribbble,
+  twitter: SiX,
 };
 
 function Avatar({ resume }) {

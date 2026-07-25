@@ -7,14 +7,19 @@ export function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }));
 }
 
-export function generateMetadata({ params }) {
-  const post = posts.find((p) => p.slug === params.slug);
+// Added async and await params
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const post = posts.find((p) => p.slug === slug);
   if (!post) return {};
   return { title: `${post.title} — Blog` };
 }
 
-export default function BlogPostPage({ params }) {
-  const post = posts.find((p) => p.slug === params.slug);
+// Added async and await params
+export default async function BlogPostPage({ params }) {
+  const { slug } = await params;
+  const post = posts.find((p) => p.slug === slug);
+
   if (!post) return notFound();
 
   return (
@@ -38,7 +43,9 @@ export default function BlogPostPage({ params }) {
             <span className="font-mono text-[10px] uppercase tracking-wider text-lilac">
               {post.tag}
             </span>
-            <span className="font-mono text-[10px] text-ink-soft">{post.date}</span>
+            <span className="font-mono text-[10px] text-ink-soft">
+              {post.date}
+            </span>
           </div>
 
           <h1 className="font-display font-semibold text-[28px] sm:text-[32px] leading-tight mb-8">

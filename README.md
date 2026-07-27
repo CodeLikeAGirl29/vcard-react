@@ -4,6 +4,8 @@ A fun CV card template for web developer's resume or personal portfolio page.
 
 This project is a Next.js (App Router) + Tailwind CSS rebuild of a personal resume and case study page, following a classic vCard layout. It features a fixed profile sidebar next to a tabbed content area for About, Resume, Projects, Blog, and Contact sections.
 
+[![CodeFactor](https://www.codefactor.io/repository/github/codelikeagirl29/vcard-react/badge)](https://www.codefactor.io/repository/github/codelikeagirl29/vcard-react)
+
 ![screenshot](https://res.cloudinary.com/dhw9dl4gm/image/upload/v1785016033/vcard-react-screenshot_jwhrnt.png)
 
 ## 🌟 Features

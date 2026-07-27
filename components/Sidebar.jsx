@@ -1,16 +1,32 @@
 "use client";
 
 import { useState } from "react";
-import * as Si from "react-icons/si";
+import * as Fa from "react-icons/fa";
+import * as Fa6 from "react-icons/fa6";
 import { pickIcon } from "./iconUtils";
 
 const TABS = ["About", "Resume", "Projects", "Blog", "Contact"];
 
 const SOCIAL_ICONS = {
-  linkedin: pickIcon(Si, "SiLinkedin"),
-  github: pickIcon(Si, "SiGithub"),
-  dribbble: pickIcon(Si, "SiDribbble"),
-  twitter: pickIcon(Si, "SiX", "SiTwitter"),
+  linkedin: pickIcon(Fa, "FaLinkedinIn"),
+  github: pickIcon(Fa, "FaGithub"),
+  dribbble: pickIcon(Fa, "FaDribbble"),
+  twitter: pickIcon(Fa6, "FaXTwitter") || pickIcon(Fa, "FaTwitter"),
+};
+
+// Official brand colors for each platform's hover state.
+// GitHub's mark is black/white — white is used here so it stays visible
+// against the dark sidebar background; swap to #181717 if your sidebar
+// is ever light.
+const SOCIAL_COLORS = {
+  linkedin: "#0A66C2",
+  github: "#FFFFFF",
+  dribbble: "#EA4C89",
+  // X's brand black is invisible against a dark sidebar, so it's swapped
+  // for X's light "dark mode" text color instead — still reads as "X",
+  // but actually visible on hover. Use #1DA1F2 if you'd rather have the
+  // legacy Twitter blue.
+  twitter: "#E7E9EA",
 };
 
 function Avatar({ resume }) {
@@ -37,7 +53,7 @@ function Avatar({ resume }) {
 
 export default function Sidebar({ resume, activeTab, setActiveTab }) {
   return (
-    <aside className="lg:w-[280px] lg:shrink-0 bg-ink text-paper lg:sticky lg:top-0 lg:h-screen flex flex-col">
+    <aside className="lg:w-[320px] lg:shrink-0 bg-[#161b28] text-paper lg:sticky lg:top-0 lg:h-screen flex flex-col">
       <div className="p-8 flex flex-col items-center text-center border-b border-white/10">
         <Avatar resume={resume} />
         <h1 className="font-display font-semibold text-xl leading-tight">
@@ -68,13 +84,15 @@ export default function Sidebar({ resume, activeTab, setActiveTab }) {
         <div className="flex gap-4 mt-6 text-paper/50">
           {resume.socials.map((s) => {
             const Icon = SOCIAL_ICONS[s.icon];
+            const hoverColor = SOCIAL_COLORS[s.icon];
             return (
               <a
                 key={s.label}
                 href={s.href.startsWith("[") ? "#" : s.href}
                 aria-label={s.label}
                 title={s.label}
-                className="hover:text-accent transition-colors"
+                style={hoverColor ? { "--hover-color": hoverColor } : undefined}
+                className="transition-colors hover:text-[color:var(--hover-color)]"
               >
                 {Icon ? <Icon size={16} /> : s.label}
               </a>

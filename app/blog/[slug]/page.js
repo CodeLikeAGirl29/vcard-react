@@ -2,6 +2,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import posts from "@/data/posts";
 import Thumbnail from "@/components/Thumbnail";
+import Pullquote from "@/components/Pullquote";
+import StatCallout from "@/components/StatCallout";
+import BackButton from "@/components/BackButton";
 
 export function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }));
@@ -32,12 +35,7 @@ export default async function BlogPostPage({ params }) {
           className="w-full h-[220px] sm:h-[280px]"
         />
         <div className="px-6 py-10 sm:px-12 sm:py-14">
-          <Link
-            href="/"
-            className="font-mono text-[11px] uppercase tracking-wider text-accent hover:underline"
-          >
-            ← Back to site
-          </Link>
+          <BackButton />
 
           <div className="flex items-center gap-3 mt-8 mb-3">
             <span className="font-mono text-[10px] uppercase tracking-wider text-lilac">
@@ -53,11 +51,37 @@ export default async function BlogPostPage({ params }) {
           </h1>
 
           <div className="flex flex-col gap-4">
-            {post.body.map((paragraph, i) => (
-              <p key={i} className="text-[15px] leading-relaxed text-ink">
-                {paragraph}
-              </p>
-            ))}
+            {post.body.map((block, i) => {
+              // Plain strings render as ordinary paragraphs (backward compatible
+              // with existing posts).
+              if (typeof block === "string") {
+                return (
+                  <p key={i} className="text-[15px] leading-relaxed text-ink">
+                    {block}
+                  </p>
+                );
+              }
+
+              // Content blocks: { type: "quote", text, cite? } or
+              // { type: "stat", value, label }
+              if (block.type === "quote") {
+                return (
+                  <Pullquote key={i} quote={block.text} cite={block.cite} />
+                );
+              }
+
+              if (block.type === "stat") {
+                return (
+                  <StatCallout
+                    key={i}
+                    value={block.value}
+                    label={block.label}
+                  />
+                );
+              }
+
+              return null;
+            })}
           </div>
 
           <div className="mt-10 pt-5 border-t border-rule">
@@ -65,7 +89,7 @@ export default async function BlogPostPage({ params }) {
               href="/"
               className="font-mono text-[11px] uppercase tracking-wider text-accent hover:underline"
             >
-              ← Back to site
+              ← Back
             </Link>
           </div>
         </div>

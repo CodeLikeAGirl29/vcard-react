@@ -1,5 +1,19 @@
 // Edit this file to add, remove, or update blog posts.
-// `body` is an array of paragraphs — add more strings for a longer post.
+//
+// `body` is an array of content blocks, rendered top to bottom. Each entry
+// can be either:
+//   - a plain string           → renders as a regular paragraph
+//   - { type: "quote", text, cite? }   → a pullquote, `cite` is optional
+//   - { type: "stat", value, label }   → a large stat callout
+//
+// Mix and match freely, e.g.:
+//   body: [
+//     "Some intro paragraph...",
+//     { type: "stat", value: "3x", label: "faster load times" },
+//     "More paragraph text...",
+//     { type: "quote", text: "A memorable line.", cite: "Client Name" },
+//     "Closing paragraph...",
+//   ]
 
 const posts = [
   {
@@ -13,7 +27,25 @@ const posts = [
     body: [
       "Studying for the Florida Real Estate Sales Associate Licensing Exam can feel like trying to memorize a dry legal encyclopedia. Between mastering complex property math, state statutes, disclosure laws, and closing statement mechanics, the sheer volume of material is overwhelming. While preparing for the exam myself, I quickly grew frustrated with existing study resources. Most online practice systems were locked behind rigid paywalls, featured outdated interface designs, or lacked dynamic feedback. Flashcard apps were often cluttered with irrelevant general trivia rather than Florida-specific legal definitions. I realized I didn't just need to read more textbook chapters—I needed a fast, focused, and intuitive drill tool that allowed me to rapidly test memory retention on real-world test scenarios.",
 
+      {
+        type: "stat",
+        value: "50–53%",
+        label:
+          "Overall annual fail rate on the Florida real estate exam — over 35,000 test-takers fail every year across all attempts managed by the FL Dept. of Business & Professional Regulation",
+      },
+
+      {
+        type: "quote",
+        text: "I didn't need to read more textbook chapters — I needed a fast, focused drill tool built for real-world test scenarios.",
+      },
+
       "To solve this, I designed and developed FL RE Drill (fl-re-drill.netlify.app), a targeted web application built specifically for rapid-fire exam prep. Leveraging modern frontend architecture with Next.js, React, and Tailwind CSS, I prioritized a distraction-free, responsive user experience that works seamlessly on desktop and mobile. The core functionality revolves around randomized card decks and categorized quiz modules, allowing users to drill down into specific weak spots—like Florida Statute Chapter 475 rules, agency relationships, or property tax calculations. One of the primary engineering challenges was organizing the question data and state logic to ensure seamless state management without performance lag, giving instant feedback on incorrect answers along with detailed explanations of the underlying legal concept.",
+
+      {
+        type: "stat",
+        value: "475",
+        label: "Florida Statute chapter drilled most by users",
+      },
 
       "Building FL RE Drill turned a challenging exam preparation journey into an empowering practical engineering project. It bridges the gap between high-yield real estate theory and modern software design, providing an active-recall framework that makes studying far more efficient. The app is live and actively helping learners cut through the noise, lock in key concepts, and walk into exam day with genuine confidence. As I continue updating the question bank and refining the user interface based on real feedback, FL RE Drill remains a proud testament to using code to solve immediate, real-world problems.",
     ],
